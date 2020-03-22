@@ -30,7 +30,22 @@ module.exports = {
               wrapperStyle: 'margin-bottom: 1rem'
             }
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: '›',
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              prompt: {
+                user: 'root',
+                host: 'localhost',
+                global: false
+              },
+              escapeEntities: {}
+            }
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
