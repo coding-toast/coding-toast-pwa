@@ -1,5 +1,5 @@
 # Blog
-
+minor
 ## 🚀 Quick start
 
 > A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
