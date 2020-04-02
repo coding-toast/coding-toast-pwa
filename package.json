@@ -12,12 +12,14 @@
     "build": "gatsby build",
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dev": "gatsby develop",
-    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "start": "npm run dev",
-    "test": "npm run type-check && npm run lint && jest",
-    "type-check": "tsc"
+    "dev:develop": "gatsby develop",
+    "dev:format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
+    "dev:start": "npm run dev:format && npm run dev:develop",
+    "test:lint": "eslint 'src/**/*.{ts,tsx}'",
+    "test:type-check": "tsc",
+    "test:jest": "jest",
+    "test:coverage": "jest --coverage",
+    "test:precheckin": "npm run test:type-check && npm run test:lint && npm run build && npm run test:coverage "
   },
   "engines": {
     "node": ">=8.0.0"

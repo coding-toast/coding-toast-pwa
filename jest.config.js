@@ -1,4 +1,14 @@
 module.exports = {
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/**.{js,jsx,ts,tsx}', '!**/node_modules/**', '!**/styles/**'],
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 16.67,
+      lines: 25,
+      statements: 26.67
+    }
+  },
   transform: {
     '^.+\\.[jt]sx?$': `<rootDir>/jest-preprocess.js`
   },
