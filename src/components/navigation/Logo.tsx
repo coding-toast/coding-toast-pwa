@@ -1,5 +1,5 @@
 import * as React from 'react'
-import LogoImage from '../../../public/images/logo.png'
+import LogoImage from '../../images/logo.png'
 
 const Logo: React.FC = () => (
   <a href="/">
