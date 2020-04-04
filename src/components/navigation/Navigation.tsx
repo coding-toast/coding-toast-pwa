@@ -4,7 +4,7 @@ import Menu from './menu/Menu'
 
 const NavigationStyles = {
   backgroundColor: '#121212',
-  position: 'relative'
+  position: 'relative' as 'relative'
 }
 
 const Navigation: React.FC = () => (

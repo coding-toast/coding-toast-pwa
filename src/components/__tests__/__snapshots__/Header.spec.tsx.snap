@@ -1,18 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<header
-  className="css-dy6o69"
+<div
+  style={
+    Object {
+      "backgroundColor": "#121212",
+      "position": "relative",
+    }
+  }
 >
   <div
-    className="css-1jjsitt"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
   >
     <a
-      className="css-1w8zl5a"
       href="/"
     >
-      Default Starter
+      <img
+        alt="Logo"
+        src="test-file-stub"
+        style={
+          Object {
+            "maxWidth": "33%",
+            "minWidth": "300px",
+          }
+        }
+      />
     </a>
   </div>
-</header>
+  <div>
+    <div
+      id="menuLinks"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <a
+        href="/"
+        style={
+          Object {
+            "color": "white",
+            "fontSize": "24px",
+            "padding": "10px",
+            "textDecoration": "none",
+          }
+        }
+      >
+        About
+      </a>
+      <a
+        href="/"
+        style={
+          Object {
+            "color": "white",
+            "fontSize": "24px",
+            "padding": "10px",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Contact
+      </a>
+      <a
+        href="/"
+        style={
+          Object {
+            "color": "white",
+            "fontSize": "24px",
+            "padding": "10px",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Login
+      </a>
+    </div>
+    <button
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "border": "none",
+          "color": "inherit",
+          "cursor": "pointer",
+          "font": "inherit",
+          "outline": "inherit",
+          "padding": 0,
+        }
+      }
+      type="button"
+    >
+      <img
+        alt="Open Menu"
+        src="test-file-stub"
+        style={
+          Object {
+            "color": "#70F3FF",
+            "display": "block",
+            "padding": "0",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </button>
+  </div>
+</div>
 `;
