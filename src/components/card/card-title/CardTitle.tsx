@@ -1,7 +1,13 @@
-interface ICardTitleProps {
+import * as React from 'react'
+
+interface CardTitleProps {
   title: string
 }
 
-const CardTitle: React.FC<ICardTitleProps> = props => <h2>{props.title}</h2>
+const CardTitle: React.FC<CardTitleProps> = props => {
+  const { title } = props
+
+  return <h2>{title}</h2>
+}
 
 export default CardTitle
