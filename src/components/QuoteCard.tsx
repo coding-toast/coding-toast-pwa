@@ -30,12 +30,9 @@ const quoteImageStyles = {
 }
 
 const QuoteCard: React.FC = () => (
-  <div className="card" style={cardStyles}>
+  <div style={cardStyles}>
     <img src={QuoteImage} style={quoteImageStyles} alt="Quote" />
-    <p style={quoteStyles}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea facere tempore vitae molestias, optio deleniti eveniet modi expedita
-      accusamus autem pariatur omnis debitis nam, saepe soluta iusto praesentium blanditiis! lor
-    </p>
+    <p style={quoteStyles}>Because it takes more than going over your git log before standup to become a great engineer.</p>
   </div>
 )
 

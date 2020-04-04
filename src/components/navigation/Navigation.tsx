@@ -2,6 +2,7 @@ import * as React from 'react'
 import Logo from './Logo'
 import Menu from './menu/Menu'
 import QuoteCard from '../QuoteCard'
+import NextSection from './NextSection'
 
 const NavigationStyles = {
   backgroundColor: '#121212',
@@ -13,6 +14,7 @@ const Navigation: React.FC = () => (
     <Logo />
     <Menu />
     <QuoteCard />
+    <NextSection />
   </div>
 )
 
