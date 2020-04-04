@@ -13,3 +13,8 @@ declare module '*.module.css' {
   const cssModule: CSSModule
   export = cssModule
 }
+
+declare module '*.png' {
+  const value: any
+  export default value
+}
