@@ -1,3 +1,3 @@
-const CardBody: React.FC = () => <article></article>
+const CardBody: React.FC = ({ children }) => <article>{children}</article>
 
 export default CardBody
