@@ -1,3 +1,6 @@
-const CardImg: React.FC = () => <div></div>
+interface ICardImgProps {
+  imgUrl: string
+}
+const CardImg: React.FC<ICardImgProps> = ICardImgProps => <img src={ICardImgProps.imgUrl} />
 
 export default CardImg
