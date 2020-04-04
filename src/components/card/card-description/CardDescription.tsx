@@ -2,9 +2,9 @@ interface ICardDescriptionProps {
   text: string
 }
 
-const CardDesctiption: React.FC<ICardDescriptionProps> = ICardDescriptionProps => (
+const CardDesctiption: React.FC<ICardDescriptionProps> = props => (
   <div>
-    <p>{ICardDescriptionProps.text}</p>
+    <p>{props.text}</p>
   </div>
 )
 
