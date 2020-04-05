@@ -7,10 +7,10 @@ import BlogHighlightSection from '../components/blog-highllights/BlogHighlightSe
 
 const IndexPage = () => (
   <IndexLayout>
-    <Page> 
+    <Page>
       <Container>
         <BlogHighlightSection />
-      </Container> 
+      </Container>
     </Page>
   </IndexLayout>
 )
