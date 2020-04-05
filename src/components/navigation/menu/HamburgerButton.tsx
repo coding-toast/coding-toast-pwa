@@ -1,5 +1,6 @@
 import * as React from 'react'
 import HamburgerIcon from '../../../images/hamburger.png'
+import Menu from './Menu'
 
 const HamburgerIconStyles = {
   color: '#70F3FF',
@@ -20,19 +21,20 @@ const ButtonStyle = {
   outline: 'inherit'
 }
 
-function displayMenu() {
-  const element = document.getElementById('menuLinks')
-
-  if (element !== null) {
-    if (element.style.display === 'block') element.style.display = 'none'
-    else element.style.display = 'block'
+const HamburgerButton: React.FC = () => {
+  const [isMenuDisplayed, setIsMenuDisplayed] = React.useState(false)
+  const changeMenuDisplay = () => {
+    setIsMenuDisplayed(!isMenuDisplayed)
   }
-}
 
-const HamburgerButton: React.FC = () => (
-  <button type="button" style={ButtonStyle} onClick={displayMenu} onKeyDown={displayMenu}>
-    <img src={HamburgerIcon} style={HamburgerIconStyles} alt="Open Menu" />
-  </button>
-)
+  return (
+    <div>
+      <button type="button" className="hamburgerButton" style={ButtonStyle} onClick={changeMenuDisplay} onKeyDown={changeMenuDisplay}>
+        <img src={HamburgerIcon} style={HamburgerIconStyles} alt="Open Menu" />
+      </button>
+      {isMenuDisplayed ? <Menu /> : ''}
+    </div>
+  )
+}
 
 export default HamburgerButton

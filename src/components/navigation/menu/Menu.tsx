@@ -1,5 +1,4 @@
 import * as React from 'react'
-import HamburgerButton from './HamburgerButton'
 
 const MenuLinkStyles = {
   color: 'white',
@@ -10,7 +9,7 @@ const MenuLinkStyles = {
 
 const Menu: React.FC = () => (
   <div>
-    <div id="menuLinks" style={{ display: 'none' }}>
+    <div id="menuLinks">
       <a href="/" style={MenuLinkStyles}>
         About
       </a>
@@ -21,8 +20,6 @@ const Menu: React.FC = () => (
         Login
       </a>
     </div>
-
-    <HamburgerButton />
   </div>
 )
 

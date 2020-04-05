@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Logo from './Logo'
-import Menu from './menu/Menu'
 import QuoteCard from '../QuoteCard'
 import NextSection from './NextSection'
+import HamburgerButton from './menu/HamburgerButton'
 
 const NavigationStyles = {
   backgroundColor: '#121212',
@@ -12,7 +12,7 @@ const NavigationStyles = {
 const Navigation: React.FC = () => (
   <div style={NavigationStyles}>
     <Logo />
-    <Menu />
+    <HamburgerButton />
     <QuoteCard />
     <NextSection />
   </div>
