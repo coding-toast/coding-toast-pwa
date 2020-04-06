@@ -77,6 +77,11 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: [require('path').resolve(__dirname, 'node_modules')]
+      }
+    }
   ]
 }
