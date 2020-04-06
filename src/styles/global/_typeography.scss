@@ -2,7 +2,8 @@
 
 // set base rem
 html {
-  font-size: 16px;
+  font-family: $font-family-body;
+  font-size: $font-size-base;
 }
 
 h1,
@@ -17,26 +18,67 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: $font-title;
+  font-family: $font-family-title;
+  font-style: normal;
   font-weight: bold;
+  letter-spacing: 0.04em;
 }
 
 h1,
 .h1 {
   font-size: 2rem;
+  line-height: 40px;
 }
 
 h2,
 .h2 {
   font-size: 1.5rem;
+  line-height: 30px;
 }
 
 h3,
 .h3 {
   font-size: 1.16rem;
+  line-height: 24px;
 }
 
 h4,
 .h4 {
   font-size: 1rem;
+  line-height: 20px;
+}
+
+.text-lead {
+  font-family: $font-family-body;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+.text-lead {
+  font-family: $font-family-body;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+
+.text-label {
+  font-family: $font-family-body;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.16rem;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+
+.text-code {
+  font-family: $font-family-code;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 21px;
 }

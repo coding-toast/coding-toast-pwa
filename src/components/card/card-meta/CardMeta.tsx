@@ -7,7 +7,7 @@ interface CardMetaProps {
 const CardMeta: React.FC<CardMetaProps> = props => {
   const { publishDate } = props
 
-  return <p>{publishDate}</p>
+  return <p className="muted-text">{publishDate}</p>
 }
 
 export default CardMeta
