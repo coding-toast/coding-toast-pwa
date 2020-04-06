@@ -19,7 +19,8 @@
     "test:type-check": "tsc",
     "test:jest": "jest",
     "test:coverage": "jest --coverage",
-    "test:precheckin": "npm run test:type-check && npm run test:lint && npm run build && npm run test:coverage "
+    "test:precheckin": "npm run test:type-check && npm run test:lint && npm run build && npm run test:coverage ",
+    "test:update-snapshots": "npm run test:jest -- -u"
   },
   "engines": {
     "node": ">=8.0.0"
