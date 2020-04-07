@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section>
+  <article
+    className="card"
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
+          "backgroundSize": "cover",
+          "height": "124px",
+          "position": "relative",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "bottom": "12px",
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+          }
+        }
+      >
+        blog-post-placerholder2
+      </h2>
+    </div>
+    <div>
+      <p>
+        second blog post
+      </p>
+    </div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+        }
+      }
+    />
+    <p>
+      June 16, 2007
+    </p>
+  </article>
+  <article
+    className="card"
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
+          "backgroundSize": "cover",
+          "height": "124px",
+          "position": "relative",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "bottom": "12px",
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+          }
+        }
+      >
+        blog-post-placerholder3
+      </h2>
+    </div>
+    <div>
+      <p>
+        third blog post
+      </p>
+    </div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+        }
+      }
+    />
+    <p>
+      January 30, 2001
+    </p>
+  </article>
+  <article
+    className="card"
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
+          "backgroundSize": "cover",
+          "height": "124px",
+          "position": "relative",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "bottom": "12px",
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+          }
+        }
+      >
+        blog-post-placerholder4
+      </h2>
+    </div>
+    <div>
+      <p>
+        fourth blog post
+      </p>
+    </div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+        }
+      }
+    />
+    <p>
+      February 13, 1995
+    </p>
+  </article>
+  <article
+    className="card"
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
+          "backgroundSize": "cover",
+          "height": "124px",
+          "position": "relative",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "bottom": "12px",
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+          }
+        }
+      >
+        blog-post-placerholder5
+      </h2>
+    </div>
+    <div>
+      <p>
+        fifth blog post
+      </p>
+    </div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+        }
+      }
+    />
+    <p>
+      December 7, 2005
+    </p>
+  </article>
+  <article
+    className="card"
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
+          "backgroundSize": "cover",
+          "height": "124px",
+          "position": "relative",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "bottom": "12px",
+            "margin": 0,
+            "padding": 0,
+            "position": "absolute",
+          }
+        }
+      >
+        blog-post-placerholder1
+      </h2>
+    </div>
+    <div>
+      <p>
+        first blog post
+      </p>
+    </div>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+        }
+      }
+    />
+    <p>
+      December 29, 2015
+    </p>
+  </article>
+</section>
+`;

@@ -3,7 +3,6 @@ import { CardBody, CardTitle, CardDesctiption, CardMeta } from '../../card'
 
 const ExerptList: React.FC<any> = props => {
   const { allMarkdownRemark } = props
-  console.log(allMarkdownRemark)
   return (
     <section>
       {allMarkdownRemark.allMarkdownRemark.edges.map((post: any) => (
