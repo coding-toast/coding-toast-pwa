@@ -12,8 +12,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
-    "preserveConstEnums": true,
-    "allowSyntheticDefaultImports": true
+    "preserveConstEnums": true
   },
   "include": ["./src/**/*"]
 }

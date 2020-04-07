@@ -33,13 +33,6 @@ exports[`renders correctly 1`] = `
         second blog post
       </p>
     </div>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
-        }
-      }
-    />
     <p>
       June 16, 2007
     </p>
@@ -75,13 +68,6 @@ exports[`renders correctly 1`] = `
         third blog post
       </p>
     </div>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
-        }
-      }
-    />
     <p>
       January 30, 2001
     </p>
@@ -117,13 +103,6 @@ exports[`renders correctly 1`] = `
         fourth blog post
       </p>
     </div>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
-        }
-      }
-    />
     <p>
       February 13, 1995
     </p>
@@ -159,13 +138,6 @@ exports[`renders correctly 1`] = `
         fifth blog post
       </p>
     </div>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
-        }
-      }
-    />
     <p>
       December 7, 2005
     </p>
@@ -201,13 +173,6 @@ exports[`renders correctly 1`] = `
         first blog post
       </p>
     </div>
-    <div
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
-        }
-      }
-    />
     <p>
       December 29, 2015
     </p>

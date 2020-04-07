@@ -17,7 +17,6 @@ const BlogHighlightSection: React.FC = () => {
                 title
                 publishDate
               }
-              html
             }
           }
         }
