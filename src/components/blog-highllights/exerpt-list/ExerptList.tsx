@@ -1,61 +1,21 @@
 import * as React from 'react'
 import { CardBody, CardTitle, CardDesctiption, CardMeta } from '../../card'
 
-export const ExerptList: React.FC = () => {
+const ExerptList: React.FC<any> = props => {
+  const { allMarkdownRemark } = props
+  console.log(allMarkdownRemark)
   return (
     <section>
-      <CardBody>
-        <CardTitle
-          title="Lorem Ipsum"
-          backgroundUrl="https://images.unsplash.com/profile-1441298803695-accd94000cac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5a9dc749c43ce5bd60870b129a40902f"
-        />
-        <CardDesctiption
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-                            lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
-                            vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque
-                            fermentum dui faucibus in ornare quam viverra"
-        />
-        <CardMeta publishDate="November 11, 2016" />
-      </CardBody>
-      <CardBody>
-        <CardTitle
-          title="Lorem Ipsum"
-          backgroundUrl="https://images.unsplash.com/profile-1441298803695-accd94000cac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5a9dc749c43ce5bd60870b129a40902f"
-        />
-        <CardDesctiption
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-                            lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
-                            vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque
-                            fermentum dui faucibus in ornare quam viverra"
-        />
-        <CardMeta publishDate="November 11, 2016" />
-      </CardBody>
-      <CardBody>
-        <CardTitle
-          title="Lorem Ipsum"
-          backgroundUrl="https://images.unsplash.com/profile-1441298803695-accd94000cac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5a9dc749c43ce5bd60870b129a40902f"
-        />
-        <CardDesctiption
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-                            lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
-                            vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque
-                            fermentum dui faucibus in ornare quam viverra"
-        />
-        <CardMeta publishDate="November 11, 2016" />
-      </CardBody>
-      <CardBody>
-        <CardTitle
-          title="Lorem Ipsum"
-          backgroundUrl="https://images.unsplash.com/profile-1441298803695-accd94000cac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5a9dc749c43ce5bd60870b129a40902f"
-        />
-        <CardDesctiption
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-                            lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo,
-                            vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque
-                            fermentum dui faucibus in ornare quam viverra"
-        />
-        <CardMeta publishDate="November 11, 2016" />
-      </CardBody>
+      {allMarkdownRemark.allMarkdownRemark.edges.map((post: any) => (
+        <CardBody>
+          <CardTitle title={post.node.frontmatter.title} backgroundUrl={post.node.frontmatter.banner} />
+          <CardDesctiption text={post.node.frontmatter.description} />
+          <div dangerouslySetInnerHTML={{ __html: post.node.html }} />
+          <CardMeta publishDate={post.node.frontmatter.publishDate} />
+        </CardBody>
+      ))}
     </section>
   )
 }
+
+export default ExerptList
