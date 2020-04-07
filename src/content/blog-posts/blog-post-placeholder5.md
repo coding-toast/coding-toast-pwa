@@ -1,9 +1,9 @@
 ---
 title: 'blog-post-placerholder5'
 description: 'fifth blog post'
-publishDate: 'December 7, 2005'
+publish_date: '`January 1, 1970`'
 author: 'author here'
-banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg'
+banner: 'https://dummyimage.com/1200x600/000/fff'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.
