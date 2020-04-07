@@ -25,9 +25,6 @@ const BlogHighlightSection: React.FC = () => {
     `
   )
 
-  {
-    console.log(query)
-  }
   return (
     <section className={BlogHighlightSectionStyles.container}>
       <h1>Catch Up On The Latest</h1>

@@ -36,7 +36,7 @@ exports[`renders correctly 1`] = `
     <div
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
         }
       }
     />
@@ -78,7 +78,7 @@ exports[`renders correctly 1`] = `
     <div
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
         }
       }
     />
@@ -120,7 +120,7 @@ exports[`renders correctly 1`] = `
     <div
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
         }
       }
     />
@@ -162,7 +162,7 @@ exports[`renders correctly 1`] = `
     <div
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
         }
       }
     />
@@ -204,7 +204,7 @@ exports[`renders correctly 1`] = `
     <div
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat. Maecenas libero leo, commodo nec faucibus eu, mattis ac nisl. Sed libero nisl, suscipit nec dapibus id, porttitor vel elit. Nulla facilisi. In finibus nisl non purus accumsan efficitur. Nullam semper dapibus nisi, et sagittis nisi auctor at. Suspendisse commodo sed arcu ac imperdiet. Pellentesque ac lorem quis dolor vehicula viverra.</p>",
+          "__html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.</p>",
         }
       }
     />
