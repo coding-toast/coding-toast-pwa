@@ -1,9 +1,9 @@
 ---
 title: 'blog-post-placerholder1'
 description: 'first blog post'
-publish_date: '`January 1, 1970`'
+publishDate: '`January 1, 1970`'
 author: 'author here'
-banner: 'https://dummyimage.com/1200x600/000/fff'
+banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam lectus sit amet sapien tincidunt placerat.
