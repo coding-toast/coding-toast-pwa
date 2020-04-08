@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer, { act } from 'react-test-renderer'
 
-import HamburgerButton from '../navigation/menu/HamburgerButton'
+import HamburgerButton from '../menu/HamburgerButton'
 
 describe('HamburgerButton', () => {
   it('renders correctly', () => {
