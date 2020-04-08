@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlogHighlightSection /> It renders hopefully 1`] = `ShallowWrapper {}`;
+exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
+<section
+  className="container"
+>
+  <h1>
+    Catch Up On The Latest
+  </h1>
+  <ExerptList />
+</section>
+`;

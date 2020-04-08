@@ -1,11 +1,11 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-
+import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import CardDescription from '../CardDescription'
 
 describe('<CardDescription />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<CardDescription text="Content" />).toJSON()
-    expect(tree).toMatchSnapshot()
+    const component = shallow(<CardDescription text="Content" />)
+    expect(toJson(component)).toMatchSnapshot()
   })
 })
