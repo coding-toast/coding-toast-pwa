@@ -1,11 +1,12 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import CardBody from '../CardBody'
 
 describe('<CardBody />', () => {
   it('renders correctly without children', () => {
     const component = shallow(<CardBody />)
-    expect(component).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 
   it('renders with children', () => {
@@ -15,6 +16,6 @@ describe('<CardBody />', () => {
       </CardBody>
     )
 
-    expect(component).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 })

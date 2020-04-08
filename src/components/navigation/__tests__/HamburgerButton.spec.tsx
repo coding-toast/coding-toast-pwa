@@ -1,5 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import HamburgerButton from '../menu/HamburgerButton'
 
 describe('HamburgerButton', () => {
@@ -13,6 +14,6 @@ describe('HamburgerButton', () => {
 
     await component.find('.hamburgerButton').simulate('click')
 
-    expect(component).toMatchSnapshot()
+    expect(toJson(component)).toMatchSnapshot()
   })
 })
