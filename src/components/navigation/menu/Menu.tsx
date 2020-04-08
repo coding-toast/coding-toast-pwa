@@ -8,18 +8,16 @@ const MenuLinkStyles = {
 }
 
 const Menu: React.FC = () => (
-  <div>
-    <div id="menuLinks">
-      <a href="/" style={MenuLinkStyles}>
-        About
-      </a>
-      <a href="/" style={MenuLinkStyles}>
-        Contact
-      </a>
-      <a href="/" style={MenuLinkStyles}>
-        Login
-      </a>
-    </div>
+  <div id="menuLinks">
+    <a href="/" style={MenuLinkStyles}>
+      About
+    </a>
+    <a href="/" style={MenuLinkStyles}>
+      Contact
+    </a>
+    <a href="/" style={MenuLinkStyles}>
+      Login
+    </a>
   </div>
 )
 

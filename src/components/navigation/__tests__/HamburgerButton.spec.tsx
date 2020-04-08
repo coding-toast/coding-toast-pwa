@@ -1,22 +1,18 @@
 import React from 'react'
-import renderer, { act } from 'react-test-renderer'
-
+import { shallow } from 'enzyme'
 import HamburgerButton from '../menu/HamburgerButton'
 
 describe('HamburgerButton', () => {
-  it('renders correctly', () => {
-    const component = renderer.create(<HamburgerButton />).toJSON()
-
+  it('will render correctly', () => {
+    const component = shallow(<HamburgerButton />)
     expect(component).toMatchSnapshot()
   })
 
-  it('renders opened correctly', () => {
-    const component = renderer.create(<HamburgerButton />)
+  it('will open correctly', async () => {
+    const component = shallow(<HamburgerButton />)
 
-    act(() => {
-      component.root.findByType('button').props.onClick()
-    })
+    await component.find('.hamburgerButton').simulate('click')
 
-    expect(component.toJSON()).toMatchSnapshot()
+    expect(component).toMatchSnapshot()
   })
 })
