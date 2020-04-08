@@ -1,39 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CardTitle /> renders correctly with a background 1`] = `
-<div
-  style={
-    Object {
-      "backgroundImage": "url(test url)",
-      "backgroundSize": "cover",
-      "height": "124px",
-      "position": "relative",
-    }
-  }
->
-  <h2
-    style={
-      Object {
-        "bottom": "12px",
-        "margin": 0,
-        "padding": 0,
-        "position": "absolute",
-      }
-    }
-  >
-    Lorem Ipsum
-  </h2>
-</div>
-`;
+exports[`<CardTitle /> renders correctly with a background 1`] = `ShallowWrapper {}`;
 
-exports[`<CardTitle /> renders correctly without a background 1`] = `
-<div
-  style={Object {}}
->
-  <h2
-    style={Object {}}
-  >
-    Lorem Ipsum
-  </h2>
-</div>
-`;
+exports[`<CardTitle /> renders correctly without a background 1`] = `ShallowWrapper {}`;

@@ -1,9 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CardDescription /> renders correctly 1`] = `
-<div>
-  <p>
-    Content
-  </p>
-</div>
-`;
+exports[`<CardDescription /> renders correctly 1`] = `ShallowWrapper {}`;
