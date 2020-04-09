@@ -1,0 +1,19 @@
+.card-title-container {
+  position: relative;
+}
+
+.card-title-background {
+  position: absolute;
+  content: '';
+  top: -32px;
+  bottom: -16px;
+  right: -16px;
+  left: -16px;
+}
+
+.card-title {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
