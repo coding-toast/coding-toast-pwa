@@ -31,7 +31,6 @@ exports[`<CardTitle /> renders correctly without a background 1`] = `
 <div
   className="cardTitleContainer"
 >
-  
   <h2
     className="cardTitle text-color-primary"
     style={Object {}}
