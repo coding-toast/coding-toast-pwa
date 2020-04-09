@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Navigation from './Navigation/Navigation'
+import Navigation from './navigation/Navigation'
 
 const Header: React.FC = () => <Navigation />
 
