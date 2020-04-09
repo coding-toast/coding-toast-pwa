@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HamburgerButton renders correctly 1`] = `
+exports[`HamburgerButton will open correctly 1`] = `
 <div>
   <button
     className="hamburgerButton"
@@ -34,11 +34,11 @@ exports[`HamburgerButton renders correctly 1`] = `
       }
     />
   </button>
-  
+  <Menu />
 </div>
 `;
 
-exports[`HamburgerButton renders opened correctly 1`] = `
+exports[`HamburgerButton will render correctly 1`] = `
 <div>
   <button
     className="hamburgerButton"
@@ -72,50 +72,5 @@ exports[`HamburgerButton renders opened correctly 1`] = `
       }
     />
   </button>
-  <div>
-    <div
-      id="menuLinks"
-    >
-      <a
-        href="/"
-        style={
-          Object {
-            "color": "white",
-            "fontSize": "24px",
-            "padding": "10px",
-            "textDecoration": "none",
-          }
-        }
-      >
-        About
-      </a>
-      <a
-        href="/"
-        style={
-          Object {
-            "color": "white",
-            "fontSize": "24px",
-            "padding": "10px",
-            "textDecoration": "none",
-          }
-        }
-      >
-        Contact
-      </a>
-      <a
-        href="/"
-        style={
-          Object {
-            "color": "white",
-            "fontSize": "24px",
-            "padding": "10px",
-            "textDecoration": "none",
-          }
-        }
-      >
-        Login
-      </a>
-    </div>
-  </div>
 </div>
 `;

@@ -1,11 +1,11 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-
+import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import CardMeta from '../CardMeta'
 
 describe('<CardMeta />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<CardMeta publishDate="November 11, 2016" />).toJSON()
-    expect(tree).toMatchSnapshot()
+    const component = shallow(<CardMeta publishDate="November 11, 2016" />)
+    expect(toJson(component)).toMatchSnapshot()
   })
 })
