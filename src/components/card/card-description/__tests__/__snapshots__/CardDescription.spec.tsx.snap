@@ -2,7 +2,9 @@
 
 exports[`<CardDescription /> renders correctly 1`] = `
 <div>
-  <p>
+  <p
+    className="text-color-secondary"
+  >
     Content
   </p>
 </div>

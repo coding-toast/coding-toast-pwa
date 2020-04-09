@@ -1,5 +1,4 @@
 import * as React from 'react'
-import QuoteImage from '../images/quote.png'
 import QuoteBoxStyles from './QuoteBox.module.scss'
 
 const QuoteCard: React.FC = () => (
