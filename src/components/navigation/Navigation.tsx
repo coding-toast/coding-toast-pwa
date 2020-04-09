@@ -1,4 +1,4 @@
-import * as React from './node_modules/react'
+import * as React from 'react'
 import Logo from './Logo'
 import QuoteBox from '../quote-box/QuoteBox'
 import NextSection from './NextSection'

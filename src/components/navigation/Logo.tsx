@@ -1,4 +1,4 @@
-import * as React from './node_modules/react'
+import * as React from 'react'
 import LogoImage from '../../images/logo.png'
 
 const Logo: React.FC = () => (
