@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { CardBody, CardTitle, CardDesctiption, CardMeta } from '../../card'
+import { CardBody, CardTitle, CardDesctiption, CardMeta } from '../../../components/card'
 import ExerptListStyles from './ExerptList.module.scss'
 
 export const ExerptList: React.FC = () => {

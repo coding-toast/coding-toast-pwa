@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import Page from '../../components/Page'
-import IndexLayout from '../../layouts'
+import Page from '../components/Page'
+import IndexLayout from '../layouts'
 
 const NotFoundPage = () => (
   <IndexLayout>

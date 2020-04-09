@@ -1,21 +1,18 @@
 import * as React from 'react'
 import Logo from './Logo'
-import QuoteCard from '../QuoteCard'
+import QuoteBox from '../quote-box/QuoteBox'
 import NextSection from './NextSection'
 import HamburgerButton from './menu/HamburgerButton'
-
-const NavigationStyles = {
-  backgroundColor: '#121212',
-  position: 'relative' as 'relative'
-}
+import Container from '../Container'
+import NavigationStyles from './Navigation.module.scss'
 
 const Navigation: React.FC = () => (
-  <div style={NavigationStyles}>
+  <Container className={NavigationStyles.container}>
     <Logo />
     <HamburgerButton />
-    <QuoteCard />
+    <QuoteBox />
     <NextSection />
-  </div>
+  </Container>
 )
 
 export default Navigation

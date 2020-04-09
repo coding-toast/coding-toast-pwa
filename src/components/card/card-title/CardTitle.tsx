@@ -22,7 +22,7 @@ const CardTitle: React.FC<CardTitleProps> = props => {
   return (
     <div className={CardTitleStyles.cardTitleContainer}>
       {backgroundUrl ? <div style={backgroundImage} className={CardTitleStyles.cardTitleBackground}></div> : ''}
-      <h2 style={backgroundUrl ? cardTitleHeightWithBackground : {}} className={CardTitleStyles.cardTitle}>
+      <h2 style={backgroundUrl ? cardTitleHeightWithBackground : {}} className={`${CardTitleStyles.cardTitle} text-color-primary`}>
         {title}
       </h2>
     </div>

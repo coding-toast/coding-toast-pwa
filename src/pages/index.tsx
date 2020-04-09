@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-import Page from '../../components/Page'
-import IndexLayout from '../../layouts'
-import BlogHighlightSection from '../../components/blog-highllights/BlogHighlightSection'
+import Page from '../components/Page'
+import IndexLayout from '../layouts'
+import BlogHighlightSection from '../modules/blog-highllights/BlogHighlightSection'
 
 const IndexPage = () => (
   <IndexLayout>
