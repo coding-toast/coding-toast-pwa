@@ -1,4 +1,5 @@
 import * as React from 'react'
+import CardTitleStyles from './CardTitle.module.scss'
 
 interface CardTitleProps {
   title: string
@@ -8,23 +9,22 @@ interface CardTitleProps {
 const CardTitle: React.FC<CardTitleProps> = props => {
   const { title, backgroundUrl } = props
 
-  const backgroundStyle = {
-    position: 'relative' as 'relative',
-    height: '124px',
+  const backgroundImage = {
     backgroundImage: `url(${backgroundUrl})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    marginBottom: '1em'
   }
 
-  const textStyle = {
-    position: 'absolute' as 'absolute',
-    bottom: '12px',
-    padding: 0,
-    margin: 0
+  const cardTitleHeightWithBackground = {
+    height: '125px'
   }
 
   return (
-    <div style={backgroundUrl ? backgroundStyle : {}}>
-      <h2 style={backgroundUrl ? textStyle : {}}>{title}</h2>
+    <div className={CardTitleStyles.cardTitleContainer}>
+      {backgroundUrl ? <div style={backgroundImage} className={CardTitleStyles.cardTitleBackground} /> : ''}
+      <h2 style={backgroundUrl ? cardTitleHeightWithBackground : {}} className={`${CardTitleStyles.cardTitle} text-color-primary`}>
+        {title}
+      </h2>
     </div>
   )
 }

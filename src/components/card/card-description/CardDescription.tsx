@@ -9,7 +9,7 @@ const CardDesctiption: React.FC<CardDescriptionProps> = props => {
 
   return (
     <div>
-      <p>{text}</p>
+      <p className="text-color-secondary">{text}</p>
     </div>
   )
 }

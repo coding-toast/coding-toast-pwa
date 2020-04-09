@@ -1,0 +1,9 @@
+@import '../../../styles/shared/_variables';
+@import '../../../styles/shared/mixins';
+
+.card {
+  @include box-padding;
+  margin: 16px 0;
+  background-color: $color-modify-lighten-1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}

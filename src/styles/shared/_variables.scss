@@ -1,3 +1,16 @@
 // Typeography
-$font-body: 'Fira Sans', Helvetica, sans-serif;
-$font-title: 'Merriweather';
+$font-size-base: 16px;
+$font-family-body: 'Fira Sans', Helvetica, sans-serif;
+$font-family-title: 'Merriweather';
+$font-family-code: 'Fira Code';
+
+// Colors
+$background-primary: #121212;
+$background-accent: #121f20;
+$color-modify-lighten-1: rgba(255, 255, 255, 0.05);
+$color-modify-lighten-2: rgba(255, 255, 255, 0.22);
+$text-color-primary: rgba(255, 255, 255, 0.98);
+$text-color-secondary: rgba(255, 255, 255, 0.6);
+$text-color-disabled: rgba(255, 255, 255, 0.38);
+$accent-primary: #70f3ff;
+$accent-secondary: #4a99a0;

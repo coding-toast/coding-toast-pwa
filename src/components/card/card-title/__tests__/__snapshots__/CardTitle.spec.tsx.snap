@@ -2,22 +2,23 @@
 
 exports[`<CardTitle /> renders correctly with a background 1`] = `
 <div
-  style={
-    Object {
-      "backgroundImage": "url(test url)",
-      "backgroundSize": "cover",
-      "height": "124px",
-      "position": "relative",
-    }
-  }
+  className="cardTitleContainer"
 >
-  <h2
+  <div
+    className="cardTitleBackground"
     style={
       Object {
-        "bottom": "12px",
-        "margin": 0,
-        "padding": 0,
-        "position": "absolute",
+        "backgroundImage": "url(test url)",
+        "backgroundSize": "cover",
+        "marginBottom": "1em",
+      }
+    }
+  />
+  <h2
+    className="cardTitle text-color-primary"
+    style={
+      Object {
+        "height": "125px",
       }
     }
   >
@@ -28,9 +29,10 @@ exports[`<CardTitle /> renders correctly with a background 1`] = `
 
 exports[`<CardTitle /> renders correctly without a background 1`] = `
 <div
-  style={Object {}}
+  className="cardTitleContainer"
 >
   <h2
+    className="cardTitle text-color-primary"
     style={Object {}}
   >
     Lorem Ipsum

@@ -1,36 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<div
-  style={
-    Object {
-      "backgroundColor": "#121212",
-      "position": "relative",
-    }
-  }
+<section
+  className="container container"
 >
-  <div
-    style={
-      Object {
-        "textAlign": "center",
-      }
-    }
+  <a
+    href="/"
   >
-    <a
-      href="/"
+    <div
+      style={
+        Object {
+          "maxWidth": "100%",
+          "paddingLeft": "30px",
+          "textAlign": "center",
+        }
+      }
     >
       <img
         alt="Logo"
         src="test-file-stub"
         style={
           Object {
-            "maxWidth": "33%",
-            "minWidth": "300px",
+            "maxWidth": "100%",
           }
         }
       />
-    </a>
-  </div>
+    </div>
+  </a>
   <div>
     <button
       className="hamburgerButton"
@@ -67,43 +63,10 @@ exports[`Header renders correctly 1`] = `
     
   </div>
   <div
-    style={
-      Object {
-        "background": "rgba(255, 255, 255, 0.05)",
-        "borderRadius": "10px",
-        "boxShadow": "2px 2px 4px rgba(0, 0, 0, 0.25)",
-        "margin": "0 auto",
-        "padding": "65px 27px 49px 27px",
-      }
-    }
+    className="quoteBox"
   >
-    <img
-      alt="Quote"
-      src="test-file-stub"
-      style={
-        Object {
-          "left": "-18px",
-          "position": "relative",
-          "top": "18px",
-        }
-      }
-    />
     <p
-      style={
-        Object {
-          "display": "inline-block",
-          "fontFamily": "Fira Sans",
-          "fontSize": "24px",
-          "fontStyle": "normal",
-          "fontVariant": "small-caps",
-          "fontWeight": 300,
-          "left": 43,
-          "letterSpacing": "0.04em",
-          "lineHeight": "29px",
-          "maxWidth": "316px",
-          "paddingLeft": "10px",
-        }
-      }
+      className="text-color-primary text-style-lead textQuote"
     >
       Because it takes more than going over your git log before standup to become a great engineer.
     </p>
@@ -124,5 +87,5 @@ exports[`Header renders correctly 1`] = `
       }
     />
   </div>
-</div>
+</section>
 `;

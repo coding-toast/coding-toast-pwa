@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CardMeta /> renders correctly 1`] = `
-<p>
+<p
+  className="text-style-muted text-color-secondary"
+>
   November 11, 2016
 </p>
 `;

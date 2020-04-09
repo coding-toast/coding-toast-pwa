@@ -1,0 +1,12 @@
+@mixin box-spacing() {
+  @include box-padding;
+  @include box-margin;
+}
+
+@mixin box-padding() {
+  padding: 16px 16px;
+}
+
+@mixin box-margin() {
+  margin: 16px 16px;
+}
