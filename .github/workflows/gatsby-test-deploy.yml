@@ -1,4 +1,4 @@
-name: Gatsby Test Deploy
+name: Gatsby Deploy - Test Server
 
 on:
   push:
