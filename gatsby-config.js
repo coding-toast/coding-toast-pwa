@@ -12,6 +12,7 @@ module.exports = {
       email: 'resir014@gmail.com'
     }
   },
+  pathPrefix: '/coding-toast-pwa',
   plugins: [
     {
       resolve: `gatsby-plugin-google-fonts`,
