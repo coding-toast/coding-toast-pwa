@@ -1,6 +1,9 @@
-name: Check-in Tests
+name: Gatsby Test Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -15,8 +18,9 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+        node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm run test:precheckin
+      - run: npm run deploy:test
         env:
           CI: true
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
