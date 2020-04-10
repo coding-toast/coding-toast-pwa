@@ -14,3 +14,4 @@ jobs:
           access-token: ${{ secrets.GATSBY_DEPLOY }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+          deploy-repo: coding-toast-pwa
