@@ -23,4 +23,4 @@ jobs:
       - run: npm run deploy:test
         env:
           CI: true
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GATSBY_DEPLOY }}
