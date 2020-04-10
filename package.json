@@ -11,7 +11,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rimraf public",
-    "deploy:test": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:test": "gatsby build --prefix-paths && gh-pages -d public -r https://${{ secrets.GITHUB_TOKEN }}@github.com/QuentinGuenther/coding-toast-pwa/.git",
     "dev:develop": "gatsby develop",
     "dev:format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "dev:start": "npm run dev:format && npm run dev:develop",
