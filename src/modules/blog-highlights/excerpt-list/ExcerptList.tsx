@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { CardBody, CardTitle, CardDescription, CardMeta } from '../../../components/card'
 import ExcerptListStyles from './ExcerptList.module.scss'
+import { ButtonWithIcon } from '../../../components/buttons/button-with-icon/ButtonWithIcon'
 
 interface ExcerptListProps {
   allMarkdownRemark: {
