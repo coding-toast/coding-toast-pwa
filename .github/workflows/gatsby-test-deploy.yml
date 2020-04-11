@@ -23,4 +23,4 @@ jobs:
       - run: npm run deploy:github
         env:
           CI: true
-          GIT_AUTH_TOKEN: ${{ GATSBY_DEPLOY }}
+          GIT_AUTH_TOKEN: ${{ secrets.GATSBY_DEPLOY }}
