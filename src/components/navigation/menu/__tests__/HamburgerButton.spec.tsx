@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
-import HamburgerButton from '../menu/HamburgerButton'
+import HamburgerButton from '../HamburgerButton'
 
 describe('HamburgerButton', () => {
   it('will render correctly', () => {
