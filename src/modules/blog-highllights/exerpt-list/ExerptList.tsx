@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { CardBody, CardTitle, CardDesctiption, CardMeta } from '../../../components/card'
 import ExerptListStyles from './ExerptList.module.scss'
+import { ButtonWithIcon } from '../../../components/buttons/button-with-icon/ButtonWithIcon'
 
 interface ExcerptListProps {
   allMarkdownRemark: {
@@ -31,6 +32,7 @@ const ExerptList: React.FC<ExcerptListProps> = props => {
             <CardTitle title={title} backgroundUrl={banner} />
             <CardDesctiption text={description} />
             <CardMeta publishDate={publishDate} />
+            <ButtonWithIcon />
           </CardBody>
         )
       })}
