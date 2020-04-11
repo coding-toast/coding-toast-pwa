@@ -32,6 +32,7 @@ const ExcerptList: React.FC<ExcerptListProps> = props => {
             <CardTitle title={title} backgroundUrl={banner} />
             <CardDescription text={description} />
             <CardMeta publishDate={publishDate} />
+            <ButtonWithIcon />
           </CardBody>
         )
       })}
