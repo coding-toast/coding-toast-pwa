@@ -3,10 +3,15 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
-    branch: 'master',
+    branch: 'gh-pages',
     repo: 'https://' + process.env.GIT_AUTH_TOKEN + '@github.com/QuentinGuenther/coding-toast-pwa.git'
   },
-  () => {
-    console.log('Deploy Complete!')
+  error => {
+    if (error) {
+      console.log('Deployment Failed: \n' + error)
+      throw error
+    } else {
+      console.log('Deployment Success!')
+    }
   }
 )
