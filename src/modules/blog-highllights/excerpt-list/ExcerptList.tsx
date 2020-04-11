@@ -25,9 +25,10 @@ const ExcerptList: React.FC<ExcerptListProps> = props => {
   return (
     <section className={ExcerptListStyles.list}>
       {allMarkdownRemark.allMarkdownRemark.edges.map((post: Post) => {
+        // TODO: Add unique keys to blog posts (Issue #34 https://github.com/QuentinGuenther/coding-toast-pwa/issues/34)
         const { title, banner, description, publishDate } = post.node.frontmatter
         return (
-          <CardBody>
+          <CardBody key={title}>
             <CardTitle title={title} backgroundUrl={banner} />
             <CardDescription text={description} />
             <CardMeta publishDate={publishDate} />
