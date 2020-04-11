@@ -9,9 +9,9 @@
   ],
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "clean": "rimraf public",
-    "deploy:github": "npm run build --prefix-paths && node ./deploy-github",
+    "deploy:github": "npm run build && node ./deploy-github",
     "dev:develop": "gatsby develop",
     "dev:format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "dev:start": "npm run dev:format && npm run dev:develop",
