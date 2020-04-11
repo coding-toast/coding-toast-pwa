@@ -20,6 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm run deploy:test
+      - run: npm run deploy:github
         env:
           CI: true
+          GIT_AUTH_TOKEN: ${{ GATSBY_DEPLOY }}

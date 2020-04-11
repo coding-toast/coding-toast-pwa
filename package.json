@@ -11,7 +11,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rimraf public",
-    "deploy:test": "gatsby build --prefix-paths && gh-pages -d public -r https://${{ secrets.GATSBY_DEPLOY }}@github.com/QuentinGuenther/coding-toast-pwa/.git",
+    "deploy:github": "npm run build --prefix-paths && node ./deploy-github",
     "dev:develop": "gatsby develop",
     "dev:format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "dev:start": "npm run dev:format && npm run dev:develop",
@@ -26,6 +26,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "@types/gh-pages": "^2.2.0",
     "babel-plugin-styled-components": "^1.10.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.10.0",
