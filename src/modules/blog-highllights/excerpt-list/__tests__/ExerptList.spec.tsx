@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import ExerptList from '../ExerptList'
+import ExerptList from '../ExcerptList'
 import { query } from '../__mocks__/card-data'
 
 it('renders correctly', () => {

@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { CardBody, CardTitle, CardDesctiption, CardMeta } from '../../../components/card'
-import ExerptListStyles from './ExerptList.module.scss'
+import { CardBody, CardTitle, CardDescription, CardMeta } from '../../../components/card'
+import ExcerptListStyles from './ExcerptList.module.scss'
 
 interface ExcerptListProps {
   allMarkdownRemark: {
@@ -20,16 +20,16 @@ interface Post {
     }
   }
 }
-const ExerptList: React.FC<ExcerptListProps> = props => {
+const ExcerptList: React.FC<ExcerptListProps> = props => {
   const { allMarkdownRemark } = props
   return (
-    <section className={ExerptListStyles.list}>
+    <section className={ExcerptListStyles.list}>
       {allMarkdownRemark.allMarkdownRemark.edges.map((post: Post) => {
         const { title, banner, description, publishDate } = post.node.frontmatter
         return (
           <CardBody>
             <CardTitle title={title} backgroundUrl={banner} />
-            <CardDesctiption text={description} />
+            <CardDescription text={description} />
             <CardMeta publishDate={publishDate} />
           </CardBody>
         )
@@ -37,4 +37,4 @@ const ExerptList: React.FC<ExcerptListProps> = props => {
     </section>
   )
 }
-export default ExerptList
+export default ExcerptList

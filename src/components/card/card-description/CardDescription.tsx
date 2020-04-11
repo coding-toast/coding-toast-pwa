@@ -4,7 +4,7 @@ interface CardDescriptionProps {
   text: string
 }
 
-const CardDesctiption: React.FC<CardDescriptionProps> = props => {
+const CardDescription: React.FC<CardDescriptionProps> = props => {
   const { text } = props
 
   return (
@@ -14,4 +14,4 @@ const CardDesctiption: React.FC<CardDescriptionProps> = props => {
   )
 }
 
-export default CardDesctiption
+export default CardDescription

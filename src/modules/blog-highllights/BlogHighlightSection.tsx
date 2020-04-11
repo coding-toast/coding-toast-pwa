@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BlogHighlightSectionStyles from './BlogHighlightSection.module.scss'
 import Container from '../../components/Container'
-import ExerptList from './exerpt-list/ExerptList'
+import ExcerptList from './excerpt-list/ExcerptList'
 
 const BlogHighlightSection: React.FC = () => {
   const query = useStaticQuery(
@@ -28,7 +28,7 @@ const BlogHighlightSection: React.FC = () => {
   return (
     <Container className={BlogHighlightSectionStyles.container}>
       <h1>Catch Up On The Latest</h1>
-      <ExerptList allMarkdownRemark={query} />
+      <ExcerptList allMarkdownRemark={query} />
     </Container>
   )
 }
