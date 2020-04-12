@@ -7,232 +7,87 @@ exports[`renders correctly 1`] = `
   <CardBody
     key="968769ef-231d-5501-8942-ee51d8d1324d"
   >
-    <div
-      className="cardTitleContainer"
-    >
-      <div
-        className="cardTitleBackground"
-        style={
-          Object {
-            "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
-            "backgroundSize": "cover",
-            "marginBottom": "1em",
-          }
-        }
-      />
-      <h2
-        className="cardTitle text-color-primary"
-        style={
-          Object {
-            "height": "125px",
-          }
-        }
-      >
-        blog-post-placerholder2
-      </h2>
-    </div>
-    <div>
-      <p
-        className="text-color-secondary"
-      >
-        second blog post
-      </p>
-    </div>
-    <p
-      className="meta text-style-muted text-color-secondary"
-    >
-      June 16, 2007
-    </p>
-    <a
-      className="button text-style-label"
-      href="/"
-    >
-      Read More
-    </a>
-  </article>
-  <article
-    className="card"
+    <CardTitle
+      backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      title="blog-post-placerholder1"
+    />
+    <CardDescription
+      text="first blog post"
+    />
+    <CardMeta
+      publishDate="\`January 1, 1970\`"
+    />
+    <ButtonWithIcon
+      toUrl="/"
+    />
+  </CardBody>
+  <CardBody
+    key="68e1f043-9989-584f-80e7-2bb2eed3f985"
   >
-    <div
-      className="cardTitleContainer"
-    >
-      <div
-        className="cardTitleBackground"
-        style={
-          Object {
-            "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
-            "backgroundSize": "cover",
-            "marginBottom": "1em",
-          }
-        }
-      />
-      <h2
-        className="cardTitle text-color-primary"
-        style={
-          Object {
-            "height": "125px",
-          }
-        }
-      >
-        blog-post-placerholder3
-      </h2>
-    </div>
-    <div>
-      <p
-        className="text-color-secondary"
-      >
-        third blog post
-      </p>
-    </div>
-    <p
-      className="meta text-style-muted text-color-secondary"
-    >
-      January 30, 2001
-    </p>
-    <a
-      className="button text-style-label"
-      href="/"
-    >
-      Read More
-    </a>
-  </article>
-  <article
-    className="card"
+    <CardTitle
+      backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      title="blog-post-placerholder5"
+    />
+    <CardDescription
+      text="fifth blog post"
+    />
+    <CardMeta
+      publishDate="\`January 1, 1970\`"
+    />
+    <ButtonWithIcon
+      toUrl="/"
+    />
+  </CardBody>
+  <CardBody
+    key="1a172731-99f4-5f68-8ead-23324a44f70c"
   >
-    <div
-      className="cardTitleContainer"
-    >
-      <div
-        className="cardTitleBackground"
-        style={
-          Object {
-            "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
-            "backgroundSize": "cover",
-            "marginBottom": "1em",
-          }
-        }
-      />
-      <h2
-        className="cardTitle text-color-primary"
-        style={
-          Object {
-            "height": "125px",
-          }
-        }
-      >
-        blog-post-placerholder4
-      </h2>
-    </div>
-    <div>
-      <p
-        className="text-color-secondary"
-      >
-        fourth blog post
-      </p>
-    </div>
-    <p
-      className="meta text-style-muted text-color-secondary"
-    >
-      February 13, 1995
-    </p>
-    <a
-      className="button text-style-label"
-      href="/"
-    >
-      Read More
-    </a>
-  </article>
-  <article
-    className="card"
+    <CardTitle
+      backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      title="blog-post-placerholder3"
+    />
+    <CardDescription
+      text="third blog post"
+    />
+    <CardMeta
+      publishDate="\`January 1, 1970\`"
+    />
+    <ButtonWithIcon
+      toUrl="/"
+    />
+  </CardBody>
+  <CardBody
+    key="011af6f6-6c3f-5eab-81ad-3f73e427dbd8"
   >
-    <div
-      className="cardTitleContainer"
-    >
-      <div
-        className="cardTitleBackground"
-        style={
-          Object {
-            "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
-            "backgroundSize": "cover",
-            "marginBottom": "1em",
-          }
-        }
-      />
-      <h2
-        className="cardTitle text-color-primary"
-        style={
-          Object {
-            "height": "125px",
-          }
-        }
-      >
-        blog-post-placerholder5
-      </h2>
-    </div>
-    <div>
-      <p
-        className="text-color-secondary"
-      >
-        fifth blog post
-      </p>
-    </div>
-    <p
-      className="meta text-style-muted text-color-secondary"
-    >
-      December 7, 2005
-    </p>
-    <a
-      className="button text-style-label"
-      href="/"
-    >
-      Read More
-    </a>
-  </article>
-  <article
-    className="card"
+    <CardTitle
+      backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      title="blog-post-placerholder4"
+    />
+    <CardDescription
+      text="fourth blog post"
+    />
+    <CardMeta
+      publishDate="\`January 1, 1970\`"
+    />
+    <ButtonWithIcon
+      toUrl="/"
+    />
+  </CardBody>
+  <CardBody
+    key="d28f2392-be5f-5fc1-96fb-b3c69e7dce6b"
   >
-    <div
-      className="cardTitleContainer"
-    >
-      <div
-        className="cardTitleBackground"
-        style={
-          Object {
-            "backgroundImage": "url(https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg)",
-            "backgroundSize": "cover",
-            "marginBottom": "1em",
-          }
-        }
-      />
-      <h2
-        className="cardTitle text-color-primary"
-        style={
-          Object {
-            "height": "125px",
-          }
-        }
-      >
-        blog-post-placerholder1
-      </h2>
-    </div>
-    <div>
-      <p
-        className="text-color-secondary"
-      >
-        first blog post
-      </p>
-    </div>
-    <p
-      className="meta text-style-muted text-color-secondary"
-    >
-      December 29, 2015
-    </p>
-    <a
-      className="button text-style-label"
-      href="/"
-    >
-      Read More
-    </a>
-  </article>
+    <CardTitle
+      backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      title="blog-post-placerholder2"
+    />
+    <CardDescription
+      text="second blog post"
+    />
+    <CardMeta
+      publishDate="\`January 1, 1970\`"
+    />
+    <ButtonWithIcon
+      toUrl="/"
+    />
+  </CardBody>
 </section>
 `;
