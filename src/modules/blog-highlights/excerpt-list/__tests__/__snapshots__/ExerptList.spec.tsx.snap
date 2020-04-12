@@ -39,10 +39,16 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <p
-      className="text-style-muted text-color-secondary"
+      className="meta text-style-muted text-color-secondary"
     >
       June 16, 2007
     </p>
+    <a
+      className="button text-style-label"
+      href="/"
+    >
+      Read More
+    </a>
   </article>
   <article
     className="card"
@@ -79,10 +85,16 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <p
-      className="text-style-muted text-color-secondary"
+      className="meta text-style-muted text-color-secondary"
     >
       January 30, 2001
     </p>
+    <a
+      className="button text-style-label"
+      href="/"
+    >
+      Read More
+    </a>
   </article>
   <article
     className="card"
@@ -119,10 +131,16 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <p
-      className="text-style-muted text-color-secondary"
+      className="meta text-style-muted text-color-secondary"
     >
       February 13, 1995
     </p>
+    <a
+      className="button text-style-label"
+      href="/"
+    >
+      Read More
+    </a>
   </article>
   <article
     className="card"
@@ -159,10 +177,16 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <p
-      className="text-style-muted text-color-secondary"
+      className="meta text-style-muted text-color-secondary"
     >
       December 7, 2005
     </p>
+    <a
+      className="button text-style-label"
+      href="/"
+    >
+      Read More
+    </a>
   </article>
   <article
     className="card"
@@ -199,10 +223,16 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <p
-      className="text-style-muted text-color-secondary"
+      className="meta text-style-muted text-color-secondary"
     >
       December 29, 2015
     </p>
+    <a
+      className="button text-style-label"
+      href="/"
+    >
+      Read More
+    </a>
   </article>
 </section>
 `;
