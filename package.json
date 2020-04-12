@@ -26,7 +26,6 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "@types/gh-pages": "^2.2.0",
     "babel-plugin-styled-components": "^1.10.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.10.0",
@@ -61,6 +60,7 @@
     "@types/classnames": "^2.2.8",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/gh-pages": "^2.2.0",
     "@types/jest": "^25.1.4",
     "@types/node": "^12.0.10",
     "@types/react": "^16.8.22",
