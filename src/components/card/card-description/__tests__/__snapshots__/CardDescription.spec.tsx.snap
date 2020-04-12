@@ -3,7 +3,7 @@
 exports[`<CardDescription /> renders correctly 1`] = `
 <div>
   <p
-    className="text-color-secondary"
+    className="text-color-primary "
   >
     Content
   </p>
