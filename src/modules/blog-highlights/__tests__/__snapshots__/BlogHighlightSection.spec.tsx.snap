@@ -1,14 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
-<Container
-  className="container"
->
-  <h1
-    className="text-color-primary"
-  >
-    Catch Up On The Latest
-  </h1>
-  <ExcerptList />
-</Container>
-`;
+exports[`<BlogHighlightSection /> It renders hopefully 1`] = `""`;
