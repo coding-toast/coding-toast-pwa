@@ -4,7 +4,7 @@ interface CardDescriptionProps {
   text: string
 }
 
-const CardDescription: React.FC<CardDescriptionProps> = props => {
+const CardDescription: React.FC<CardDescriptionProps> = (props) => {
   const { text } = props
 
   return (

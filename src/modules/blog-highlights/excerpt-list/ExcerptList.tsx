@@ -21,7 +21,7 @@ interface Post {
     }
   }
 }
-const ExcerptList: React.FC<ExcerptListProps> = props => {
+const ExcerptList: React.FC<ExcerptListProps> = (props) => {
   const { allMarkdownRemark } = props
   return (
     <section className={ExcerptListStyles.list}>
