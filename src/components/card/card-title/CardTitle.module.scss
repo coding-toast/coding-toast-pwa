@@ -1,5 +1,7 @@
 .card-title-container {
   position: relative;
+  overflow: hidden;
+  margin: -16px -16px 0px -16px;
 }
 
 .card-title-background {
@@ -9,6 +11,8 @@
   bottom: -16px;
   right: -16px;
   left: -16px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .card-title {
