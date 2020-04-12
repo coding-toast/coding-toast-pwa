@@ -9,7 +9,7 @@ const CardDescription: React.FC<CardDescriptionProps> = props => {
 
   return (
     <div>
-      <p className="text-color-secondary">{text}</p>
+      <p className="text-color-primary ">{text}</p>
     </div>
   )
 }

@@ -4,7 +4,9 @@ exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
 <Container
   className="container"
 >
-  <h1>
+  <h1
+    className="text-color-primary"
+  >
     Catch Up On The Latest
   </h1>
   <ExcerptList />
