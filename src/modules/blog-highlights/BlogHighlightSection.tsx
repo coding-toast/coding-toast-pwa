@@ -27,7 +27,7 @@ const BlogHighlightSection: React.FC = () => {
 
   return (
     <Container className={BlogHighlightSectionStyles.container}>
-      <h1>Catch Up On The Latest</h1>
+      <h1 className="text-color-primary">Catch Up On The Latest</h1>
       <ExcerptList allMarkdownRemark={query} />
     </Container>
   )
