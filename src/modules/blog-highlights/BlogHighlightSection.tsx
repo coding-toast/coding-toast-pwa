@@ -11,8 +11,8 @@ const BlogHighlightSection: React.FC = () => {
         allMarkdownRemark(limit: 10, sort: { fields: frontmatter___publishDate, order: DESC }) {
           edges {
             node {
+              id
               frontmatter {
-                author
                 banner
                 description
                 title

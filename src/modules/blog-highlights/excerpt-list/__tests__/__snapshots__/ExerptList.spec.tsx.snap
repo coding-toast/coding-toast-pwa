@@ -4,8 +4,8 @@ exports[`renders correctly 1`] = `
 <section
   className="list"
 >
-  <article
-    className="card"
+  <CardBody
+    key="968769ef-231d-5501-8942-ee51d8d1324d"
   >
     <div
       className="cardTitleContainer"
