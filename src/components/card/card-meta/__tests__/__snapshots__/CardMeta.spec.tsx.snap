@@ -2,7 +2,7 @@
 
 exports[`<CardMeta /> renders correctly 1`] = `
 <p
-  className="text-style-muted text-color-secondary"
+  className="meta text-style-muted text-color-secondary"
 >
   November 11, 2016
 </p>
