@@ -22,17 +22,13 @@ const ButtonStyle = {
 }
 
 const HamburgerButton: React.FC = () => {
-  const [isMenuDisplayed, setIsMenuDisplayed] = React.useState(false)
-  const changeMenuDisplay = () => {
-    setIsMenuDisplayed(!isMenuDisplayed)
-  }
-
+  const [open, isOpen] = React.useState(false)
   return (
     <div>
-      <button type="button" className="hamburgerButton" style={ButtonStyle} onClick={changeMenuDisplay} onKeyDown={changeMenuDisplay}>
+      <button type="button" className="hamburgerButton" style={ButtonStyle} onClick={() => isOpen(!open)} onKeyDown={() => isOpen(!open)}>
         <img src={HamburgerIcon} style={HamburgerIconStyles} alt="Open Menu" />
       </button>
-      {isMenuDisplayed ? <Menu /> : ''}
+      {open ? <Menu /> : ''}
     </div>
   )
 }
