@@ -6,32 +6,12 @@ exports[`HamburgerButton will open correctly 1`] = `
     className="hamburgerButton"
     onClick={[Function]}
     onKeyDown={[Function]}
-    style={
-      Object {
-        "background": "none",
-        "border": "none",
-        "color": "inherit",
-        "cursor": "pointer",
-        "font": "inherit",
-        "outline": "inherit",
-        "padding": 0,
-      }
-    }
     type="button"
   >
     <img
       alt="Open Menu"
+      className="hamburgerIcon"
       src="test-file-stub"
-      style={
-        Object {
-          "color": "#70F3FF",
-          "display": "block",
-          "padding": "0",
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
-      }
     />
   </button>
   <Menu />
@@ -44,32 +24,12 @@ exports[`HamburgerButton will render correctly 1`] = `
     className="hamburgerButton"
     onClick={[Function]}
     onKeyDown={[Function]}
-    style={
-      Object {
-        "background": "none",
-        "border": "none",
-        "color": "inherit",
-        "cursor": "pointer",
-        "font": "inherit",
-        "outline": "inherit",
-        "padding": 0,
-      }
-    }
     type="button"
   >
     <img
       alt="Open Menu"
+      className="hamburgerIcon"
       src="test-file-stub"
-      style={
-        Object {
-          "color": "#70F3FF",
-          "display": "block",
-          "padding": "0",
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
-      }
     />
   </button>
 </div>
