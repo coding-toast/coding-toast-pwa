@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import HamburgerButton from '../HamburgerButton'
 
-describe('HamburgerButton', () => {
+describe('<HamburgerButton />', () => {
   it('will render correctly', () => {
     const component = shallow(<HamburgerButton />)
     expect(toJson(component)).toMatchSnapshot()
