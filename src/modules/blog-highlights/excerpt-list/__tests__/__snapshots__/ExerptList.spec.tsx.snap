@@ -17,7 +17,9 @@ exports[`renders correctly 1`] = `
     <CardMeta
       publishDate="\`January 1, 1970\`"
     />
-    <ButtonWithIcon />
+    <ButtonWithIcon
+      toUrl="/"
+    />
   </CardBody>
   <CardBody
     key="68e1f043-9989-584f-80e7-2bb2eed3f985"
@@ -32,7 +34,9 @@ exports[`renders correctly 1`] = `
     <CardMeta
       publishDate="\`January 1, 1970\`"
     />
-    <ButtonWithIcon />
+    <ButtonWithIcon
+      toUrl="/"
+    />
   </CardBody>
   <CardBody
     key="1a172731-99f4-5f68-8ead-23324a44f70c"
@@ -47,7 +51,9 @@ exports[`renders correctly 1`] = `
     <CardMeta
       publishDate="\`January 1, 1970\`"
     />
-    <ButtonWithIcon />
+    <ButtonWithIcon
+      toUrl="/"
+    />
   </CardBody>
   <CardBody
     key="011af6f6-6c3f-5eab-81ad-3f73e427dbd8"
@@ -62,7 +68,9 @@ exports[`renders correctly 1`] = `
     <CardMeta
       publishDate="\`January 1, 1970\`"
     />
-    <ButtonWithIcon />
+    <ButtonWithIcon
+      toUrl="/"
+    />
   </CardBody>
   <CardBody
     key="d28f2392-be5f-5fc1-96fb-b3c69e7dce6b"
@@ -77,7 +85,9 @@ exports[`renders correctly 1`] = `
     <CardMeta
       publishDate="\`January 1, 1970\`"
     />
-    <ButtonWithIcon />
+    <ButtonWithIcon
+      toUrl="/"
+    />
   </CardBody>
 </section>
 `;

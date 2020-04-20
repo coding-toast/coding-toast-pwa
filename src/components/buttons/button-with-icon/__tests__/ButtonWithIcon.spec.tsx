@@ -5,7 +5,7 @@ import { ButtonWithIcon } from '../ButtonWithIcon'
 
 describe('<ButtonWithIcon />', () => {
   it('renders correctly', () => {
-    const component = shallow(<ButtonWithIcon />)
+    const component = shallow(<ButtonWithIcon toUrl="/" />)
     expect(toJson(component)).toMatchSnapshot()
   })
 })
