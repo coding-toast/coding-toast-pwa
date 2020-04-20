@@ -1,15 +1,11 @@
 @import '../../../styles/shared/variables';
 @import '../../../styles/shared/mixins';
 
-.button {
-  position: relative;
-  display: inline-block;
+.buttonWithIcon {
+  @include button;
+
   border: 2px solid $accent-primary;
-  border-radius: 5px;
-  text-decoration: none;
   color: $text-color-primary;
-  padding: 0.5em 2em 0.5em 1em;
-  margin: 8px 0 37px 0;
 
   &::after {
     $icon-size: 20px;
