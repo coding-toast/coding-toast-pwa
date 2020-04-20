@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonToBlogs /> renders correctly 1`] = `
+<Button
+  buttonText="Go To All Posts"
+  className="primaryBtn text-style-label"
+  toUrl="/"
+/>
+`;

@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
-import { ButtonWithIcon } from '../ButtonWithIcon'
+import Button from '../Button'
 
-describe('<ButtonWithIcon />', () => {
+describe('<Button />', () => {
   it('renders correctly', () => {
-    const component = shallow(<ButtonWithIcon toUrl="/" />)
+    const component = shallow(<Button toUrl="/home" buttonText="test" className="test" />)
     expect(toJson(component)).toMatchSnapshot()
   })
 })

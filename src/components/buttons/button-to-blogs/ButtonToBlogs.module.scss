@@ -1,0 +1,9 @@
+@import '../../../styles/shared/variables';
+@import '../../../styles/shared/mixins';
+
+.primaryBtn {
+  @include button;
+  background: $color-modify-lighten-2;
+  width: 100%;
+  text-align: center;
+}

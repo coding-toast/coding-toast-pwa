@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import BlogHighlightSectionStyles from './BlogHighlightSection.module.scss'
 import Container from '../../components/Container'
 import ExcerptList from './excerpt-list/ExcerptList'
+import ButtonToBlogs from '../../components/buttons/button-to-blogs/ButtonToBlogs'
 
 const BlogHighlightSection: React.FC = () => {
   const query = useStaticQuery(
@@ -29,6 +30,7 @@ const BlogHighlightSection: React.FC = () => {
     <Container className={BlogHighlightSectionStyles.container}>
       <h1 className="text-color-primary">Catch Up On The Latest</h1>
       <ExcerptList allMarkdownRemark={query} />
+      <ButtonToBlogs />
     </Container>
   )
 }

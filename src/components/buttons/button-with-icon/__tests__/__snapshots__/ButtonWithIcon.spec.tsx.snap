@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ButtonWithIcon /> renders correctly without children 1`] = `
-<mockConstructor
-  className="button text-style-label"
-  to="/"
->
-  Read More
-</mockConstructor>
+exports[`<ButtonWithIcon /> renders correctly 1`] = `
+<Button
+  buttonText="Read More"
+  className="buttonWithIcon text-style-label"
+  toUrl="/"
+/>
 `;

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import ButtonWithIconStyles from './ButtonWithIcon.module.scss'
+import Button from '../Button'
 
 interface ButtonWithIconProps {
   toUrl: string
@@ -8,9 +8,5 @@ interface ButtonWithIconProps {
 
 export const ButtonWithIcon: React.FC<ButtonWithIconProps> = props => {
   const { toUrl } = props
-  return (
-    <Link to={toUrl} className={`${ButtonWithIconStyles.button} text-style-label`}>
-      Read More
-    </Link>
-  )
+  return <Button toUrl={toUrl} buttonText="Read More" className={`${ButtonWithIconStyles.buttonWithIcon} text-style-label`} />
 }
