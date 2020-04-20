@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json'
 import ButtonToBlogs from '../ButtonToBlogs'
 
 describe('<ButtonToBlogs />', () => {
-  it('renders correctly without children', () => {
+  it('renders correctly', () => {
     const component = shallow(<ButtonToBlogs />)
     expect(toJson(component)).toMatchSnapshot()
   })
