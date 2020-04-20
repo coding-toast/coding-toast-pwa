@@ -10,5 +10,6 @@ exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
     Catch Up On The Latest
   </h1>
   <ExcerptList />
+  <ButtonToBlogs />
 </Container>
 `;
