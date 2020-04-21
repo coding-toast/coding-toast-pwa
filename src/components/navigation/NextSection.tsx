@@ -1,18 +1,10 @@
 import * as React from 'react'
 import NextSectionImage from '../../images/next-section.png'
-
-const nextSectionStyles = {
-  position: 'absolute' as 'absolute',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  left: 0,
-  right: 0,
-  top: '88vh'
-}
+import NextSectionStyles from './NextSection.module.scss'
 
 const NextSection: React.FC = () => (
   <div>
-    <img src={NextSectionImage} alt="Next Section" style={nextSectionStyles} />
+    <img src={NextSectionImage} alt="Next Section" className={NextSectionStyles.chevronImage} />
   </div>
 )
 
