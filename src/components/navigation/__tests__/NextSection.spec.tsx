@@ -8,4 +8,11 @@ describe('<NextSection />', () => {
     const component = shallow(<NextSection />)
     expect(toJson(component)).toMatchSnapshot()
   })
+
+  it('Executes scroll correctly', () => {
+    const component = shallow(<NextSection />)
+    window.scrollTo = jest.fn()
+    component.find('button').simulate('click')
+    expect(window.scrollTo).toHaveBeenCalledTimes(1)
+  })
 })
