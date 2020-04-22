@@ -2,14 +2,14 @@
 
 exports[`<NextSection /> renders correctly 1`] = `
 <button
-  className="nextSectionButton"
+  className="chevronButton"
   onClick={[Function]}
   onKeyPress={[Function]}
   tabIndex={-1}
+  type="button"
 >
   <img
     alt="Next Section"
-    className="chevronImage"
     src="test-file-stub"
   />
 </button>

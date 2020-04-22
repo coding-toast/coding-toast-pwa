@@ -13,8 +13,8 @@ const NextSection: React.FC = observer(() => {
     })
   }
   return (
-    <button type="button" onClick={executeScroll} onKeyPress={executeScroll} tabIndex={-1} className="nextSectionButton">
-      <img src={NextSectionImage} alt="Next Section" className={NextSectionStyles.chevronImage} />
+    <button type="button" onClick={executeScroll} onKeyPress={executeScroll} tabIndex={-1} className={NextSectionStyles.chevronButton}>
+      <img src={NextSectionImage} alt="Next Section" />
     </button>
   )
 })
