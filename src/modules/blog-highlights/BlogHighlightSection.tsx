@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import { observer } from 'mobx-react-lite'
+import { RefStoreContext } from '../../stores/RefStore'
 import BlogHighlightSectionStyles from './BlogHighlightSection.module.scss'
 import Container from '../../components/Container'
 import ExcerptList from './excerpt-list/ExcerptList'
 import ButtonToBlogs from '../../components/buttons/button-to-blogs/ButtonToBlogs'
-import { RefStoreContext } from '../../stores/RefStore'
-import { observer } from 'mobx-react-lite'
 
 const BlogHighlightSection: React.FC = observer(() => {
   const query = useStaticQuery(

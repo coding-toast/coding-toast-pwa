@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NextSection /> renders correctly 1`] = `
+<div
+  className="nextSectionButton"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  tabIndex={-1}
+>
+  <img
+    alt="Next Section"
+    className="chevronImage"
+    src="test-file-stub"
+  />
+</div>
+`;
