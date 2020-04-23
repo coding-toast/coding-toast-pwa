@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Logo from './Logo'
+import Logo from './logo/Logo'
 import QuoteBox from '../quote-box/QuoteBox'
 import NextSection from './NextSection'
 import HamburgerButton from './menu/HamburgerButton'
