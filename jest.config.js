@@ -3,10 +3,10 @@ module.exports = {
   collectCoverageFrom: ['src/**/**.{js,jsx,ts,tsx}', '!**/node_modules/**', '!**/styles/**'],
   coverageThreshold: {
     global: {
-      statements: 52.23,
+      statements: 66.67,
       branches: 100,
-      functions: 42.31,
-      lines: 56.14
+      functions: 55.17,
+      lines: 70.15
     }
   },
   transform: {
