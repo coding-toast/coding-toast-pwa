@@ -6,7 +6,9 @@ interface ContainerProps {
 }
 
 const Container: React.FC<ContainerProps> = ({ className, children }) => (
-  <section className={`${className} ${ContainerStyles.container}`}>{children}</section>
+  <div className={className}>
+    <section className={ContainerStyles.container}>{children}</section>
+  </div>
 )
 
 export default Container
