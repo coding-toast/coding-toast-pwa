@@ -24,23 +24,20 @@
 }
 
 @mixin container() {
-  @media only screen and (min-width: 1024px) {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
+  max-width: 960px;
+  margin: 0 auto;
+  // @media only screen and (min-width: 1124px) {
+  //   padding-left: 10vw;
+  //   padding-right: 10vw;
+  // }
 
-  @media only screen and (min-width: 1124px) {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
+  // @media only screen and (min-width: 1224px) {
+  //   padding-left: 15vw;
+  //   padding-right: 15vw;
+  // }
 
-  @media only screen and (min-width: 1224px) {
-    padding-left: 15vw;
-    padding-right: 15vw;
-  }
-
-  @media only screen and (min-width: 1324px) {
-    padding-left: 20vw;
-    padding-right: 20vw;
-  }
+  // @media only screen and (min-width: 1324px) {
+  //   padding-left: 20vw;
+  //   padding-right: 20vw;
+  // }
 }
