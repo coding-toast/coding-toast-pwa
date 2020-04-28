@@ -7,5 +7,6 @@ exports[`<Footer /> renders correctly 1`] = `
   <h1>
     CodingToast Footer
   </h1>
+  <Copyright />
 </Container>
 `;
