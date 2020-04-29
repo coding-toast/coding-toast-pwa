@@ -1,11 +1,17 @@
 import * as React from 'react'
 import LogoImage from '../../../images/logo.svg'
-import LogoStyles from './Logo.module.scss'
 
-const Logo: React.FC = () => (
-  <div className={LogoStyles.logoContainer}>
-    <img className={LogoStyles.logoImage} src={LogoImage} alt="coding toast" />
-  </div>
-)
+interface StyleProps {
+  styles: CSSModule
+}
+
+const Logo: React.FC<StyleProps> = props => {
+  const { styles } = props
+  return (
+    <div className={styles.logoContainer}>
+      <img className={styles.logoImage} src={LogoImage} alt="coding toast" />
+    </div>
+  )
+}
 
 export default Logo
