@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SocialMedia /> renders correctly 1`] = `
+<div>
+  <p
+    className="lead"
+  >
+    Follow Us
+  </p>
+  <div
+    className="row"
+  >
+    <div
+      className="column"
+    >
+      <img
+        alt=""
+        className="icon"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="column"
+    >
+      <img
+        alt=""
+        className="icon"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="column"
+    >
+      <img
+        alt=""
+        className="icon"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+</div>
+`;
