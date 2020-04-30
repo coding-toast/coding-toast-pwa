@@ -3,7 +3,7 @@
 .container {
   background-color: $background-accent;
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 33px;
   width: 100%;
   text-align: center;
 }
@@ -11,7 +11,7 @@
 .logoImage {
   width: 197px;
   height: 45px;
-  padding-left: calc(5% - 10px);
+  padding-left: calc(5% - 40px);
 }
 
 .leftAlign {
@@ -28,6 +28,30 @@
 
 .copyright, a {
   color: $text-color-disabled;
+}
+
+.lead {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18.72px;
+  line-height: 22px;
+  color: $text-color-secondary
+}
+
+.row {
+  justify-content: center;
+  display: flex;
+  margin: 0 -17.5px;
+}
+
+.column {
+  padding: 0 17.5px;
+}
+
+.icon {
+  width: 28px;
+  height: 32px;
 }
 
 a {
