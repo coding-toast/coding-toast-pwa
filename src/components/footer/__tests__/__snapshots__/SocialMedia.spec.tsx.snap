@@ -13,29 +13,41 @@ exports[`<SocialMedia /> renders correctly 1`] = `
     <div
       className="column"
     >
-      <img
-        alt=""
-        className="icon"
-        src="test-file-stub"
-      />
+      <mockConstructor
+        to="/"
+      >
+        <img
+          alt="Reddit"
+          className="icon"
+          src="test-file-stub"
+        />
+      </mockConstructor>
     </div>
     <div
       className="column"
     >
-      <img
-        alt=""
-        className="icon"
-        src="test-file-stub"
-      />
+      <mockConstructor
+        to="/"
+      >
+        <img
+          alt="Twitter"
+          className="icon"
+          src="test-file-stub"
+        />
+      </mockConstructor>
     </div>
     <div
       className="column"
     >
-      <img
-        alt=""
-        className="icon"
-        src="test-file-stub"
-      />
+      <mockConstructor
+        to="/"
+      >
+        <img
+          alt="RSS"
+          className="icon"
+          src="test-file-stub"
+        />
+      </mockConstructor>
     </div>
   </div>
 </div>
