@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 import RedditIcon from '../../images/Reddit.svg'
 import TwitterIcon from '../../images/Twitter.svg'
 import RSSIcon from '../../images/RSS.svg'
@@ -10,13 +11,19 @@ const SocialMedia: React.FC = () => {
       <p className={FooterStyles.lead}>Follow Us</p>
       <div className={FooterStyles.row}>
         <div className={FooterStyles.column}>
-          <img src={RedditIcon} className={FooterStyles.icon} alt="Reddit" />
+          <Link to="/">
+            <img src={RedditIcon} className={FooterStyles.icon} alt="Reddit" />
+          </Link>
         </div>
         <div className={FooterStyles.column}>
-          <img src={TwitterIcon} className={FooterStyles.icon} alt="Twitter" />
+          <Link to="/">
+            <img src={TwitterIcon} className={FooterStyles.icon} alt="Twitter" />
+          </Link>
         </div>
         <div className={FooterStyles.column}>
-          <img src={RSSIcon} className={FooterStyles.icon} alt="RSS" />
+          <Link to="/">
+            <img src={RSSIcon} className={FooterStyles.icon} alt="RSS" />
+          </Link>
         </div>
       </div>
     </div>
