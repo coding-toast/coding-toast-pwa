@@ -2,10 +2,11 @@ import * as React from 'react'
 import Container from '../Container'
 import FooterStyles from './Footer.module.scss'
 import Copyright from './Copyright'
+import Logo from '../navigation/logo/Logo'
 
 const Footer: React.FC = () => (
   <Container className={FooterStyles.container}>
-    <h1>CodingToast Footer</h1>
+    <Logo styles={FooterStyles} />
     <Copyright />
   </Container>
 )

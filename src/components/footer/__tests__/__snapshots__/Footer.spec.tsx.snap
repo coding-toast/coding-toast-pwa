@@ -4,9 +4,9 @@ exports[`<Footer /> renders correctly 1`] = `
 <Container
   className="container"
 >
-  <h1>
-    CodingToast Footer
-  </h1>
+  <Logo
+    styles={null}
+  />
   <Copyright />
 </Container>
 `;

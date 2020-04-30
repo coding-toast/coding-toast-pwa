@@ -5,10 +5,11 @@ import NextSection from './NextSection'
 import HamburgerButton from './menu/HamburgerButton'
 import Container from '../Container'
 import NavigationStyles from './Navigation.module.scss'
+import LogoStyles from './logo/Logo.module.scss'
 
 const Navigation: React.FC = () => (
   <Container className={NavigationStyles.container}>
-    <Logo />
+    <Logo styles={LogoStyles} />
     <HamburgerButton />
     <QuoteBox />
     <NextSection />
