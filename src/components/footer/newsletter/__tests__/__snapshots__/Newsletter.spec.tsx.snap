@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Newsletter /> renders correctly 1`] = `
+<Container
+  className="container"
+>
+  <h1>
+    Newsletter
+  </h1>
+</Container>
+`;
