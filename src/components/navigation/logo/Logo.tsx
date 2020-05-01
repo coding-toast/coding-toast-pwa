@@ -5,7 +5,7 @@ interface StyleProps {
   styles: CSSModule
 }
 
-const Logo: React.FC<StyleProps> = props => {
+const Logo: React.FC<StyleProps> = (props) => {
   const { styles } = props
   return (
     <div className={styles.logoContainer}>
