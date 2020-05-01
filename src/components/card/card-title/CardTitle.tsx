@@ -6,7 +6,7 @@ interface CardTitleProps {
   backgroundUrl?: string
 }
 
-const CardTitle: React.FC<CardTitleProps> = props => {
+const CardTitle: React.FC<CardTitleProps> = (props) => {
   const { title, backgroundUrl } = props
 
   const backgroundImage = {

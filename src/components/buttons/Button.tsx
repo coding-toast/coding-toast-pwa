@@ -7,7 +7,7 @@ interface ButtonProps {
   className: string
 }
 
-const Button: React.FC<ButtonProps> = props => {
+const Button: React.FC<ButtonProps> = (props) => {
   const { toUrl, buttonText, className } = props
 
   return (

@@ -5,7 +5,7 @@ interface CardMetaProps {
   publishDate: string
 }
 
-const CardMeta: React.FC<CardMetaProps> = props => {
+const CardMeta: React.FC<CardMetaProps> = (props) => {
   const { publishDate } = props
 
   return <p className={`${CardMetaStyles.meta} text-style-muted text-color-secondary`}>{publishDate}</p>
