@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SocialMedia /> renders correctly 1`] = `
+<div>
+  <p
+    className="lead"
+  >
+    Follow Us
+  </p>
+  <div
+    className="row"
+  >
+    <div
+      className="column"
+    >
+      <mockConstructor
+        to="/"
+      >
+        <img
+          alt="Reddit"
+          className="icon"
+          src="test-file-stub"
+        />
+      </mockConstructor>
+    </div>
+    <div
+      className="column"
+    >
+      <mockConstructor
+        to="/"
+      >
+        <img
+          alt="Twitter"
+          className="icon"
+          src="test-file-stub"
+        />
+      </mockConstructor>
+    </div>
+    <div
+      className="column"
+    >
+      <mockConstructor
+        to="/"
+      >
+        <img
+          alt="RSS"
+          className="icon"
+          src="test-file-stub"
+        />
+      </mockConstructor>
+    </div>
+  </div>
+</div>
+`;

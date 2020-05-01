@@ -7,6 +7,7 @@ exports[`<Footer /> renders correctly 1`] = `
   <Logo
     styles={null}
   />
+  <SocialMedia />
   <Policies />
   <Copyright />
 </Container>
