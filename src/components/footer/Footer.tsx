@@ -9,6 +9,7 @@ import SocialMedia from './SocialMedia'
 const Footer: React.FC = () => (
   <Container className={FooterStyles.container}>
     <Logo styles={FooterStyles} />
+    <p className={FooterStyles.lead}>Follow Us</p>
     <SocialMedia styles={FooterStyles} />
     <Policies />
     <Copyright />

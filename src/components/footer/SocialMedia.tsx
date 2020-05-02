@@ -12,7 +12,6 @@ const SocialMedia: React.FC<StyleProps> = (props) => {
   const { styles } = props
   return (
     <div>
-      <p className={styles.lead}>Follow Us</p>
       <div className={styles.row}>
         <div className={styles.column}>
           <Link to="/">
