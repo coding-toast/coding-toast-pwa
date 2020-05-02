@@ -1,6 +1,0 @@
-@import '../styles/shared/mixins';
-
-.container {
-  @include box-padding;
-  @include container();
-}
