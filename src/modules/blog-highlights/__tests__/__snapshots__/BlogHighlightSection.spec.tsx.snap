@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
-<Container
-  className="container"
+<SectionContainer
+  backgroundShade="#121f20"
 >
   <h1
     className="text-color-primary"
@@ -11,5 +11,5 @@ exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
   </h1>
   <ExcerptList />
   <ButtonToBlogs />
-</Container>
+</SectionContainer>
 `;
