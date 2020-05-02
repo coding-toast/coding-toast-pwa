@@ -18,3 +18,49 @@
   width: 56px;
   height: 64px;
 }
+
+.heading {
+  color: white;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+.listHeading {
+  color: white;
+}
+
+.list {
+  color: $text-color-secondary;
+  font-style: normal;
+  font-family: Fira Sans;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.025em;
+}
+
+.emailInput {
+  background-color: $color-modify-lighten-2;
+  color: $text-color-disabled;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18.72px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
