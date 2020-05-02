@@ -2,11 +2,6 @@
 
 exports[`<SocialMedia /> renders correctly 1`] = `
 <div>
-  <p
-    className="lead"
-  >
-    Follow Us
-  </p>
   <div
     className="row"
   >
