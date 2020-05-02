@@ -20,7 +20,7 @@ describe('<SectionContainer />', () => {
   })
 
   it('renders correctly with no children', () => {
-    const component = shallow(<SectionContainer backgroundShade={BackgroundShade.PRIMARY}></SectionContainer>)
+    const component = shallow(<SectionContainer backgroundShade={BackgroundShade.PRIMARY} />)
     expect(toJson(component)).toMatchSnapshot()
   })
 })
