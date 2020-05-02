@@ -3,3 +3,18 @@
 .container {
   background-color: $background-primary;
 }
+
+.row {
+  justify-content: center;
+  display: flex;
+  margin: 0 -21.5px;
+}
+
+.column {
+  padding: 0 21.5px;
+}
+
+.icon {
+  width: 56px;
+  height: 64px;
+}
