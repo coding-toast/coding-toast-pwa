@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> renders correctly 1`] = `
-<Container
-  className="container"
+<SectionContainer
+  backgroundShade="#121f20"
 >
   <Logo
     styles={null}
@@ -17,5 +17,5 @@ exports[`<Footer /> renders correctly 1`] = `
   />
   <Policies />
   <Copyright />
-</Container>
+</SectionContainer>
 `;

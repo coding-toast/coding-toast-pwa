@@ -1,11 +1,11 @@
 import * as React from 'react'
-import Container from '../../Container'
 import NewsletterStyles from './Newsletter.module.scss'
 import SocialMedia from '../SocialMedia'
+import Container, { BackgroundShade } from '../../section-container/SectionContainer'
 
 const NewsLetter: React.FC = () => {
   return (
-    <Container className={NewsletterStyles.container}>
+    <Container backgroundShade={BackgroundShade.PRIMARY}>
       <h1>Newsletter</h1>
       <SocialMedia styles={NewsletterStyles} />
     </Container>

@@ -3,12 +3,12 @@ import Logo from './logo/Logo'
 import QuoteBox from '../quote-box/QuoteBox'
 import NextSection from './NextSection'
 import HamburgerButton from './menu/HamburgerButton'
-import Container from '../Container'
-import NavigationStyles from './Navigation.module.scss'
+import Container, { BackgroundShade } from '../section-container/SectionContainer'
+// FIXME: import NavigationStyles from './Navigation.module.scss'
 import LogoStyles from './logo/Logo.module.scss'
 
 const Navigation: React.FC = () => (
-  <Container className={NavigationStyles.container}>
+  <Container backgroundShade={BackgroundShade.PRIMARY}>
     <Logo styles={LogoStyles} />
     <HamburgerButton />
     <QuoteBox />

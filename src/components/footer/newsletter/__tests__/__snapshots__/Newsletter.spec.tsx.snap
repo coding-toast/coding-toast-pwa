@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Newsletter /> renders correctly 1`] = `
-<Container
-  className="container"
+<SectionContainer
+  backgroundShade="#121212"
 >
   <h1>
     Newsletter
@@ -10,5 +10,5 @@ exports[`<Newsletter /> renders correctly 1`] = `
   <SocialMedia
     styles={null}
   />
-</Container>
+</SectionContainer>
 `;

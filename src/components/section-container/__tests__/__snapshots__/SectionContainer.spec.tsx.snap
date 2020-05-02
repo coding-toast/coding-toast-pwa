@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionContainer /> renders correctly with Primary background shade 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121212",
+    }
+  }
+>
+  <Container
+    fluid={false}
+  >
+    <div>
+      <h1>
+        Hello World!
+      </h1>
+    </div>
+  </Container>
+</section>
+`;
+
+exports[`<SectionContainer /> renders correctly with Secondary background shade 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121f20",
+    }
+  }
+>
+  <Container
+    fluid={false}
+  >
+    <div>
+      <h1>
+        Hello World!
+      </h1>
+    </div>
+  </Container>
+</section>
+`;
+
+exports[`<SectionContainer /> renders correctly with no children 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121212",
+    }
+  }
+>
+  <Container
+    fluid={false}
+  />
+</section>
+`;
