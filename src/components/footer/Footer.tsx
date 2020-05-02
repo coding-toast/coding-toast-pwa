@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Container, { BackgroundShade } from '../SectionContainer'
+import Container, { BackgroundShade } from '../section-container/SectionContainer'
 import FooterStyles from './Footer.module.scss'
 import Copyright from './Copyright'
 import Logo from '../navigation/logo/Logo'

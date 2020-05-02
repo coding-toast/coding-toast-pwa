@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite'
 import { NextSectionStoreContext } from '../../stores/NextSectionStore'
 import ExcerptList from './excerpt-list/ExcerptList'
 import ButtonToBlogs from '../../components/buttons/button-to-blogs/ButtonToBlogs'
-import SectionContainer, { BackgroundShade } from '../../components/SectionContainer'
+import SectionContainer, { BackgroundShade } from '../../components/section-container/SectionContainer'
 
 const BlogHighlightSection: React.FC = observer(() => {
   const query = useStaticQuery(
