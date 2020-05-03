@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Button from '../../buttons/Button'
+import Button from '../Button'
 import SignUpButtonStyles from './SignUpButton.module.scss'
 
 const SignUpButton: React.FC = () => {
