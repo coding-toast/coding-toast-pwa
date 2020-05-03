@@ -4,9 +4,8 @@ exports[`<Newsletter /> renders correctly 1`] = `
 <SectionContainer
   backgroundShade="#121212"
 >
-  <h1>
-    Newsletter
-  </h1>
+  <SignUpInfo />
+  <SignUpForm />
   <SocialMedia
     styles={null}
   />
