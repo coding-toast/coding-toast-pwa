@@ -7,14 +7,9 @@
   position: absolute;
   left: 50%;
   right: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 80vh;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+  bottom: 0;
   transition: all 0.2s ease-in-out;
-
-}
-
-.chevronButton:hover {
-  transform: scale(1.2) translateX(-35%);
-  -webkit-transform: scale(1.2) translateX(-35%);
+  z-index: 1;
 }
