@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> renders correctly 1`] = `
+<Navbar
+  bg="dark"
+  collapseOnSelect={true}
+  expand={false}
+  fixed="top"
+  sticky="top"
+  variant="dark"
+>
+  <NavbarBrand>
+    <mockConstructor
+      to="/"
+    >
+      <Logo
+        styles={null}
+      />
+    </mockConstructor>
+  </NavbarBrand>
+  <NavbarToggle
+    aria-controls="responsive-navbar-nav"
+    label="Toggle navigation"
+  />
+  <NavbarCollapse
+    id="responsive-navbar-nav"
+  >
+    <Nav
+      className="flex-column"
+      fill={false}
+      justify={false}
+    >
+      <NavItem>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          disabled={false}
+        >
+          <mockConstructor
+            to="/m"
+          >
+            Blog
+          </mockConstructor>
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          disabled={false}
+        >
+          <mockConstructor
+            to="/m"
+          >
+            Resources
+          </mockConstructor>
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "SafeAnchor",
+              "render": [Function],
+            }
+          }
+          disabled={false}
+        >
+          <mockConstructor
+            to="/m"
+          >
+            Contact
+          </mockConstructor>
+        </NavLink>
+      </NavItem>
+    </Nav>
+  </NavbarCollapse>
+</Navbar>
+`;

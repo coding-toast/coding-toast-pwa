@@ -23,4 +23,9 @@ describe('<SectionContainer />', () => {
     const component = shallow(<SectionContainer backgroundShade={BackgroundShade.PRIMARY} />)
     expect(toJson(component)).toMatchSnapshot()
   })
+
+  it('renders correctly with style injected container', () => {
+    const component = shallow(<SectionContainer backgroundShade={BackgroundShade.PRIMARY} style={{ height: '80vh' }} />)
+    expect(toJson(component)).toMatchSnapshot()
+  })
 })

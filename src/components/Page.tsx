@@ -1,10 +1,12 @@
 import * as React from 'react'
-import Header from './Header'
+import NavigationPanel from './navigation-panel/NavigationPanel'
+import Footer from './footer/Footer'
 
 const Page: React.FC = ({ children }) => (
   <>
-    <Header />
+    <NavigationPanel />
     {children}
+    <Footer />
   </>
 )
 
