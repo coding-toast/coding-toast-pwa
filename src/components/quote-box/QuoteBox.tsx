@@ -1,7 +1,6 @@
 import * as React from 'react'
+import { Jumbotron } from 'react-bootstrap'
 import QuoteBoxStyles from './QuoteBox.module.scss'
-import { Jumbotron, Container, Row, Col } from 'react-bootstrap'
-import QuoteImage from '../../images/quote.png'
 
 const QuoteCard: React.FC = () => (
   <Jumbotron className={QuoteBoxStyles.quoteBox}>
