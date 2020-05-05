@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<QuoteBox /> renders correctly 1`] = `
+<Jumbotron
+  className="quoteBox"
+  fluid={false}
+>
+  <blockquote
+    className="text-color-primary text-style-lead textQuote"
+  >
+    Because it takes more than going over your git log before standup to become a great engineer.
+  </blockquote>
+</Jumbotron>
+`;
