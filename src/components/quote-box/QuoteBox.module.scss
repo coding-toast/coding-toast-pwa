@@ -2,9 +2,7 @@
 
 .quote-box {
   background-color: $color-modify-lighten-1;
-  padding: 65px 0px 49px 27px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+  padding: 65px 0px 49px calc(20px + 1em);
 
   .text-quote {
     position: relative;
@@ -15,7 +13,7 @@
       background-image: url('../../images/quote.png');
       width: 20px;
       height: 17px;
-      left: -23px;
+      left: -1em;
       top: -8px;
     }
   }
