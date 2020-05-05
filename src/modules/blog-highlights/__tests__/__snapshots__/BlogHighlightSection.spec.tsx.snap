@@ -4,12 +4,23 @@ exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
 <SectionContainer
   backgroundShade="#121f20"
 >
-  <h1
-    className="text-color-primary"
-  >
+  <h1>
     Catch Up On The Latest
   </h1>
   <ExcerptList />
-  <ButtonToBlogs />
+  <mockConstructor
+    to="/"
+  >
+    <Button
+      active={false}
+      block={true}
+      className="btn-accent-secondary"
+      disabled={false}
+      type="button"
+      variant="primary"
+    >
+      Checkout All Blog Posts
+    </Button>
+  </mockConstructor>
 </SectionContainer>
 `;

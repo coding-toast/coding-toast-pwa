@@ -1,5 +1,42 @@
 $dark: #121212;
 
+// Color system
+
+$background-primary: #121212;
+$background-accent: #121f20;
+$color-modify-lighten-1: rgba(255, 255, 255, 0.05);
+$color-modify-lighten-2: rgba(255, 255, 255, 0.22);
+$text-color-primary: rgba(255, 255, 255, 0.98);
+$text-color-secondary: rgba(255, 255, 255, 0.6);
+$text-color-disabled: rgba(255, 255, 255, 0.38);
+$accent-primary: #70f3ff;
+$accent-secondary: #4a99a0;
+
+$theme-colors: (
+  'background-primary': $background-primary,
+  'background-accent': $background-accent,
+  'color-modify-lighten-1': $color-modify-lighten-1,
+  'color-modify-lighten-2': $color-modify-lighten-2,
+  'text-color-primary': $text-color-primary,
+  'text-color-secondary': $text-color-secondary,
+  'text-color-disabled': $text-color-disabled,
+  'accent-primary': $accent-primary,
+  'accent-secondary': $accent-secondary
+);
+
+// Options
+$enable-shadows: true;
+
+// Body
+$body-bg: $background-primary;
+$body-color: $text-color-primary;
+
+// Links
+$link-color: $accent-primary;
+
+// Typography
+$text-muted: $text-color-secondary;
+
 @import '~bootstrap/scss/bootstrap';
 
 @import './typeography';

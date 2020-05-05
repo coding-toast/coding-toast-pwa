@@ -8,99 +8,199 @@ exports[`renders correctly 1`] = `
   xs={1}
 >
   <Col>
-    <CardBody
+    <Card
+      body={false}
       key="968769ef-231d-5501-8942-ee51d8d1324d"
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "margin": "16px 0",
+        }
+      }
     >
-      <CardTitle
-        backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-        title="blog-post-placerholder1"
+      <CardImg
+        src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+        variant="top"
       />
-      <CardDescription
-        text="first blog post"
-      />
-      <CardMeta
-        publishDate="\`January 1, 1970\`"
-      />
-      <ButtonWithIcon
-        toUrl="/"
-      />
-    </CardBody>
+      <CardBody>
+        <CardTitle>
+          blog-post-placerholder1
+        </CardTitle>
+        <CardSubtitle
+          className="mb-2 text-style-muted text-color-secondary"
+        >
+          \`January 1, 1970\`
+        </CardSubtitle>
+        <CardText
+          className="text-color-primary"
+        >
+          first blog post
+        </CardText>
+        <CardLink>
+          <mockConstructor
+            to="/"
+          >
+            Read More
+          </mockConstructor>
+        </CardLink>
+      </CardBody>
+    </Card>
   </Col>
   <Col>
-    <CardBody
+    <Card
+      body={false}
       key="68e1f043-9989-584f-80e7-2bb2eed3f985"
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "margin": "16px 0",
+        }
+      }
     >
-      <CardTitle
-        backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-        title="blog-post-placerholder5"
+      <CardImg
+        src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+        variant="top"
       />
-      <CardDescription
-        text="fifth blog post"
-      />
-      <CardMeta
-        publishDate="\`January 1, 1970\`"
-      />
-      <ButtonWithIcon
-        toUrl="/"
-      />
-    </CardBody>
+      <CardBody>
+        <CardTitle>
+          blog-post-placerholder5
+        </CardTitle>
+        <CardSubtitle
+          className="mb-2 text-style-muted text-color-secondary"
+        >
+          \`January 1, 1970\`
+        </CardSubtitle>
+        <CardText
+          className="text-color-primary"
+        >
+          fifth blog post
+        </CardText>
+        <CardLink>
+          <mockConstructor
+            to="/"
+          >
+            Read More
+          </mockConstructor>
+        </CardLink>
+      </CardBody>
+    </Card>
   </Col>
   <Col>
-    <CardBody
+    <Card
+      body={false}
       key="1a172731-99f4-5f68-8ead-23324a44f70c"
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "margin": "16px 0",
+        }
+      }
     >
-      <CardTitle
-        backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-        title="blog-post-placerholder3"
+      <CardImg
+        src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+        variant="top"
       />
-      <CardDescription
-        text="third blog post"
-      />
-      <CardMeta
-        publishDate="\`January 1, 1970\`"
-      />
-      <ButtonWithIcon
-        toUrl="/"
-      />
-    </CardBody>
+      <CardBody>
+        <CardTitle>
+          blog-post-placerholder3
+        </CardTitle>
+        <CardSubtitle
+          className="mb-2 text-style-muted text-color-secondary"
+        >
+          \`January 1, 1970\`
+        </CardSubtitle>
+        <CardText
+          className="text-color-primary"
+        >
+          third blog post
+        </CardText>
+        <CardLink>
+          <mockConstructor
+            to="/"
+          >
+            Read More
+          </mockConstructor>
+        </CardLink>
+      </CardBody>
+    </Card>
   </Col>
   <Col>
-    <CardBody
+    <Card
+      body={false}
       key="011af6f6-6c3f-5eab-81ad-3f73e427dbd8"
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "margin": "16px 0",
+        }
+      }
     >
-      <CardTitle
-        backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-        title="blog-post-placerholder4"
+      <CardImg
+        src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+        variant="top"
       />
-      <CardDescription
-        text="fourth blog post"
-      />
-      <CardMeta
-        publishDate="\`January 1, 1970\`"
-      />
-      <ButtonWithIcon
-        toUrl="/"
-      />
-    </CardBody>
+      <CardBody>
+        <CardTitle>
+          blog-post-placerholder4
+        </CardTitle>
+        <CardSubtitle
+          className="mb-2 text-style-muted text-color-secondary"
+        >
+          \`January 1, 1970\`
+        </CardSubtitle>
+        <CardText
+          className="text-color-primary"
+        >
+          fourth blog post
+        </CardText>
+        <CardLink>
+          <mockConstructor
+            to="/"
+          >
+            Read More
+          </mockConstructor>
+        </CardLink>
+      </CardBody>
+    </Card>
   </Col>
   <Col>
-    <CardBody
+    <Card
+      body={false}
       key="d28f2392-be5f-5fc1-96fb-b3c69e7dce6b"
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "margin": "16px 0",
+        }
+      }
     >
-      <CardTitle
-        backgroundUrl="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-        title="blog-post-placerholder2"
+      <CardImg
+        src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+        variant="top"
       />
-      <CardDescription
-        text="second blog post"
-      />
-      <CardMeta
-        publishDate="\`January 1, 1970\`"
-      />
-      <ButtonWithIcon
-        toUrl="/"
-      />
-    </CardBody>
+      <CardBody>
+        <CardTitle>
+          blog-post-placerholder2
+        </CardTitle>
+        <CardSubtitle
+          className="mb-2 text-style-muted text-color-secondary"
+        >
+          \`January 1, 1970\`
+        </CardSubtitle>
+        <CardText
+          className="text-color-primary"
+        >
+          second blog post
+        </CardText>
+        <CardLink>
+          <mockConstructor
+            to="/"
+          >
+            Read More
+          </mockConstructor>
+        </CardLink>
+      </CardBody>
+    </Card>
   </Col>
 </Row>
 `;
