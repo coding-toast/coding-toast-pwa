@@ -10,7 +10,7 @@ const NewsLetter: React.FC = () => {
     <Container backgroundShade={BackgroundShade.PRIMARY}>
       <SignUpInfo />
       <SignUpForm />
-      <SocialMedia styles={NewsletterStyles} />
+      <SocialMedia />
     </Container>
   )
 }
