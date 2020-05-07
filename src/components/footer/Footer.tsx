@@ -4,8 +4,8 @@ import FooterStyles from './Footer.module.scss'
 import Copyright from './Copyright'
 import Logo from '../navigation/logo/Logo'
 import Policies from './Policies'
-import SocialMedia, { scale } from './SocialMedia'
 import { Row, Col } from 'react-bootstrap'
+import { SocialMediaGroup, scale } from '../social-media/'
 
 const Footer: React.FC = () => (
   <Container backgroundShade={BackgroundShade.SECONDARY}>
@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
     <Row className="justify-content-md-center">
       <Col>
         <p className={FooterStyles.lead}>Follow Us</p>
-        <SocialMedia scale={scale.SMALL} />
+        <SocialMediaGroup scale={scale.SMALL} />
       </Col>
     </Row>
     <Policies />

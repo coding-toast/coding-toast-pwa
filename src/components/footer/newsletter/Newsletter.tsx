@@ -1,16 +1,15 @@
 import * as React from 'react'
-import NewsletterStyles from './Newsletter.module.scss'
-import SocialMedia from '../SocialMedia'
 import Container, { BackgroundShade } from '../../section-container/SectionContainer'
 import SignUpInfo from './SignUpInfo'
 import SignUpForm from './SignUpForm'
+import { SocialMediaGroup, scale } from '../../social-media'
 
 const NewsLetter: React.FC = () => {
   return (
     <Container backgroundShade={BackgroundShade.PRIMARY}>
       <SignUpInfo />
       <SignUpForm />
-      <SocialMedia />
+      <SocialMediaGroup scale={scale.MEDIUM} />
     </Container>
   )
 }

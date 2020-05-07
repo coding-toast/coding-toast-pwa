@@ -1,49 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SocialMedia /> renders correctly 1`] = `
-<div>
-  <div
-    className="row"
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "18em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
   >
-    <div
-      className="column"
-    >
-      <mockConstructor
-        to="/"
-      >
-        <img
-          alt="Reddit"
-          className="icon"
-          src="test-file-stub"
-        />
-      </mockConstructor>
-    </div>
-    <div
-      className="column"
-    >
-      <mockConstructor
-        to="/"
-      >
-        <img
-          alt="Twitter"
-          className="icon"
-          src="test-file-stub"
-        />
-      </mockConstructor>
-    </div>
-    <div
-      className="column"
-    >
-      <mockConstructor
-        to="/"
-      >
-        <img
-          alt="RSS"
-          className="icon"
-          src="test-file-stub"
-        />
-      </mockConstructor>
-    </div>
-  </div>
-</div>
+    <SocialBrand
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Twitter",
+        }
+      }
+      key="0"
+      style={
+        Object {
+          "height": "4em",
+        }
+      }
+    />
+    <SocialBrand
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Reddit",
+        }
+      }
+      key="1"
+      style={
+        Object {
+          "height": "4em",
+        }
+      }
+    />
+    <SocialBrand
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "RSS",
+        }
+      }
+      key="2"
+      style={
+        Object {
+          "height": "4em",
+        }
+      }
+    />
+  </Row>
+</Container>
 `;

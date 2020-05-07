@@ -4,17 +4,33 @@ exports[`<Footer /> renders correctly 1`] = `
 <SectionContainer
   backgroundShade="#121f20"
 >
-  <Logo
-    styles={null}
-  />
-  <p
-    className="lead"
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
   >
-    Follow Us
-  </p>
-  <SocialMedia
-    styles={null}
-  />
+    <Col
+      md="auto"
+    >
+      <Logo
+        styles={null}
+      />
+    </Col>
+  </Row>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <Col>
+      <p
+        className="lead"
+      >
+        Follow Us
+      </p>
+      <SocialMediaGroup
+        scale="small"
+      />
+    </Col>
+  </Row>
   <Policies />
   <Copyright />
 </SectionContainer>
