@@ -1,17 +1,23 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import FooterStyles from './Footer.module.scss'
+import { Row, Col, Container } from 'react-bootstrap'
 
 const Policies: React.FC = () => {
   return (
-    <div className={FooterStyles.links}>
-      <Link to="/" className={FooterStyles.leftAlign}>
-        Privacy Policy
-      </Link>
-      <Link to="/" className={FooterStyles.rightAlign}>
-        Terms of Service
-      </Link>
-    </div>
+    <Container style={{ maxWidth: '30em' }}>
+      <Row>
+        <Col className="text-left">
+          <Link to="/" className="text-muted">
+            Privacy Policy
+          </Link>
+        </Col>
+        <Col className="text-right">
+          <Link to="/" className="text-muted">
+            Terms of Service
+          </Link>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

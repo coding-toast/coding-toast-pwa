@@ -9,19 +9,23 @@ import { SocialMediaGroup, scale } from '../social-media/'
 
 const Footer: React.FC = () => (
   <Container backgroundShade={BackgroundShade.SECONDARY}>
-    <Row className="justify-content-md-center">
+    <Row className="justify-content-md-center" style={{ margin: '2em 0' }}>
       <Col md="auto">
         <Logo styles={FooterStyles} />
       </Col>
     </Row>
-    <Row className="justify-content-md-center">
-      <Col>
-        <p className={FooterStyles.lead}>Follow Us</p>
+    <Row className="justify-content-md-center" style={{ margin: '2em 0' }}>
+      <Col className="text-center">
+        <p className={`${FooterStyles.lead} text-muted lead`}>Follow Us</p>
         <SocialMediaGroup scale={scale.SMALL} />
       </Col>
     </Row>
-    <Policies />
-    <Copyright />
+    <Row style={{ margin: '2em 0' }}>
+      <Policies />
+    </Row>
+    <Row style={{ margin: '2em 0' }}>
+      <Copyright />
+    </Row>
   </Container>
 )
 
