@@ -1,15 +1,15 @@
 import * as React from 'react'
-import { scale, SocialBrand } from '../types'
+import { Container, Row } from 'react-bootstrap'
 import SocialBrandIcon from '../social-brand-icon/SocialBrandIcon'
 import socialIcons from './SocialIcons'
-import { Container, Row } from 'react-bootstrap'
+import { scale, SocialBrand } from '../types'
 
 interface SocialMediaGroupProps {
-  scale?: scale
+  iconScale?: scale
 }
 
-const scaleToEm = (scale: scale) => {
-  switch (scale) {
+const scaleToEm = (iconScale: scale) => {
+  switch (iconScale) {
     case 'small':
       return 2
     case 'medium':
@@ -22,9 +22,11 @@ const scaleToEm = (scale: scale) => {
 }
 
 const SocialMediaGroup: React.FC<SocialMediaGroupProps> = (props) => {
-  const brandLogoEm = scaleToEm(props.scale == null ? scale.MEDIUM : props.scale)
-  const brands = socialIcons.map((element: SocialBrand, key: string | number | undefined) => {
-    return <SocialBrandIcon key={key} brand={element} size={brandLogoEm} />
+  const { iconScale } = props
+  const brandLogoEm = scaleToEm(iconScale == null ? scale.MEDIUM : iconScale)
+
+  const brands = socialIcons.map((element: SocialBrand) => {
+    return <SocialBrandIcon key={element.name} brand={element} size={brandLogoEm} />
   })
 
   return (

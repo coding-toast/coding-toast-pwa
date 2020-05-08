@@ -6,15 +6,15 @@ import { scale } from '../../types'
 
 describe('<SocialMediaGroup />', () => {
   it('renders correctly scale=small', () => {
-    const component = shallow(<SocialMediaGroup scale={scale.SMALL} />)
+    const component = shallow(<SocialMediaGroup iconScale={scale.SMALL} />)
     expect(toJson(component)).toMatchSnapshot()
   })
   it('renders correctly scale=medium', () => {
-    const component = shallow(<SocialMediaGroup scale={scale.MEDIUM} />)
+    const component = shallow(<SocialMediaGroup iconScale={scale.MEDIUM} />)
     expect(toJson(component)).toMatchSnapshot()
   })
   it('renders correctly scale=large', () => {
-    const component = shallow(<SocialMediaGroup scale={scale.LARGE} />)
+    const component = shallow(<SocialMediaGroup iconScale={scale.LARGE} />)
     expect(toJson(component)).toMatchSnapshot()
   })
   it('renders correctly with no scale modifier', () => {

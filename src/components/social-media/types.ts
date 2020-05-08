@@ -1,6 +1,6 @@
 export interface SocialBrand {
   name: string
-  logo: any
+  logo: string
   href: string
 }
 

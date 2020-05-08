@@ -1,19 +1,22 @@
 import * as React from 'react'
-import { SocialBrand } from '../types'
 import { Col, Image } from 'react-bootstrap'
 import { Link } from 'gatsby'
+import { SocialBrand } from '../types'
 
 interface SocialBrandIconProps {
   brand: SocialBrand
   size: number
 }
 
-const SocialBrandIcon: React.FC<SocialBrandIconProps> = (props) => (
-  <Col className="mx-auto text-center" xs="auto">
-    <Link to={props.brand.href}>
-      <Image src={props.brand.logo} alt={props.brand.name} style={{ height: `${props.size}em` }} />
-    </Link>
-  </Col>
-)
+const SocialBrandIcon: React.FC<SocialBrandIconProps> = (props) => {
+  const { brand, size } = props
+  return (
+    <Col className="mx-auto text-center" xs="auto">
+      <Link to={brand.href}>
+        <Image src={brand.logo} alt={brand.name} style={{ height: `${size}em` }} />
+      </Link>
+    </Col>
+  )
+}
 
 export default SocialBrandIcon

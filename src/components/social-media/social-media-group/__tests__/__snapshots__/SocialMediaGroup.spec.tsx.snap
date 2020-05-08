@@ -21,7 +21,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
           "name": "Twitter",
         }
       }
-      key="0"
+      key="Twitter"
       size={6}
     />
     <SocialBrandIcon
@@ -32,7 +32,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
           "name": "Reddit",
         }
       }
-      key="1"
+      key="Reddit"
       size={6}
     />
     <SocialBrandIcon
@@ -43,7 +43,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
           "name": "RSS",
         }
       }
-      key="2"
+      key="RSS"
       size={6}
     />
   </Row>
@@ -71,7 +71,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
           "name": "Twitter",
         }
       }
-      key="0"
+      key="Twitter"
       size={4}
     />
     <SocialBrandIcon
@@ -82,7 +82,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
           "name": "Reddit",
         }
       }
-      key="1"
+      key="Reddit"
       size={4}
     />
     <SocialBrandIcon
@@ -93,7 +93,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
           "name": "RSS",
         }
       }
-      key="2"
+      key="RSS"
       size={4}
     />
   </Row>
@@ -121,7 +121,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
           "name": "Twitter",
         }
       }
-      key="0"
+      key="Twitter"
       size={2}
     />
     <SocialBrandIcon
@@ -132,7 +132,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
           "name": "Reddit",
         }
       }
-      key="1"
+      key="Reddit"
       size={2}
     />
     <SocialBrandIcon
@@ -143,7 +143,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
           "name": "RSS",
         }
       }
-      key="2"
+      key="RSS"
       size={2}
     />
   </Row>
@@ -171,7 +171,7 @@ exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
           "name": "Twitter",
         }
       }
-      key="0"
+      key="Twitter"
       size={4}
     />
     <SocialBrandIcon
@@ -182,7 +182,7 @@ exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
           "name": "Reddit",
         }
       }
-      key="1"
+      key="Reddit"
       size={4}
     />
     <SocialBrandIcon
@@ -193,7 +193,7 @@ exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
           "name": "RSS",
         }
       }
-      key="2"
+      key="RSS"
       size={4}
     />
   </Row>

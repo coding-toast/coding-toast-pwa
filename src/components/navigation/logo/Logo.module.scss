@@ -1,11 +1,10 @@
-@import '../../../styles/shared/variables';
-
-.logoContainer {
-  max-width: 100%;
-  padding-top: 3vh;
-}
+$glass-to-image-ratio: (1 - (318/332)) * 100;
 
 .logoImage {
-  max-width: 100%;
-  padding-left: calc(5% - 10px);
+  -moz-transform: translateX($glass-to-image-ratio * 1%);
+  -ms-transform: translateX($glass-to-image-ratio * 1%);
+  -o-transform: translateX($glass-to-image-ratio * 1%);
+  -webkit-transform: translateX($glass-to-image-ratio * 1%);
+  transform: translateX($glass-to-image-ratio * 1%);
+  padding-right: $glass-to-image-ratio * 1%;
 }

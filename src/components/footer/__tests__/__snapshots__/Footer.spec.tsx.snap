@@ -7,31 +7,59 @@ exports[`<Footer /> renders correctly 1`] = `
   <Row
     className="justify-content-md-center"
     noGutters={false}
+    style={
+      Object {
+        "margin": "2em 0",
+      }
+    }
   >
     <Col
       md="auto"
     >
-      <Logo
-        styles={null}
-      />
+      <Logo />
     </Col>
   </Row>
   <Row
     className="justify-content-md-center"
     noGutters={false}
+    style={
+      Object {
+        "margin": "2em 0",
+      }
+    }
   >
-    <Col>
+    <Col
+      className="text-center"
+    >
       <p
-        className="lead"
+        className="text-muted lead"
       >
         Follow Us
       </p>
       <SocialMediaGroup
-        scale="small"
+        iconScale="small"
       />
     </Col>
   </Row>
-  <Policies />
-  <Copyright />
+  <Row
+    noGutters={false}
+    style={
+      Object {
+        "margin": "2em 0",
+      }
+    }
+  >
+    <Policies />
+  </Row>
+  <Row
+    noGutters={false}
+    style={
+      Object {
+        "margin": "2em 0",
+      }
+    }
+  >
+    <Copyright />
+  </Row>
 </SectionContainer>
 `;

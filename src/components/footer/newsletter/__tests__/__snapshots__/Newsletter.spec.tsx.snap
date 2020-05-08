@@ -7,7 +7,7 @@ exports[`<Newsletter /> renders correctly 1`] = `
   <SignUpInfo />
   <SignUpForm />
   <SocialMediaGroup
-    scale="medium"
+    iconScale="medium"
   />
 </SectionContainer>
 `;

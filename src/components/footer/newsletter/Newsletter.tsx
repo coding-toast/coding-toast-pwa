@@ -9,7 +9,7 @@ const NewsLetter: React.FC = () => {
     <Container backgroundShade={BackgroundShade.PRIMARY}>
       <SignUpInfo />
       <SignUpForm />
-      <SocialMediaGroup scale={scale.MEDIUM} />
+      <SocialMediaGroup iconScale={scale.MEDIUM} />
     </Container>
   )
 }
