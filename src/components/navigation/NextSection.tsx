@@ -6,9 +6,11 @@ import NextSectionStyles from './NextSection.module.scss'
 
 const NextSection: React.FC = observer(() => {
   const nextSectionStore = React.useContext(NextSectionStoreContext)
+  const offset: any = nextSectionStore.ref.current?.offsetParent
+
   const executeScroll = () => {
     window.scrollTo({
-      top: nextSectionStore.ref.current?.offsetTop,
+      top: offset?.offsetTop,
       behavior: 'smooth'
     })
   }
