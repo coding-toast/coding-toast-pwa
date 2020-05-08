@@ -1,14 +1,14 @@
 import * as React from 'react'
-import FooterStyles from './Footer.module.scss'
+import { Col } from 'react-bootstrap'
 
 const Copyright: React.FC = () => (
-  <div>
-    <p className={FooterStyles.copyright}>
+  <Col className="text-center">
+    <small className="text-muted">
       &copy; {new Date().getFullYear()} Coding Toast
       <br />
       Quentin Guenther, Nathan Corbin
-    </p>
-  </div>
+    </small>
+  </Col>
 )
 
 export default Copyright

@@ -1,17 +1,16 @@
 import * as React from 'react'
+import { Image } from 'react-bootstrap'
 import LogoImage from '../../../images/logo.svg'
+import LogoStyles from './Logo.module.scss'
 
-interface StyleProps {
-  styles: CSSModule
+interface LogoProps {
+  fillWidth?: boolean
 }
 
-const Logo: React.FC<StyleProps> = (props) => {
-  const { styles } = props
-  return (
-    <div className={styles.logoContainer}>
-      <img className={styles.logoImage} src={LogoImage} alt="coding toast" />
-    </div>
-  )
+const Logo: React.FC<LogoProps> = (props) => {
+  const { fillWidth } = props
+  const logoWidth = fillWidth ? '100%' : '12em'
+  return <Image className={LogoStyles.logoImage} style={{ width: logoWidth }} src={LogoImage} alt="coding toast" />
 }
 
 export default Logo

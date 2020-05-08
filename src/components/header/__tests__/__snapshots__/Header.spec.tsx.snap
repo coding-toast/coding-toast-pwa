@@ -10,7 +10,7 @@ exports[`<Header /> renders correctly 1`] = `
   }
 >
   <Logo
-    styles={null}
+    fillWidth={true}
   />
   <QuoteCard />
   <Memo(wrappedComponent) />

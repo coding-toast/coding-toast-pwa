@@ -2,11 +2,15 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import Logo from '../Logo'
-import LogoStyles from '../Logo.module.scss'
 
 describe('<Logo />', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Logo styles={LogoStyles} />)
+  it('renders correctly without fill width', () => {
+    const component = shallow(<Logo />)
+    expect(toJson(component)).toMatchSnapshot()
+  })
+
+  it('renders correctly with fill width', () => {
+    const component = shallow(<Logo fillWidth />)
     expect(toJson(component)).toMatchSnapshot()
   })
 })

@@ -13,9 +13,7 @@ exports[`<Navbar /> renders correctly 1`] = `
     <mockConstructor
       to="/"
     >
-      <Logo
-        styles={null}
-      />
+      <Logo />
     </mockConstructor>
   </NavbarBrand>
   <NavbarToggle

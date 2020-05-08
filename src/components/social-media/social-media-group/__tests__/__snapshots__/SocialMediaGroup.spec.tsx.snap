@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "24em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Twitter",
+        }
+      }
+      key="Twitter"
+      size={6}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Reddit",
+        }
+      }
+      key="Reddit"
+      size={6}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "RSS",
+        }
+      }
+      key="RSS"
+      size={6}
+    />
+  </Row>
+</Container>
+`;
+
+exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "18em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Twitter",
+        }
+      }
+      key="Twitter"
+      size={4}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Reddit",
+        }
+      }
+      key="Reddit"
+      size={4}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "RSS",
+        }
+      }
+      key="RSS"
+      size={4}
+    />
+  </Row>
+</Container>
+`;
+
+exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "12em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Twitter",
+        }
+      }
+      key="Twitter"
+      size={2}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Reddit",
+        }
+      }
+      key="Reddit"
+      size={2}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "RSS",
+        }
+      }
+      key="RSS"
+      size={2}
+    />
+  </Row>
+</Container>
+`;
+
+exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "18em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Twitter",
+        }
+      }
+      key="Twitter"
+      size={4}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "Reddit",
+        }
+      }
+      key="Reddit"
+      size={4}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "test-file-stub",
+          "name": "RSS",
+        }
+      }
+      key="RSS"
+      size={4}
+    />
+  </Row>
+</Container>
+`;

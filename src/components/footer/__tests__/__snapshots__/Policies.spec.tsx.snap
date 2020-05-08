@@ -1,20 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Policies /> renders correctly 1`] = `
-<div
-  className="links"
+<Container
+  fluid={false}
+  style={
+    Object {
+      "maxWidth": "30em",
+    }
+  }
 >
-  <mockConstructor
-    className="leftAlign"
-    to="/"
+  <Row
+    noGutters={false}
   >
-    Privacy Policy
-  </mockConstructor>
-  <mockConstructor
-    className="rightAlign"
-    to="/"
-  >
-    Terms of Service
-  </mockConstructor>
-</div>
+    <Col
+      className="text-left"
+    >
+      <mockConstructor
+        className="text-muted"
+        to="/"
+      >
+        Privacy Policy
+      </mockConstructor>
+    </Col>
+    <Col
+      className="text-right"
+    >
+      <mockConstructor
+        className="text-muted"
+        to="/"
+      >
+        Terms of Service
+      </mockConstructor>
+    </Col>
+  </Row>
+</Container>
 `;

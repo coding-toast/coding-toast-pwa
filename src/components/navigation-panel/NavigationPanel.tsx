@@ -2,13 +2,12 @@ import * as React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'gatsby'
 import Logo from '../navigation/logo/Logo'
-import FooterStyles from '../footer/Footer.module.scss'
 
 const NavigationPanel: React.FC = () => (
   <Navbar collapseOnSelect expand={false} fixed="top" sticky="top" bg="dark" variant="dark">
     <Navbar.Brand>
       <Link to="/">
-        <Logo styles={FooterStyles} />
+        <Logo />
       </Link>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
