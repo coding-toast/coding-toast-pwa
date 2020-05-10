@@ -8,12 +8,12 @@ import { SocialMediaGroup, scale } from '../social-media'
 
 const Footer: React.FC = () => (
   <Container backgroundShade={BackgroundShade.SECONDARY}>
-    <Row className="justify-content-md-center" style={{ margin: '2em 0' }}>
-      <Col md="auto">
+    <Row className="justify-content-center" style={{ margin: '2em 0' }}>
+      <Col xs="auto">
         <Logo />
       </Col>
     </Row>
-    <Row className="justify-content-md-center" style={{ margin: '2em 0' }}>
+    <Row className="justify-content-center" style={{ margin: '2em 0' }}>
       <Col className="text-center">
         <p className="text-muted lead">Follow Us</p>
         <SocialMediaGroup iconScale={scale.SMALL} />

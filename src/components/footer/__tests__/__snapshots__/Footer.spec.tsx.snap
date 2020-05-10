@@ -5,7 +5,7 @@ exports[`<Footer /> renders correctly 1`] = `
   backgroundShade="#121f20"
 >
   <Row
-    className="justify-content-md-center"
+    className="justify-content-center"
     noGutters={false}
     style={
       Object {
@@ -14,13 +14,13 @@ exports[`<Footer /> renders correctly 1`] = `
     }
   >
     <Col
-      md="auto"
+      xs="auto"
     >
       <Logo />
     </Col>
   </Row>
   <Row
-    className="justify-content-md-center"
+    className="justify-content-center"
     noGutters={false}
     style={
       Object {

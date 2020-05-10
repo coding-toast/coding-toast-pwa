@@ -30,7 +30,7 @@ const ExcerptList: React.FC<ExcerptListProps> = (props) => {
         return (
           <Col>
             <Card key={id} style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-              <Card.Img variant="top" src={banner} />
+              <Card.Img variant="top" src={banner} alt={`Banner ${title}`} />
               <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-style-muted text-color-secondary">{publishDate}</Card.Subtitle>
