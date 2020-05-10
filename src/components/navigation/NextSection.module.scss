@@ -7,9 +7,9 @@
   position: absolute;
   left: 50%;
   right: 50%;
+  top: 70vh;
   -webkit-transform: translateX(-50%) translateY(50%);
   transform: translateX(-50%) translateY(50%);
-  bottom: 0;
   transition: all 0.2s ease-in-out;
   z-index: 1;
 }
