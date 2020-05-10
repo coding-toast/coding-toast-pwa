@@ -5,7 +5,7 @@ exports[`<Header /> renders correctly 1`] = `
   backgroundShade="#121212"
   style={
     Object {
-      "minHeight": "68vh",
+      "minHeight": "calc(68vh + 77px)",
     }
   }
 >
