@@ -19,6 +19,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <CardImg
+        alt="Banner blog-post-placerholder1"
         src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
         variant="top"
       />
@@ -58,6 +59,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <CardImg
+        alt="Banner blog-post-placerholder5"
         src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
         variant="top"
       />
@@ -97,6 +99,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <CardImg
+        alt="Banner blog-post-placerholder3"
         src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
         variant="top"
       />
@@ -136,6 +139,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <CardImg
+        alt="Banner blog-post-placerholder4"
         src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
         variant="top"
       />
@@ -175,6 +179,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <CardImg
+        alt="Banner blog-post-placerholder2"
         src="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
         variant="top"
       />
