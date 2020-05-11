@@ -10,7 +10,7 @@ const NextSection: React.FC = observer(() => {
 
   const executeScroll = () => {
     window.scrollTo({
-      top: offset?.offsetTop,
+      top: offset?.offsetTop - 77,
       behavior: 'smooth'
     })
   }
