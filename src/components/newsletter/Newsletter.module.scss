@@ -1,62 +1,11 @@
-@import '../../../styles/shared/variables';
-
-.row {
-  justify-content: center;
-  display: flex;
-  margin: 0 -21.5px;
-}
-
-.column {
-  padding: 0 21.5px;
-}
-
-.icon {
-  width: 56px;
-  height: 64px;
-}
-
-.heading {
-  color: white;
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-}
-
-.listHeading {
-  color: white;
-}
-
 .list {
-  color: $text-color-secondary;
-  font-style: normal;
-  font-family: Fira Sans;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  letter-spacing: 0.025em;
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
 }
 
-.emailInput {
-  color: $text-color-disabled;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  padding: 12px 20px 10px 50px;
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0.04em;
-  text-align: center;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  background: url('../../../images/Envelope.svg') no-repeat $color-modify-lighten-2;
-  background-size: 20px;
-  background-position-x: 15px;
-  background-position-y: 11px;
+.list li::before {
+  content: '✅';
+  display: inline-block;
+  margin-right: 0.3rem;
 }
