@@ -26,6 +26,7 @@ $theme-colors: (
 
 // Options
 $enable-shadows: true;
+$enable-responsive-font-sizes: true;
 
 // Body
 $body-bg: $background-primary;
@@ -36,6 +37,14 @@ $link-color: $accent-primary;
 
 // Typography
 $text-muted: $text-color-secondary;
+
+// Forms
+$input-bg: $color-modify-lighten-2;
+$input-color: $text-color-primary;
+$input-placeholder-color: $text-color-secondary;
+
+// Form Validation
+$form-feedback-valid-color: $accent-primary;
 
 @import '~bootstrap/scss/bootstrap';
 

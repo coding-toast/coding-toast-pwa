@@ -3,9 +3,3 @@
   list-style-position: outside;
   padding: 0;
 }
-
-.list li::before {
-  content: '✅';
-  display: inline-block;
-  margin-right: 0.3rem;
-}

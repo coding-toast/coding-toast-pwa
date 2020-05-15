@@ -4,12 +4,8 @@ import NewsletterStyles from './Newsletter.module.scss'
 const SignUpInfo: React.FC = () => {
   return (
     <div>
-      <h1>Sign up for our Newsletter</h1>
-      <ul className={NewsletterStyles.list}>
-        <li>Exclusive Offers</li>
-        <li>Giveaways</li>
-        <li>Updates always important to you!</li>
-      </ul>
+      <h1>Follow us</h1>
+      <p></p>
     </div>
   )
 }
