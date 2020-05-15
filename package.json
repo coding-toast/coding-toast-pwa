@@ -60,7 +60,8 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "yup": "^0.28.5"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.9.0",
