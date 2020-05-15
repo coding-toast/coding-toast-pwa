@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 const SignUpForm: React.FC = () => {
   const [validated, setValidated] = React.useState(false)
 
-  const handleSubmit = (event: { currentTarget: any; preventDefault: () => void; stopPropagation: () => void }) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     const form = event.currentTarget
     if (form.checkValidity() === false) {
       event.preventDefault()
@@ -18,7 +18,7 @@ const SignUpForm: React.FC = () => {
   return (
     <Row xs={1} lg={2} className="justify-content-lg-center my-4">
       <Col>
-        <Card body={true} style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
+        <Card body style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
           <h2 className="mb-4">Never miss a beat with our Newsletter!</h2>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group controlId="email">
@@ -30,7 +30,7 @@ const SignUpForm: React.FC = () => {
               <Form.Check type="checkbox">
                 <Form.Check.Input type="checkbox" checked />
                 <Form.Check.Label className="small text-muted">
-                  I have read and agree to the <Link to="">Terms and Conditions</Link> and <Link to="">Privacy Policy</Link>
+                  I have read and agree to the <Link to="/">Terms and Conditions</Link> and <Link to="/">Privacy Policy</Link>
                 </Form.Check.Label>
               </Form.Check>
             </Form.Group>

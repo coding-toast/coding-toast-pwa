@@ -2,28 +2,8 @@
 
 exports[`<SignUpInfo /> renders correctly 1`] = `
 <div>
-  <p
-    className="heading"
-  >
-    Sign up for our Newsletter
-  </p>
-  <p
-    className="listHeading"
-  >
-    Get Notified For
-  </p>
-  <ul
-    className="list"
-  >
-    <li>
-      Exclusive Offers
-    </li>
-    <li>
-      Giveaways
-    </li>
-    <li>
-      Updates always important to you!
-    </li>
-  </ul>
+  <h1>
+    Follow us
+  </h1>
 </div>
 `;
