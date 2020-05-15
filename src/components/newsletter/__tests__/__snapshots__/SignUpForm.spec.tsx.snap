@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignUpForm /> renders correctly 1`] = `
+<Row
+  className="justify-content-lg-center my-4"
+  lg={2}
+  noGutters={false}
+  xs={1}
+>
+  <Col>
+    <Card
+      body={true}
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+        }
+      }
+    >
+      <h2
+        className="mb-4"
+      >
+        Never miss a beat with our Newsletter!
+      </h2>
+      <Form
+        inline={false}
+        noValidate={true}
+        onSubmit={[Function]}
+        validated={false}
+      >
+        <FormGroup
+          controlId="email"
+        >
+          <FormLabel
+            column={false}
+            srOnly={false}
+          >
+            Email address
+          </FormLabel>
+          <FormControl
+            placeholder="Enter email"
+            type="email"
+          />
+          <FormText
+            className="text-muted"
+          >
+            We'll never share your email with anyone else.
+          </FormText>
+        </FormGroup>
+        <FormGroup
+          controlId="Terms and Conditions"
+        >
+          <FormCheck
+            disabled={false}
+            inline={false}
+            isInvalid={false}
+            isValid={false}
+            title=""
+            type="checkbox"
+          >
+            <FormCheckInput
+              checked={true}
+              type="checkbox"
+            />
+            <FormCheckLabel
+              className="small text-muted"
+            >
+              I have read and agree to the 
+              <mockConstructor
+                to="/"
+              >
+                Terms and Conditions
+              </mockConstructor>
+               and 
+              <mockConstructor
+                to="/"
+              >
+                Privacy Policy
+              </mockConstructor>
+            </FormCheckLabel>
+          </FormCheck>
+        </FormGroup>
+        <Button
+          active={false}
+          block={true}
+          className="btn-accent-secondary"
+          disabled={false}
+          type="submit"
+          variant="primary"
+        >
+          Sign Up
+        </Button>
+      </Form>
+    </Card>
+  </Col>
+</Row>
+`;
