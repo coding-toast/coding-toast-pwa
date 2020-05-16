@@ -21,75 +21,115 @@ exports[`<SignUpForm /> renders correctly 1`] = `
       >
         Never miss a beat with our Newsletter!
       </h2>
-      <Form
-        inline={false}
-        noValidate={true}
+      <Formik
+        initialValues={
+          Object {
+            "acceptedTerms": true,
+            "email": "",
+          }
+        }
         onSubmit={[Function]}
-        validated={false}
+        validationSchema={
+          ObjectSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_defaultDefault": [Function],
+            "_deps": Array [],
+            "_excludedEdges": Array [],
+            "_exclusive": Object {},
+            "_mutate": undefined,
+            "_nodes": Array [
+              "acceptedTerms",
+              "email",
+            ],
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "object",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "fields": Object {
+              "acceptedTerms": BooleanSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "boolean",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {
+                    true,
+                  },
+                  "refs": Map {},
+                },
+                "_whitelistError": [Function],
+                "tests": Array [
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+                "type": "boolean",
+              },
+              "email": StringSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "email": false,
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "string",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "tests": Array [
+                  [Function],
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+                "type": "string",
+              },
+            },
+            "tests": Array [],
+            "transforms": Array [
+              [Function],
+            ],
+            "type": "object",
+          }
+        }
       >
-        <FormGroup
-          controlId="email"
-        >
-          <FormLabel
-            column={false}
-            srOnly={false}
-          >
-            Email address
-          </FormLabel>
-          <FormControl
-            placeholder="Enter email"
-            type="email"
-          />
-          <FormText
-            className="text-muted"
-          >
-            We'll never share your email with anyone else.
-          </FormText>
-        </FormGroup>
-        <FormGroup
-          controlId="Terms and Conditions"
-        >
-          <FormCheck
-            disabled={false}
-            inline={false}
-            isInvalid={false}
-            isValid={false}
-            title=""
-            type="checkbox"
-          >
-            <FormCheckInput
-              checked={true}
-              type="checkbox"
-            />
-            <FormCheckLabel
-              className="small text-muted"
-            >
-              I have read and agree to the 
-              <mockConstructor
-                to="/"
-              >
-                Terms and Conditions
-              </mockConstructor>
-               and 
-              <mockConstructor
-                to="/"
-              >
-                Privacy Policy
-              </mockConstructor>
-            </FormCheckLabel>
-          </FormCheck>
-        </FormGroup>
-        <Button
-          active={false}
-          block={true}
-          className="btn-accent-secondary"
-          disabled={false}
-          type="submit"
-          variant="primary"
-        >
-          Sign Up
-        </Button>
-      </Form>
+        <Component />
+      </Formik>
     </Card>
   </Col>
 </Row>
