@@ -1,20 +1,19 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { Row, Col, Container } from 'react-bootstrap'
+import LegaleseDialog from '../legalese/dialog/LegaleseDialog'
+import TermsOfService from '../legalese/TermsOfService'
+import PrivacyPolicy from '../legalese/PrivacyPolicy'
 
 const Policies: React.FC = () => {
   return (
     <Container style={{ maxWidth: '30em' }}>
       <Row>
         <Col className="text-left">
-          <Link to="/" className="text-muted">
-            Privacy Policy
-          </Link>
+          <PrivacyPolicy muted />
         </Col>
         <Col className="text-right">
-          <Link to="/" className="text-muted">
-            Terms of Service
-          </Link>
+          <TermsOfService muted />
         </Col>
       </Row>
     </Container>

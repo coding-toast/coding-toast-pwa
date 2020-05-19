@@ -3,6 +3,8 @@ import { Form, Button, Card, Row, Col } from 'react-bootstrap'
 import { Link } from 'gatsby'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
+import TermsOfService from '../legalese/TermsOfService'
+import PrivacyPolicy from '../legalese/PrivacyPolicy'
 
 const SignUpForm: React.FC = () => {
   const schema = Yup.object({
@@ -50,7 +52,7 @@ const SignUpForm: React.FC = () => {
                       isInvalid={touched.acceptedTerms && !isValid}
                     />
                     <Form.Check.Label className="small text-muted">
-                      I have read and agree to the <Link to="/">Terms and Conditions</Link> and <Link to="/">Privacy Policy</Link>
+                      I have read and agree to the <TermsOfService /> and <PrivacyPolicy />
                     </Form.Check.Label>
                     <Form.Control.Feedback type="invalid">{errors.acceptedTerms}</Form.Control.Feedback>
                   </Form.Check>
