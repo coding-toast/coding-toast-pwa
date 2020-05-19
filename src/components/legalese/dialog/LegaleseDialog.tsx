@@ -7,16 +7,21 @@ interface LegaleseDialogProps {
   muted?: boolean
 }
 
-const ContractArea: React.FC = (props) => (
-  <div style={{ maxHeight: '70vh' }} className="overflow-auto">
-    {props.children}
-  </div>
-)
+const ContractArea: React.FC = (props) => {
+  const { children } = props
+  return (
+    <div style={{ maxHeight: '70vh' }} className="overflow-auto">
+      {children}
+    </div>
+  )
+}
 
 const LegaleseDialog: React.FC<LegaleseDialogProps> = (props) => {
+  const { title, muted, children } = props
+
   const [show, setShow] = useState(false)
 
-  const classes = props.muted ? 'text-muted' : ''
+  const classes = muted ? 'text-muted' : ''
 
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -24,15 +29,15 @@ const LegaleseDialog: React.FC<LegaleseDialogProps> = (props) => {
   return (
     <>
       <Button variant="link" onClick={handleShow} className={`p-0 ${classes}`}>
-        {props.title}
+        {title}
       </Button>
 
       <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{props.title}</Modal.Title>
+          <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ContractArea>{props.children}</ContractArea>
+          <ContractArea>{children}</ContractArea>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={handleClose} className="btn-accent-secondary" block>

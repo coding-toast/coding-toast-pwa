@@ -1,10 +1,8 @@
 import * as React from 'react'
 import { Form, Button, Card, Row, Col } from 'react-bootstrap'
-import { Link } from 'gatsby'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
-import TermsOfService from '../legalese/TermsOfService'
-import PrivacyPolicy from '../legalese/PrivacyPolicy'
+import { PrivacyPolicy, TermsOfService } from '../legalese/'
 
 const SignUpForm: React.FC = () => {
   const schema = Yup.object({
