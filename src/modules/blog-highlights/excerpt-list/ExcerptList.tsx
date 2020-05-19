@@ -2,34 +2,47 @@ import * as React from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'gatsby'
 
+/*
+query IndexQuery {
+  allStrapiBlogs {
+    edges {
+      node {
+        author
+        banner
+        blogId
+        title
+        description
+        content
+      }
+    }
+  }
+}
+*/
+
 interface ExcerptListProps {
-  allMarkdownRemark: {
-    allMarkdownRemark: {
+  allStrapiBlogs: {
+    allStrapiBlogs: {
       edges: Post[]
     }
   }
 }
 interface Post {
   node: {
-    id: string
-    frontmatter: {
-      banner: string
-      description: string
-      title: string
-      publishDate: string
-    }
+    banner: string
+    description: string
+    title: string
+    publishDate: string
   }
 }
 const ExcerptList: React.FC<ExcerptListProps> = (props) => {
-  const { allMarkdownRemark } = props
+  const { allStrapiBlogs } = props
   return (
     <Row as="section" xs={1} md={2}>
-      {allMarkdownRemark.allMarkdownRemark.edges.map((post: Post) => {
-        const { title, banner, description, publishDate } = post.node.frontmatter
-        const { id } = post.node
+      {allStrapiBlogs.allStrapiBlogs.edges.map((post: Post) => {
+        const { title, banner, description, publishDate } = post.node
         return (
           <Col>
-            <Card key={id} style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
+            <Card key={32} style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
               <Card.Img variant="top" src={banner} alt={`Banner ${title}`} />
               <Card.Body>
                 <Card.Title>{title}</Card.Title>
