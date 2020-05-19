@@ -15,22 +15,16 @@ exports[`<Policies /> renders correctly 1`] = `
     <Col
       className="text-left"
     >
-      <mockConstructor
-        className="text-muted"
-        to="/"
-      >
-        Privacy Policy
-      </mockConstructor>
+      <PrivacyPolicy
+        muted={true}
+      />
     </Col>
     <Col
       className="text-right"
     >
-      <mockConstructor
-        className="text-muted"
-        to="/"
-      >
-        Terms of Service
-      </mockConstructor>
+      <TermsOfService
+        muted={true}
+      />
     </Col>
   </Row>
 </Container>
