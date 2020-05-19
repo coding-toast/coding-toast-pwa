@@ -38,7 +38,7 @@ const ExcerptList: React.FC<ExcerptListProps> = (props) => {
   const { allStrapiBlogs } = props
   return (
     <Row as="section" xs={1} md={2}>
-      {allStrapiBlogs.allStrapiBlogs.edges.map((post: Post) => {
+      {allStrapiBlogs.allStrapiBlogs?.edges.map((post: Post) => {
         const { title, banner, description, publishDate } = post.node
         return (
           <Col>
