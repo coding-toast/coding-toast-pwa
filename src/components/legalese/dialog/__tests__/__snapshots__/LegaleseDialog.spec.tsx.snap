@@ -7,6 +7,7 @@ exports[`<LegaleseDialog /> renders correctly as link 1`] = `
     className="p-0 "
     disabled={false}
     onClick={[Function]}
+    size="sm"
     type="button"
     variant="link"
   >
@@ -52,6 +53,7 @@ exports[`<LegaleseDialog /> renders correctly as muted link 1`] = `
     className="p-0 text-muted"
     disabled={false}
     onClick={[Function]}
+    size="sm"
     type="button"
     variant="link"
   >

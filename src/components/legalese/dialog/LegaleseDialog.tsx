@@ -28,7 +28,7 @@ const LegaleseDialog: React.FC<LegaleseDialogProps> = (props) => {
 
   return (
     <>
-      <Button variant="link" onClick={handleShow} className={`p-0 ${classes}`}>
+      <Button variant="link" onClick={handleShow} size="sm" className={`p-0 ${classes}`}>
         {title}
       </Button>
 
