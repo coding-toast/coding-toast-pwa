@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Form, Button, Card, Row, Col, ListGroup } from 'react-bootstrap'
+import { Form, Button, Card, Row, Col } from 'react-bootstrap'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 import { PrivacyPolicy, TermsOfService } from '../legalese'
