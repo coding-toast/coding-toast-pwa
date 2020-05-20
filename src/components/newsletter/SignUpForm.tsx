@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Form, Button, Card, Row, Col } from 'react-bootstrap'
+import { Form, Button, Card, Row, Col, ListGroup } from 'react-bootstrap'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 import { PrivacyPolicy, TermsOfService } from '../legalese'
@@ -15,6 +15,9 @@ const SignUpForm: React.FC = () => {
       <Col>
         <Card body style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
           <h2 className="mb-4">Never miss a beat with our Newsletter!</h2>
+          <p className="m-1 h4">We email a couple of times a month.</p>
+          <p className="m-1 h4">No spam.</p>
+          <p className="m-1 mb-4 h4">Just the best developer tips.</p>
           <Formik
             initialValues={{ email: '', acceptedTerms: true }}
             validationSchema={schema}
@@ -50,7 +53,7 @@ const SignUpForm: React.FC = () => {
                       isInvalid={touched.acceptedTerms && !isValid}
                     />
                     <Form.Check.Label className="small text-muted">
-                      I have read and agree to the <TermsOfService /> and <PrivacyPolicy />
+                      I agree to my email being stored and used to receive the newsletter
                     </Form.Check.Label>
                     <Form.Control.Feedback type="invalid">{errors.acceptedTerms}</Form.Control.Feedback>
                   </Form.Check>
