@@ -13,9 +13,9 @@ const BlogHighlightSection: React.FC = observer(() => {
         allStrapiBlogs {
           edges {
             node {
+              blogId
               author
               banner
-              blogId
               title
               description
               content
