@@ -14,9 +14,11 @@ const SignUpForm: React.FC = () => {
       <Col>
         <Card body style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
           <h2 className="mb-4">Never miss a beat with our Newsletter!</h2>
-          <p className="m-1 h4">We email a couple of times a month.</p>
-          <p className="m-1 h4">No spam.</p>
-          <p className="m-1 mb-4 h4">Just the best developer tips.</p>
+          <hr />
+          <p className="m-1">We email a couple of times a month.</p>
+          <p className="m-1">No spam.</p>
+          <p className="m-1">Just the best developer tips.</p>
+          <hr />
           <Formik
             initialValues={{ email: '', acceptedTerms: true }}
             validationSchema={schema}
