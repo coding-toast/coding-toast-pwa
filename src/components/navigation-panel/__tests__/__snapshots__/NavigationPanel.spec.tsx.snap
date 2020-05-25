@@ -76,7 +76,7 @@ exports[`<Navbar /> renders correctly 1`] = `
           disabled={false}
         >
           <mockConstructor
-            to="/m"
+            to="/contact"
           >
             Contact
           </mockConstructor>
