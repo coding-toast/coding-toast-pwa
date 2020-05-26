@@ -23,7 +23,7 @@ const ContactPage = () => (
             <ContactForm />
           </Col>
           <Col className="my-auto">
-            <h1>How Can We Help?</h1>
+            <h2>How Can We Help?</h2>
             <p className="text-muted">
               Please select a topic below related to your inquiry. If you don’t find what you need, fill out our contact form.
             </p>
