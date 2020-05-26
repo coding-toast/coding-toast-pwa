@@ -66,6 +66,17 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-source-strapi',
+      options: {
+        apiURL: 'http://aqueous-taiga-17941.herokuapp.com',
+        contentTypes: [
+          // List of the Content Types you want to be able to request from Gatsby.
+          'blogs'
+        ],
+        queryLimit: 1000
+      }
+    },
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-canonical-urls',
