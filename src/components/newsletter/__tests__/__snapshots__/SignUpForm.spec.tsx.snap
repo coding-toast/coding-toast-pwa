@@ -21,19 +21,18 @@ exports[`<SignUpForm /> renders correctly 1`] = `
       >
         Never miss a beat with our Newsletter!
       </h2>
-      <hr />
       <p
-        className="m-1"
+        className="text-muted my-1"
       >
         We email a couple of times a month.
       </p>
       <p
-        className="m-1"
+        className="text-muted my-1"
       >
         No spam.
       </p>
       <p
-        className="m-1"
+        className="text-muted my-1"
       >
         Just the best developer tips.
       </p>
