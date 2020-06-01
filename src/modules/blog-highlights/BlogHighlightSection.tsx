@@ -10,16 +10,15 @@ const BlogHighlightSection: React.FC = observer(() => {
   const query = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(limit: 10, sort: { fields: frontmatter___publishDate, order: DESC }) {
+        allStrapiBlogs {
           edges {
             node {
-              id
-              frontmatter {
-                banner
-                description
-                title
-                publishDate
-              }
+              blogId
+              author
+              banner
+              title
+              description
+              content
             }
           }
         }
@@ -31,7 +30,7 @@ const BlogHighlightSection: React.FC = observer(() => {
   return (
     <SectionContainer backgroundShade={BackgroundShade.SECONDARY}>
       <h1 ref={nextSectionStore.ref}>Catch Up On The Latest</h1>
-      <ExcerptList allMarkdownRemark={query} />
+      <ExcerptList allStrapiBlogs={query} />
       <Link to="/">
         <Button className="btn-accent-secondary" block>
           Checkout All Blog Posts
