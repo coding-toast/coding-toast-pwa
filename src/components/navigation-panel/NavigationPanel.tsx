@@ -25,7 +25,7 @@ const NavigationPanel: React.FC = () => (
         </Nav.Item>
         <Nav.Item>
           <Nav.Link>
-            <Link to="/m">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </Nav.Link>
         </Nav.Item>
       </Nav>

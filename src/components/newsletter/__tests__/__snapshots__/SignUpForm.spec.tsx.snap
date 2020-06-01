@@ -22,20 +22,21 @@ exports[`<SignUpForm /> renders correctly 1`] = `
         Never miss a beat with our Newsletter!
       </h2>
       <p
-        className="m-1 h4"
+        className="text-muted my-1"
       >
         We email a couple of times a month.
       </p>
       <p
-        className="m-1 h4"
+        className="text-muted my-1"
       >
         No spam.
       </p>
       <p
-        className="m-1 mb-4 h4"
+        className="text-muted my-1"
       >
         Just the best developer tips.
       </p>
+      <hr />
       <Formik
         initialValues={
           Object {
