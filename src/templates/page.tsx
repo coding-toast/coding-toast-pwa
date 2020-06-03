@@ -26,10 +26,9 @@ interface PageTemplateProps {
   }
 }
 
-const PageTemplate: React.FC<PageTemplateProps> = ({ data, children }) => (
+const PageTemplate: React.FC<PageTemplateProps> = ({ children }) => (
   <IndexLayout>
     <Page>
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
       {children}
     </Page>
   </IndexLayout>
@@ -38,7 +37,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({ data, children }) => (
 export default PageTemplate
 
 export const query = graphql`
-  query PageTemplateQuery($slug: String!) {
+  query PageTemplateQuery {
     site {
       siteMetadata {
         title
@@ -47,13 +46,6 @@ export const query = graphql`
           name
           url
         }
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      excerpt
-      frontmatter {
-        title
       }
     }
   }
