@@ -28,9 +28,7 @@ interface PageTemplateProps {
 
 const PageTemplate: React.FC<PageTemplateProps> = ({ children }) => (
   <IndexLayout>
-    <Page>
-      {children}
-    </Page>
+    <Page>{children}</Page>
   </IndexLayout>
 )
 
