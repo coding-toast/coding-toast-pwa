@@ -46,10 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark(limit: 1000) {
         edges {
           node {
-            fields {
-              layout
-              slug
-            }
+            html
           }
         }
       }
