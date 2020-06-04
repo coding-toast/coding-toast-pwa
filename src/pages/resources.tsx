@@ -6,22 +6,6 @@ import { Row, Col } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 import BasicCard from '../components/card/BasicCard'
 
-// query MyQuery {
-//   allMarkdownRemark {
-//     edges {
-//       node {
-//         frontmatter {
-//           title
-//           description
-//           publishDate
-//           author
-//           banner
-//         }
-//       }
-//     }
-//   }
-// }
-
 const ResourcesPage = () => {
   const query = useStaticQuery(
     graphql`
