@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'gatsby'
-import BasicCard from '../../../components/card/Card'
+import BasicCard from '../../../components/card/BasicCard'
 
 /*
 query IndexQuery {
