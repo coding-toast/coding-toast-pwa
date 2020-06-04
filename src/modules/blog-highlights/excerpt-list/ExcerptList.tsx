@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'gatsby'
+import BasicCard from '../../../components/card/Card'
 
 /*
 query IndexQuery {
@@ -43,17 +44,7 @@ const ExcerptList: React.FC<ExcerptListProps> = (props) => {
         const { title, banner, description, publishDate, blogId } = post.node
         return (
           <Col>
-            <Card key={blogId} style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-              <Card.Img variant="top" src={banner} alt={`Banner ${title}`} />
-              <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-style-muted text-color-secondary">{publishDate}</Card.Subtitle>
-                <Card.Text className="text-color-primary">{description}</Card.Text>
-                <Card.Link>
-                  <Link to="/">Read More</Link>
-                </Card.Link>
-              </Card.Body>
-            </Card>
+            <BasicCard id={blogId} title={title} banner={banner} description={description} publishDate={publishDate} />
           </Col>
         )
       })}
