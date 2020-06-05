@@ -72,7 +72,8 @@ module.exports = {
         apiURL: 'http://aqueous-taiga-17941.herokuapp.com',
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
-          'blogs'
+          'blogs',
+          'resources'
         ],
         queryLimit: 1000
       }

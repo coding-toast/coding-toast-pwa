@@ -10,16 +10,14 @@ const ResourcesPage = () => {
   const query = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark {
+        allStrapiResources {
           edges {
             node {
-              frontmatter {
-                title
-                description
-                banner
-                author
-                publishDate
-              }
+              title
+              description
+              banner
+              author
+              publishDate
             }
           }
         }
@@ -31,8 +29,8 @@ const ResourcesPage = () => {
       <Page>
         <SectionContainer backgroundShade={BackgroundShade.PRIMARY}>
           <Row xs={1} lg={2}>
-            {query.allMarkdownRemark?.edges.map((resource: any) => {
-              const { title, banner, description, publishDate, id } = resource.node.frontmatter
+            {query.allStrapiResources?.edges.map((resource: any) => {
+              const { title, banner, description, publishDate, id } = resource.node
               return (
                 <Col>
                   <BasicCard id={id} title={title} banner={banner} description={description} publishDate={publishDate} />
