@@ -1,24 +1,6 @@
 import * as React from 'react'
-import { Row, Col, Card } from 'react-bootstrap'
-import { Link } from 'gatsby'
+import { Row, Col } from 'react-bootstrap'
 import BasicCard from '../../../components/card/BasicCard'
-
-/*
-query IndexQuery {
-  allStrapiBlogs {
-    edges {
-      node {
-        author
-        banner
-        blogId
-        title
-        description
-        content
-      }
-    }
-  }
-}
-*/
 
 interface ExcerptListProps {
   allStrapiBlogs: {
