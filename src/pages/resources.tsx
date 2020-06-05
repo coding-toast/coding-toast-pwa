@@ -6,13 +6,14 @@ import { Row, Col } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 import BasicCard from '../components/card/BasicCard'
 
-const ResourcesPage = () => {
+const ResourcesPage: React.FC = () => {
   const query = useStaticQuery(
     graphql`
       query {
         allStrapiResources {
           edges {
             node {
+              id
               title
               description
               banner
