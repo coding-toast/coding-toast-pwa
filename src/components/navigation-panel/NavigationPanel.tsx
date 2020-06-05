@@ -20,7 +20,7 @@ const NavigationPanel: React.FC = () => (
         </Nav.Item>
         <Nav.Item>
           <Nav.Link>
-            <Link to="/m">Resources</Link>
+            <Link to="/resources">Resources</Link>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>

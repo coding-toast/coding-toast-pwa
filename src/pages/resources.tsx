@@ -29,6 +29,7 @@ const ResourcesPage: React.FC = () => {
     <IndexLayout>
       <Page>
         <SectionContainer backgroundShade={BackgroundShade.PRIMARY}>
+          <h1 className="text-center">Resources</h1>
           <Row xs={1} lg={2}>
             {query.allStrapiResources?.edges.map((resource: any) => {
               const { title, banner, description, publishDate, id } = resource.node
