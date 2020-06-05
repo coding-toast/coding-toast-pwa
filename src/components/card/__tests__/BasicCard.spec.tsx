@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import toJson from 'enzyme-to-json'
 import BasicCard from '../BasicCard'
 
-describe('<Copyright />', () => {
+describe('<BasicCard />', () => {
   it('renders correctly', () => {
     const component = shallow(<BasicCard id="1" title="test" banner="test" description="test" publishDate="6/5/2020" />)
 
