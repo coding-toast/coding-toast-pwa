@@ -60,8 +60,7 @@ exports[`<Navbar /> renders correctly 1`] = `
           disabled={false}
         >
           <mockConstructor
-            className="text-text-color-primary"
-            to="/m"
+            to="/resources"
           >
             Resources
           </mockConstructor>

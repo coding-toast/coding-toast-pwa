@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BasicCard /> renders correctly 1`] = `
+<Card
+  body={false}
+  key="1"
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.05)",
+      "margin": "16px 0",
+    }
+  }
+>
+  <CardImg
+    alt="Banner test"
+    src="test"
+    variant="top"
+  />
+  <CardBody>
+    <CardTitle>
+      test
+    </CardTitle>
+    <CardSubtitle
+      className="mb-2 text-style-muted text-color-secondary"
+    >
+      6/5/2020
+    </CardSubtitle>
+    <CardText
+      className="text-color-primary"
+    >
+      test
+    </CardText>
+    <CardLink>
+      <mockConstructor
+        to="/"
+      >
+        Read More
+      </mockConstructor>
+    </CardLink>
+  </CardBody>
+</Card>
+`;
