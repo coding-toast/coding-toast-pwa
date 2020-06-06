@@ -31,10 +31,10 @@ const ResourcesPage: React.FC = () => {
           <h1 className="text-center">Resources</h1>
           <Row xs={1} lg={2}>
             {query.allStrapiResources?.edges.map((resource: any) => {
-              const { title, banner, description, publishDate, id } = resource.node
+              const { title, banner, description, id } = resource.node
               return (
                 <Col>
-                  <BasicCard id={id} title={title} banner={banner} description={description} publishDate={null} />
+                  <BasicCard id={id} title={title} banner={banner} description={description} publishDate={''} />
                 </Col>
               )
             })}
