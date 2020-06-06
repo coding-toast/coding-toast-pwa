@@ -17,8 +17,7 @@ const ResourcesPage: React.FC = () => {
               title
               description
               banner
-              author
-              publishDate
+              url
             }
           }
         }
@@ -35,7 +34,7 @@ const ResourcesPage: React.FC = () => {
               const { title, banner, description, publishDate, id } = resource.node
               return (
                 <Col>
-                  <BasicCard id={id} title={title} banner={banner} description={description} publishDate={publishDate} />
+                  <BasicCard id={id} title={title} banner={banner} description={description} publishDate={null} />
                 </Col>
               )
             })}
