@@ -3,6 +3,7 @@
 exports[`<Navbar /> renders correctly 1`] = `
 <Navbar
   bg="dark"
+  className="bg-background-primary"
   collapseOnSelect={true}
   expand={false}
   fixed="top"
@@ -24,7 +25,7 @@ exports[`<Navbar /> renders correctly 1`] = `
     id="responsive-navbar-nav"
   >
     <Nav
-      className="flex-column"
+      className="text-right"
       fill={false}
       justify={false}
     >
@@ -40,6 +41,7 @@ exports[`<Navbar /> renders correctly 1`] = `
           disabled={false}
         >
           <mockConstructor
+            className="text-text-color-primary"
             to="/m"
           >
             Blog
@@ -59,6 +61,8 @@ exports[`<Navbar /> renders correctly 1`] = `
         >
           <mockConstructor
             to="/resources"
+            className="text-text-color-primary"
+            to="/m"
           >
             Resources
           </mockConstructor>
@@ -76,6 +80,7 @@ exports[`<Navbar /> renders correctly 1`] = `
           disabled={false}
         >
           <mockConstructor
+            className="text-text-color-primary"
             to="/contact"
           >
             Contact
