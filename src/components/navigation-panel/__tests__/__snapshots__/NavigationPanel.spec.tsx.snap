@@ -61,8 +61,6 @@ exports[`<Navbar /> renders correctly 1`] = `
         >
           <mockConstructor
             to="/resources"
-            className="text-text-color-primary"
-            to="/m"
           >
             Resources
           </mockConstructor>
