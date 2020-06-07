@@ -22,7 +22,9 @@ const NavigationPanel: React.FC = () => (
         </Nav.Item>
         <Nav.Item>
           <Nav.Link>
-            <Link to="/resources" className="text-text-color-primary">Resources</Link>
+            <Link to="/resources" className="text-text-color-primary">
+              Resources
+            </Link>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
