@@ -9,7 +9,7 @@ exports[`<BlogHighlightSection /> It renders hopefully 1`] = `
   </h1>
   <ExcerptList />
   <mockConstructor
-    to="/"
+    to="/blogs"
   >
     <Button
       active={false}
