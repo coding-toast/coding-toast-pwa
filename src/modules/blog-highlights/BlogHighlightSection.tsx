@@ -10,7 +10,7 @@ const BlogHighlightSection: React.FC = observer(() => {
   const query = useStaticQuery(
     graphql`
       query {
-        allStrapiBlogs {
+        allStrapiBlogs(limit: 4) {
           edges {
             node {
               blogId
