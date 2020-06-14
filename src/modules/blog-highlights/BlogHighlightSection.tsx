@@ -10,7 +10,7 @@ const BlogHighlightSection: React.FC = observer(() => {
   const query = useStaticQuery(
     graphql`
       query {
-        allStrapiBlogs {
+        allStrapiBlogs(limit: 4) {
           edges {
             node {
               blogId
@@ -31,7 +31,7 @@ const BlogHighlightSection: React.FC = observer(() => {
     <SectionContainer backgroundShade={BackgroundShade.SECONDARY}>
       <h1 ref={nextSectionStore.ref}>Catch Up On The Latest</h1>
       <ExcerptList allStrapiBlogs={query} />
-      <Link to="/">
+      <Link to="/blogs">
         <Button className="btn-accent-secondary" block>
           Checkout All Blog Posts
         </Button>
