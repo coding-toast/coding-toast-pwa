@@ -1,5 +1,7 @@
 'use strict'
 
+const { API_ROOT } = require("./env")
+
 module.exports = {
   siteMetadata: {
     title: 'gatsby-starter-typescript-plus',
@@ -69,7 +71,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: 'http://aqueous-taiga-17941.herokuapp.com',
+        apiURL: API_ROOT,
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
           'blogs',
@@ -85,6 +87,7 @@ module.exports = {
         siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
       }
     },
+    `gatsby-env-variables`,
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
