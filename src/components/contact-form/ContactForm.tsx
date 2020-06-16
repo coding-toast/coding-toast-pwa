@@ -2,7 +2,8 @@ import * as React from 'react'
 import * as Yup from 'yup'
 import { Form, Card, Button } from 'react-bootstrap'
 import { Formik } from 'formik'
-import { API_ROOT } from "gatsby-env-variables"
+import { API_ROOT } from 'gatsby-env-variables'
+import { postData } from '../../helpers/postData'
 
 const ContactForm = () => {
   const schema = Yup.object({
@@ -10,21 +11,6 @@ const ContactForm = () => {
     email: Yup.string().email('Invalid email address').required('Required'),
     message: Yup.string().max(10000, 'Please shorten your message to 10,000 characters').required('Required')
   })
-  async function postData(url = '', data = {}) {
-    const response = await fetch(url, {
-      method: 'POST',
-      mode: 'cors',
-      cache: 'no-cache',
-      credentials: 'same-origin',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      redirect: 'follow',
-      referrerPolicy: 'no-referrer',
-      body: JSON.stringify(data)
-    });
-    return response.json();
-  }
   return (
     <Card body style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
       <Formik
@@ -32,10 +18,7 @@ const ContactForm = () => {
         validationSchema={schema}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            postData(`${API_ROOT}/contacts`, values)
-              .then(
-                (data) => console.log(data)
-              )
+            postData(`${API_ROOT}/contacts`, values).then((data) => console.log(data))
             setSubmitting(false)
           }, 400)
         }}
