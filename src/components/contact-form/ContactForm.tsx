@@ -18,7 +18,7 @@ const ContactForm = () => {
         validationSchema={schema}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            postData(`${API_ROOT}/contacts`, values).then((data) => console.log(data))
+            postData(`${API_ROOT}/contacts`, values)
             setSubmitting(false)
           }, 400)
         }}
