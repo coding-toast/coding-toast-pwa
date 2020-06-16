@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/**.{js,jsx,ts,tsx}', '!**/node_modules/**', '!**/styles/**'],
-  coveragePathIgnorePatterns: [`<rootDir>/src/pages/`],
+  coveragePathIgnorePatterns: [`<rootDir>/src/pages/`, `<rootDir>/src/helpers/`],
   coverageThreshold: {
     global: {
       statements: 76.27,

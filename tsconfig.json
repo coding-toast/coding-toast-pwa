@@ -4,7 +4,11 @@
     "module": "commonjs",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2017"],
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017"
+    ],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -13,7 +17,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "noImplicitAny": false
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules/@types/node/index.d.ts",
+  ]
 }

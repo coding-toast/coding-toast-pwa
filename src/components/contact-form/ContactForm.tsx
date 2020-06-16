@@ -2,6 +2,8 @@ import * as React from 'react'
 import * as Yup from 'yup'
 import { Form, Card, Button } from 'react-bootstrap'
 import { Formik } from 'formik'
+import { API_ROOT } from 'gatsby-env-variables'
+import { postData } from '../../helpers/postData'
 
 const ContactForm = () => {
   const schema = Yup.object({
@@ -16,7 +18,7 @@ const ContactForm = () => {
         validationSchema={schema}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2))
+            postData(`${API_ROOT}/contacts`, values)
             setSubmitting(false)
           }, 400)
         }}
