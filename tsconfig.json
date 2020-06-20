@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "experimentalDecorators": true,
-    "module": "commonjs",
+    "module": "esnext",
     "target": "esnext",
     "jsx": "preserve",
     "lib": [
@@ -18,12 +18,16 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
   "include": [
     "./src/**/*"
   ],
   "exclude": [
-    "./node_modules/@types/node/index.d.ts",
+    "./node_modules/@types/node/index.d.ts"
   ]
 }
