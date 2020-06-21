@@ -1,11 +1,7 @@
-import * as React from "react";
+import * as React from 'react'
 
-export default class extends React.Component<any, any> {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return <div>Hello Next.js</div>;
-  }
+const HomePage: React.FC = () => {
+  return <div>Hello Next.js</div>
 }
+
+export default HomePage
