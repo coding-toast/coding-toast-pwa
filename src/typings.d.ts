@@ -1,35 +1,35 @@
 interface CSSModule {
-  [className: string]: string
+  [className: string]: string;
 }
 
 // type shims for CSS modules
 
 declare module '*.module.scss' {
-  const cssModule: CSSModule
-  export = cssModule
+  const cssModule: CSSModule;
+  export = cssModule;
 }
 
 declare module '*.module.css' {
-  const cssModule: CSSModule
-  export = cssModule
+  const cssModule: CSSModule;
+  export = cssModule;
 }
 
 declare module '*.png' {
-  const value: string
-  export default value
+  const value: string;
+  export default value;
 }
 
 declare module '*.svg' {
-  const value: string
-  export default value
+  const value: string;
+  export default value;
 }
 
 declare module '*.gql' {
-  const value: DocumentNode
-  export default value
+  const value: DocumentNode;
+  export default value;
 }
 
 declare module '*.graphql' {
-  const value: DocumentNode
-  export default value
+  const value: DocumentNode;
+  export default value;
 }

@@ -1,50 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RouteLink /> renders correctly 1`] = `
-<Navbar
-  bg="dark"
-  className="bg-background-primary"
-  collapseOnSelect={true}
-  expand={false}
-  fixed="top"
-  sticky="top"
-  variant="dark"
->
-  <NavbarBrand>
-    <Link
-      href="/"
-    >
-      <Logo />
-    </Link>
-  </NavbarBrand>
-  <NavbarToggle
-    aria-controls="responsive-navbar-nav"
-    label="Toggle navigation"
-  />
-  <NavbarCollapse
-    id="responsive-navbar-nav"
+<NavItem>
+  <NavLink
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "SafeAnchor",
+        "render": [Function],
+      }
+    }
+    disabled={false}
   >
-    <Nav
-      className="text-right"
-      fill={false}
-      justify={false}
+    <Link
+      href="/hello_world"
+      passHref={true}
     >
-      <RouteLink
-        href="/blog"
-        key="/blog"
-        label="Blog"
-      />
-      <RouteLink
-        href="/resources"
-        key="/resources"
-        label="Resources"
-      />
-      <RouteLink
-        href="/contact"
-        key="/contact"
-        label="Contact"
-      />
-    </Nav>
-  </NavbarCollapse>
-</Navbar>
+      <a
+        className="text-text-color-primary"
+      >
+        Hello World!
+      </a>
+    </Link>
+  </NavLink>
+</NavItem>
 `;
