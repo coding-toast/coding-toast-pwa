@@ -11,12 +11,12 @@
     "test:update-snapshots": "npm run test:jest -- -u",
     "test:lint": "tslint --config ./tslint.json --format stylish --project ./tsconfig.json",
     "test:type-check": "tsc",
+    "test:precheckin": "npm run test:type-check && npm run test:lint && npm run build && npm run test:coverage",
     "format:check": "prettier --list-different '**/*.{ts,tsx,js,json,scss,css,md}'",
     "format:fix": "prettier --write '**/*.{ts,tsx,js,json,scss,css,md}'"
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
       "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
     }
   },
