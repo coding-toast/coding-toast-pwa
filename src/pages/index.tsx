@@ -1,7 +1,12 @@
 import * as React from 'react'
+import MainLayout from './layout/MainLayout'
 
 const HomePage: React.FC = () => {
-  return <div>Hello Next.js</div>
+  return (
+    <MainLayout>
+      <div>Hello Next.js</div>
+    </MainLayout>
+  )
 }
 
 export default HomePage
