@@ -4,11 +4,7 @@
     "module": "esnext",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2015",
-      "es2017"
-    ],
+    "lib": ["dom", "es2015", "es2017"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -24,10 +20,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "./node_modules/@types/node/index.d.ts"
-  ]
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules/@types/node/index.d.ts"]
 }

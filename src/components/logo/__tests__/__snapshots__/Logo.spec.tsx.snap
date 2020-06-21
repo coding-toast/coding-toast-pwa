@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo /> renders correctly with fill width 1`] = `
+<Image
+  alt="coding toast"
+  fluid={false}
+  rounded={false}
+  roundedCircle={false}
+  src="/logo.svg"
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+  thumbnail={false}
+/>
+`;
+
+exports[`<Logo /> renders correctly without fill width 1`] = `
+<Image
+  alt="coding toast"
+  fluid={false}
+  rounded={false}
+  roundedCircle={false}
+  src="/logo.svg"
+  style={
+    Object {
+      "width": "12em",
+    }
+  }
+  thumbnail={false}
+/>
+`;

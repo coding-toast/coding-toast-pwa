@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationPanel /> renders correctly 1`] = `
+<Navbar
+  bg="dark"
+  className="bg-background-primary"
+  collapseOnSelect={true}
+  expand={false}
+  fixed="top"
+  sticky="top"
+  variant="dark"
+>
+  <NavbarBrand>
+    <Link
+      href="/"
+    >
+      <Logo />
+    </Link>
+  </NavbarBrand>
+  <NavbarToggle
+    aria-controls="responsive-navbar-nav"
+    label="Toggle navigation"
+  />
+  <NavbarCollapse
+    id="responsive-navbar-nav"
+  >
+    <Nav
+      className="text-right"
+      fill={false}
+      justify={false}
+    >
+      <RouteLink
+        href="/blog"
+        key="/blog"
+        label="Blog"
+      />
+      <RouteLink
+        href="/resources"
+        key="/resources"
+        label="Resources"
+      />
+      <RouteLink
+        href="/contact"
+        key="/contact"
+        label="Contact"
+      />
+    </Nav>
+  </NavbarCollapse>
+</Navbar>
+`;

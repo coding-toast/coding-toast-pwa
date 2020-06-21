@@ -12,6 +12,12 @@
     "test:lint": "eslint \"{,!(node_modules)/**/}*.{ts,tsx}\"",
     "test:type-check": "tsc"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  },
   "dependencies": {
     "bootstrap": "^4.5.0",
     "formik": "^2.1.4",
@@ -37,10 +43,12 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
     "eslint": "7.2.0",
     "eslint-config-blvd": "^1.0.2",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",

@@ -1,12 +1,13 @@
 import * as React from 'react'
 import Head from 'next/head'
+import NavigationPanel from '../../components/navigation-panel/NavigationPanel'
 
 const MainLayout: React.FC = ({ children }) => {
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <meta http-equiv="content-language" content="en-us" />
+        <meta httpEquiv="content-language" content="en-us" />
         <meta name="description" content="Free Web tutorials" />
         <meta name="keywords" content="HTML, CSS, JavaScript" />
         <meta name="author" content="John Doe" />
@@ -21,6 +22,7 @@ const MainLayout: React.FC = ({ children }) => {
         <meta name="twitter:image" content="http://www.yourdomain.com /image-name.jpg" />
         <title>My page title</title>
       </Head>
+      <NavigationPanel />
 
       <main>{children}</main>
     </>
