@@ -21,7 +21,7 @@
       }
     ],
     "no-any": true,
-    "no-magic-numbers": [true, 1, 2, 3],
+    "no-magic-numbers": [true, 0, 1, 2, 3],
     "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
     "ban-comma-operator": true,
     "curly": true,

@@ -6,15 +6,15 @@ import { scale, ISocialBrand } from '../types';
 import { scaleToEm } from '../IconScaleToEm';
 
 interface ISocialMediaGroupProps {
-  iconScale?: scale;
   converter?: (scale: scale) => number;
+  iconScale?: scale;
 }
 
 const SocialMediaGroup: React.FC<ISocialMediaGroupProps> = (props) => {
   const { iconScale, converter } = props;
 
   const getSizeOrDefault = () => {
-    let conv = converter ? converter : scaleToEm;
+    const conv = converter ? converter : scaleToEm;
 
     const size = conv(iconScale == null ? scale.MEDIUM : iconScale);
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Container, { BackgroundShade } from '../../pages/layout/section-container/SectionContainer';
+import Container, { BackgroundShade } from '../../layout/section-container/SectionContainer';
 import Copyright from './Copyright';
 import Logo from '../logo/Logo';
 import Policies from './Policies';
