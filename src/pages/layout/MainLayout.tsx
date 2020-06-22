@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import NavigationPanel from '../../components/navigation-panel/NavigationPanel';
+import Footer from '../../components/footer/Footer';
 
 const MainLayout: React.FC = ({ children }) => {
   return (
@@ -25,6 +26,8 @@ const MainLayout: React.FC = ({ children }) => {
       <NavigationPanel />
 
       <main>{children}</main>
+
+      <Footer />
     </>
   );
 };

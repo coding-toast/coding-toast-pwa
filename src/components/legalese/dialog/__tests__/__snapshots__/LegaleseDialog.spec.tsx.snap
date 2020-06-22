@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LegaleseDialog /> renders correctly as link 1`] = `
+<Fragment>
+  <Button
+    active={false}
+    className="p-0 "
+    disabled={false}
+    onClick={[Function]}
+    size="sm"
+    type="button"
+    variant="link"
+  >
+    test title
+  </Button>
+  <Bootstrap(Modal)
+    onHide={[Function]}
+    show={false}
+    size="lg"
+  >
+    <ModalHeader
+      closeButton={true}
+      closeLabel="Close"
+    >
+      <ModalTitle>
+        test title
+      </ModalTitle>
+    </ModalHeader>
+    <ModalBody>
+      <ContractArea />
+    </ModalBody>
+    <ModalFooter>
+      <Button
+        active={false}
+        block={true}
+        className="btn-accent-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        I understand
+      </Button>
+    </ModalFooter>
+  </Bootstrap(Modal)>
+</Fragment>
+`;
+
+exports[`<LegaleseDialog /> renders correctly as muted link 1`] = `
+<Fragment>
+  <Button
+    active={false}
+    className="p-0 text-muted"
+    disabled={false}
+    onClick={[Function]}
+    size="sm"
+    type="button"
+    variant="link"
+  >
+    test title
+  </Button>
+  <Bootstrap(Modal)
+    onHide={[Function]}
+    show={false}
+    size="lg"
+  >
+    <ModalHeader
+      closeButton={true}
+      closeLabel="Close"
+    >
+      <ModalTitle>
+        test title
+      </ModalTitle>
+    </ModalHeader>
+    <ModalBody>
+      <ContractArea />
+    </ModalBody>
+    <ModalFooter>
+      <Button
+        active={false}
+        block={true}
+        className="btn-accent-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        I understand
+      </Button>
+    </ModalFooter>
+  </Bootstrap(Modal)>
+</Fragment>
+`;
+
+exports[`<LegaleseDialog /> renders correctly with children 1`] = `
+<Fragment>
+  <Button
+    active={false}
+    className="p-0 "
+    disabled={false}
+    onClick={[Function]}
+    size="sm"
+    type="button"
+    variant="link"
+  >
+    test title
+  </Button>
+  <Bootstrap(Modal)
+    onHide={[Function]}
+    show={false}
+    size="lg"
+  >
+    <ModalHeader
+      closeButton={true}
+      closeLabel="Close"
+    >
+      <ModalTitle>
+        test title
+      </ModalTitle>
+    </ModalHeader>
+    <ModalBody>
+      <ContractArea>
+        <p>
+          Hello test world!
+        </p>
+      </ContractArea>
+    </ModalBody>
+    <ModalFooter>
+      <Button
+        active={false}
+        block={true}
+        className="btn-accent-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        I understand
+      </Button>
+    </ModalFooter>
+  </Bootstrap(Modal)>
+</Fragment>
+`;

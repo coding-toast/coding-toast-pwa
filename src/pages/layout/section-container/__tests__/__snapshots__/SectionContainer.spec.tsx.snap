@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionContainer /> renders correctly with Primary background shade 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121212",
+      "paddingBottom": "3em",
+      "paddingTop": "4em",
+      "position": "relative",
+    }
+  }
+>
+  <Container
+    fluid={false}
+  >
+    <div>
+      <h1>
+        Hello World!
+      </h1>
+    </div>
+  </Container>
+</section>
+`;
+
+exports[`<SectionContainer /> renders correctly with Secondary background shade 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121f20",
+      "paddingBottom": "3em",
+      "paddingTop": "4em",
+      "position": "relative",
+    }
+  }
+>
+  <Container
+    fluid={false}
+  >
+    <div>
+      <h1>
+        Hello World!
+      </h1>
+    </div>
+  </Container>
+</section>
+`;
+
+exports[`<SectionContainer /> renders correctly with no children 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121212",
+      "paddingBottom": "3em",
+      "paddingTop": "4em",
+      "position": "relative",
+    }
+  }
+>
+  <Container
+    fluid={false}
+  />
+</section>
+`;
+
+exports[`<SectionContainer /> renders correctly with style injected container 1`] = `
+<section
+  style={
+    Object {
+      "background": "#121212",
+      "paddingBottom": "3em",
+      "paddingTop": "4em",
+      "position": "relative",
+    }
+  }
+>
+  <Container
+    fluid={false}
+    style={
+      Object {
+        "height": "80vh",
+      }
+    }
+  />
+</section>
+`;

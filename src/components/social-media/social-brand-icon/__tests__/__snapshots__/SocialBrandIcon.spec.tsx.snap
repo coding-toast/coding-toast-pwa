@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SocialBrandIcon /> renders correctly 1`] = `
+<Col
+  className="mx-auto text-center"
+  xs="auto"
+>
+  <Link
+    href="/"
+  >
+    <Image
+      alt="Twitter"
+      fluid={false}
+      rounded={false}
+      roundedCircle={false}
+      src="/Twitter.svg"
+      style={
+        Object {
+          "height": "2em",
+        }
+      }
+      thumbnail={false}
+    />
+  </Link>
+</Col>
+`;

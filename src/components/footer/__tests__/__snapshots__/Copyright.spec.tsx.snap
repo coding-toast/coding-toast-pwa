@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Copyright /> renders correctly 1`] = `
+<Col
+  className="text-center"
+>
+  <small
+    className="text-muted"
+  >
+    © 
+    2020
+     Coding Toast
+    <br />
+    Quentin Guenther, Nathan Corbin
+  </small>
+</Col>
+`;
