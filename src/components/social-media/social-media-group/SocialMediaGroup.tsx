@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import SocialBrandIcon from '../social-brand-icon/SocialBrandIcon';
+import { SocialBrandIcon, SocialIconScale } from 'components';
 import socialIcons from './SocialIcons';
-import { scale, ISocialBrand } from '../types';
+import { ISocialBrand } from '../types';
 import { scaleToEm } from '../IconScaleToEm';
 
 interface ISocialMediaGroupProps {
-  converter?: (scale: scale) => number;
-  iconScale?: scale;
+  converter?: (scale: SocialIconScale) => number;
+  iconScale?: SocialIconScale;
 }
 
 const SocialMediaGroup: React.FC<ISocialMediaGroupProps> = (props) => {
@@ -16,7 +16,7 @@ const SocialMediaGroup: React.FC<ISocialMediaGroupProps> = (props) => {
   const getSizeOrDefault = () => {
     const conv = converter ? converter : scaleToEm;
 
-    const size = conv(iconScale == null ? scale.MEDIUM : iconScale);
+    const size = conv(iconScale == null ? SocialIconScale.MEDIUM : iconScale);
 
     return size ? size : 2;
   };

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import LegaleseDialog from './dialog/LegaleseDialog';
+import { LegaleseDialog } from 'components';
 
 interface IPrivacyPolicyProps {
   muted?: boolean;

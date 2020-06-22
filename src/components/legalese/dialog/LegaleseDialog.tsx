@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import ContractArea from './ContractArea';
+import { ContractArea } from 'components';
 
 interface ILegaleseDialogProps {
   muted?: boolean;

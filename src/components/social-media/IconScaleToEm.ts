@@ -1,6 +1,6 @@
-import { scale } from './types';
+import { SocialIconScale } from './types';
 
-export function scaleToEm(iconScale: scale) {
+export function scaleToEm(iconScale: SocialIconScale) {
   const SCALE_MULTIPLIER = 2;
 
   switch (iconScale) {

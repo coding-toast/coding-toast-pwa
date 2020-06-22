@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import { PrivacyPolicy, TermsOfService } from '../legalese';
+import { PrivacyPolicy, TermsOfService } from 'components';
 
 const Policies: React.FC = () => {
   return (

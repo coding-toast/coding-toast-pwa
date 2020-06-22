@@ -2,27 +2,27 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import SocialMediaGroup from '../SocialMediaGroup';
-import { scale } from '../../types';
+import { SocialIconScale } from '../../types';
 
 describe('<SocialMediaGroup />', () => {
   it('renders correctly scale=small', () => {
-    const component = shallow(<SocialMediaGroup iconScale={scale.SMALL} />);
+    const component = shallow(<SocialMediaGroup iconScale={SocialIconScale.SMALL} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 
   it('renders correctly scale=medium', () => {
-    const component = shallow(<SocialMediaGroup iconScale={scale.MEDIUM} />);
+    const component = shallow(<SocialMediaGroup iconScale={SocialIconScale.MEDIUM} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 
   it('renders correctly scale=large', () => {
-    const component = shallow(<SocialMediaGroup iconScale={scale.LARGE} />);
+    const component = shallow(<SocialMediaGroup iconScale={SocialIconScale.LARGE} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 
   it('renders correctly with invalid scale', () => {
     const invalidScale = 9;
-    const component = shallow(<SocialMediaGroup iconScale={scale[invalidScale]} />);
+    const component = shallow(<SocialMediaGroup iconScale={SocialIconScale[invalidScale]} />);
     expect(toJson(component)).toMatchSnapshot();
   });
 

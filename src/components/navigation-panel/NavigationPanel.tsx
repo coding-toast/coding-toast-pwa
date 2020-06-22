@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import Link from 'next/link';
-import RouteLink from './RouteLink';
-import Logo from '../logo/Logo';
+import { Logo, RouteLink } from 'components';
 
 const pageLinks = [
   {
