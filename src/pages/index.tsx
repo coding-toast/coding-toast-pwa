@@ -1,10 +1,11 @@
 import * as React from 'react';
 import MainLayout from '../layout/MainLayout';
+import { Header } from 'components';
 
 const HomePage: React.FC = () => {
   return (
     <MainLayout>
-      <div>Hello Next.js</div>
+      <Header />
     </MainLayout>
   );
 };

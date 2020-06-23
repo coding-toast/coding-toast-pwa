@@ -21,7 +21,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "next.config.js"],
   "exclude": ["./node_modules/@types/node/index.d.ts"],
   "module": "commonJS"
 }

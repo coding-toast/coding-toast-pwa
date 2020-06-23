@@ -11,6 +11,8 @@ import RouteLink from './navigation-panel/RouteLink';
 import { SocialIconScale } from './social-media/types';
 import SocialMediaGroup from './social-media/social-media-group/SocialMediaGroup';
 import SocialBrandIcon from './social-media/social-brand-icon/SocialBrandIcon';
+import Header from './header/Header';
+import QuoteBox from './quote-box/QuoteBox';
 
 export { Copyright };
 export { Footer };
@@ -25,3 +27,5 @@ export { RouteLink };
 export { SocialIconScale };
 export { SocialMediaGroup };
 export { SocialBrandIcon };
+export { Header };
+export { QuoteBox };

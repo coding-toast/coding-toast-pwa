@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+<SectionContainer
+  backgroundShade="#121212"
+  style={
+    Object {
+      "minHeight": "calc(73vh + 77px)",
+    }
+  }
+>
+  <Logo
+    fillWidth={true}
+  />
+  <QuoteBox />
+</SectionContainer>
+`;
