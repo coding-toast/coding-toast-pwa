@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignUpForm /> renders correctly 1`] = `
+<Row
+  className="justify-content-lg-center my-4"
+  lg={2}
+  noGutters={false}
+  xs={1}
+>
+  <Col>
+    <Card
+      body={true}
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+        }
+      }
+    >
+      <h2
+        className="mb-4"
+      >
+        Never miss a beat with our Newsletter!
+      </h2>
+      <p
+        className="text-muted my-1"
+      >
+        We email a couple of times a month.
+      </p>
+      <p
+        className="text-muted my-1"
+      >
+        No spam.
+      </p>
+      <p
+        className="text-muted my-1"
+      >
+        Just the best developer tips.
+      </p>
+      <hr />
+      <Formik
+        initialValues={
+          Object {
+            "acceptedTerms": true,
+            "email": "",
+          }
+        }
+        onSubmit={[Function]}
+        validationSchema={
+          ObjectSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_defaultDefault": [Function],
+            "_deps": Array [],
+            "_excludedEdges": Array [],
+            "_exclusive": Object {},
+            "_mutate": undefined,
+            "_nodes": Array [
+              "acceptedTerms",
+              "email",
+            ],
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "object",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "fields": Object {
+              "acceptedTerms": BooleanSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "boolean",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {
+                    true,
+                  },
+                  "refs": Map {},
+                },
+                "_whitelistError": [Function],
+                "tests": Array [
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+                "type": "boolean",
+              },
+              "email": StringSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "email": false,
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "string",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "tests": Array [
+                  [Function],
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+                "type": "string",
+              },
+            },
+            "tests": Array [],
+            "transforms": Array [
+              [Function],
+            ],
+            "type": "object",
+          }
+        }
+      >
+        <Component />
+      </Formik>
+    </Card>
+  </Col>
+</Row>
+`;
