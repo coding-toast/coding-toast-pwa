@@ -1,7 +1,8 @@
 module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': 'ts-jest',
+    '.*': 'babel-jest'
   },
   testMatch: ['**/*.(test|spec).(ts|tsx)'],
   globals: {
@@ -11,7 +12,7 @@ module.exports = {
       diagnostics: false
     }
   },
-  coveragePathIgnorePatterns: ['/node_modules/', 'enzyme.js'],
+  coveragePathIgnorePatterns: ['/node_modules/', 'enzyme.js', '<rootDir>/src/queries'],
   setupFilesAfterEnv: ['<rootDir>/enzyme.js'],
   coverageReporters: ['json', 'lcov', 'text', 'text-summary'],
   moduleNameMapper: {

@@ -1,7 +1,13 @@
+import { ApolloProvider } from '@apollo/react-hooks';
+import { getDataFromTree } from '@apollo/react-ssr';
+import withData from '../utils/apollo';
+
 import '../styles/global/global.scss';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps, apollo }) => (
+  <ApolloProvider client={apollo}>
+    <Component {...pageProps} />
+  </ApolloProvider>
+);
 
-export default MyApp;
+export default withData(MyApp, { getDataFromTree });
