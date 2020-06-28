@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NextSection /> renders correctly 1`] = `
+<button
+  tabIndex={0}
+  type="button"
+>
+  <img
+    alt="Next Section"
+    src="/next-section.png"
+  />
+</button>
+`;
