@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RouteLink /> renders correctly 1`] = `
+<NavItem>
+  <NavLink
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "SafeAnchor",
+        "render": [Function],
+      }
+    }
+    disabled={false}
+  >
+    <Link
+      href="/hello_world"
+      passHref={true}
+    >
+      <a
+        className="text-text-color-primary"
+      >
+        Hello World!
+      </a>
+    </Link>
+  </NavLink>
+</NavItem>
+`;

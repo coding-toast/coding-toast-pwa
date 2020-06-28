@@ -1,19 +1,19 @@
-import * as React from 'react'
-import LegaleseDialog from './dialog/LegaleseDialog'
+import * as React from 'react';
+import { LegaleseDialog } from 'components';
 
-interface PrivacyPolicyProps {
-  muted?: boolean
+interface IPrivacyPolicyProps {
+  muted?: boolean;
 }
 
-const PrivacyPolicy: React.FC<PrivacyPolicyProps> = (props) => {
-  const { muted } = props
+const PrivacyPolicy: React.FC<IPrivacyPolicyProps> = (props) => {
+  const { muted } = props;
   return (
-    <LegaleseDialog title="Privacy Policy" muted={muted}>
+    <LegaleseDialog title='Privacy Policy' muted={muted}>
       <>
         <h2>Privacy Policy</h2>
         <p>
           Your privacy is important to us. It is Coding Toast's policy to respect your privacy regarding any information we may collect from
-          you across our website, <a href="http://www.codingtoast.com">http://www.codingtoast.com</a>, and other sites we own and operate.
+          you across our website, <a href='http://www.codingtoast.com'>http://www.codingtoast.com</a>, and other sites we own and operate.
         </p>
         <p>
           We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means,
@@ -39,13 +39,13 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = (props) => {
         </p>
         <p>This policy is effective as of 17 May 2020.</p>
         <p>
-          <a href="https://getterms.io" title="Generate a free privacy policy">
+          <a href='https://getterms.io' title='Generate a free privacy policy'>
             Privacy Policy created with GetTerms.
           </a>
         </p>
       </>
     </LegaleseDialog>
-  )
-}
+  );
+};
 
-export default PrivacyPolicy
+export default PrivacyPolicy;

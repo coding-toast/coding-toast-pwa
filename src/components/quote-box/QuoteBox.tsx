@@ -1,13 +1,12 @@
-import * as React from 'react'
-import { Jumbotron } from 'react-bootstrap'
-import QuoteBoxStyles from './QuoteBox.module.scss'
+import * as React from 'react';
+import { Jumbotron } from 'react-bootstrap';
 
-const QuoteCard: React.FC = () => (
-  <Jumbotron className={QuoteBoxStyles.quoteBox}>
-    <blockquote className={`text-color-primary text-style-lead ${QuoteBoxStyles.textQuote}`}>
+const QuoteBox: React.FC = () => (
+  <Jumbotron className='quote-box'>
+    <blockquote className={'text-color-primary text-style-lead text-quote'}>
       Because it takes more than going over your git log before standup to become a great engineer.
     </blockquote>
   </Jumbotron>
-)
+);
 
-export default QuoteCard
+export default QuoteBox;

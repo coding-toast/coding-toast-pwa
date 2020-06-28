@@ -1,10 +1,10 @@
-export interface SocialBrand {
-  name: string
-  logo: string
-  href: string
+export interface ISocialBrand {
+  href: string;
+  logo: string;
+  name: string;
 }
 
-export enum scale {
+export enum SocialIconScale {
   SMALL = 'small',
   MEDIUM = 'medium',
   LARGE = 'large'

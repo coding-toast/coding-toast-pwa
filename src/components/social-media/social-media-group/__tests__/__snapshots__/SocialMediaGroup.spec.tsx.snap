@@ -1,5 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<SocialMediaGroup /> defaults size when scale does not map to a value 1`] = `
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "12em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "/Twitter.svg",
+          "name": "Twitter",
+        }
+      }
+      key="Twitter"
+      size={2}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "/Reddit.svg",
+          "name": "Reddit",
+        }
+      }
+      key="Reddit"
+      size={2}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "/RSS.svg",
+          "name": "RSS",
+        }
+      }
+      key="RSS"
+      size={2}
+    />
+  </Row>
+</Container>
+`;
+
 exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
 <Container
   fluid={true}
@@ -17,7 +67,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Twitter.svg",
           "name": "Twitter",
         }
       }
@@ -28,7 +78,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Reddit.svg",
           "name": "Reddit",
         }
       }
@@ -39,7 +89,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=large 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/RSS.svg",
           "name": "RSS",
         }
       }
@@ -67,7 +117,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Twitter.svg",
           "name": "Twitter",
         }
       }
@@ -78,7 +128,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Reddit.svg",
           "name": "Reddit",
         }
       }
@@ -89,7 +139,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=medium 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/RSS.svg",
           "name": "RSS",
         }
       }
@@ -117,7 +167,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Twitter.svg",
           "name": "Twitter",
         }
       }
@@ -128,7 +178,7 @@ exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Reddit.svg",
           "name": "Reddit",
         }
       }
@@ -139,12 +189,62 @@ exports[`<SocialMediaGroup /> renders correctly scale=small 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/RSS.svg",
           "name": "RSS",
         }
       }
       key="RSS"
       size={2}
+    />
+  </Row>
+</Container>
+`;
+
+exports[`<SocialMediaGroup /> renders correctly with invalid scale 1`] = `
+<Container
+  fluid={true}
+  style={
+    Object {
+      "maxWidth": "18em",
+    }
+  }
+>
+  <Row
+    className="justify-content-md-center"
+    noGutters={false}
+  >
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "/Twitter.svg",
+          "name": "Twitter",
+        }
+      }
+      key="Twitter"
+      size={4}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "/Reddit.svg",
+          "name": "Reddit",
+        }
+      }
+      key="Reddit"
+      size={4}
+    />
+    <SocialBrandIcon
+      brand={
+        Object {
+          "href": "/",
+          "logo": "/RSS.svg",
+          "name": "RSS",
+        }
+      }
+      key="RSS"
+      size={4}
     />
   </Row>
 </Container>
@@ -167,7 +267,7 @@ exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Twitter.svg",
           "name": "Twitter",
         }
       }
@@ -178,7 +278,7 @@ exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/Reddit.svg",
           "name": "Reddit",
         }
       }
@@ -189,7 +289,7 @@ exports[`<SocialMediaGroup /> renders correctly with no scale modifier 1`] = `
       brand={
         Object {
           "href": "/",
-          "logo": "test-file-stub",
+          "logo": "/RSS.svg",
           "name": "RSS",
         }
       }

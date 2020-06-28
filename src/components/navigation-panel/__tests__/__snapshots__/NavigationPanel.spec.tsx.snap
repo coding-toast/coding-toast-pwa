@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar /> renders correctly 1`] = `
+exports[`<NavigationPanel /> renders correctly 1`] = `
 <Navbar
   bg="dark"
   className="bg-background-primary"
@@ -11,11 +11,11 @@ exports[`<Navbar /> renders correctly 1`] = `
   variant="dark"
 >
   <NavbarBrand>
-    <mockConstructor
-      to="/"
+    <Link
+      href="/"
     >
       <Logo />
-    </mockConstructor>
+    </Link>
   </NavbarBrand>
   <NavbarToggle
     aria-controls="responsive-navbar-nav"
@@ -29,63 +29,21 @@ exports[`<Navbar /> renders correctly 1`] = `
       fill={false}
       justify={false}
     >
-      <NavItem>
-        <NavLink
-          as={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "displayName": "SafeAnchor",
-              "render": [Function],
-            }
-          }
-          disabled={false}
-        >
-          <mockConstructor
-            className="text-text-color-primary"
-            to="/m"
-          >
-            Blog
-          </mockConstructor>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          as={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "displayName": "SafeAnchor",
-              "render": [Function],
-            }
-          }
-          disabled={false}
-        >
-          <mockConstructor
-            className="text-text-color-primary"
-            to="/resources"
-          >
-            Resources
-          </mockConstructor>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          as={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "displayName": "SafeAnchor",
-              "render": [Function],
-            }
-          }
-          disabled={false}
-        >
-          <mockConstructor
-            className="text-text-color-primary"
-            to="/contact"
-          >
-            Contact
-          </mockConstructor>
-        </NavLink>
-      </NavItem>
+      <RouteLink
+        href="/blog"
+        key="/blog"
+        label="Blog"
+      />
+      <RouteLink
+        href="/resources"
+        key="/resources"
+        label="Resources"
+      />
+      <RouteLink
+        href="/contact"
+        key="/contact"
+        label="Contact"
+      />
     </Nav>
   </NavbarCollapse>
 </Navbar>

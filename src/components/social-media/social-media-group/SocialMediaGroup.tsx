@@ -1,39 +1,37 @@
-import * as React from 'react'
-import { Container, Row } from 'react-bootstrap'
-import SocialBrandIcon from '../social-brand-icon/SocialBrandIcon'
-import socialIcons from './SocialIcons'
-import { scale, SocialBrand } from '../types'
+import * as React from 'react';
+import { Container, Row } from 'react-bootstrap';
+import { SocialBrandIcon, SocialIconScale } from 'components';
+import socialIcons from './SocialIcons';
+import { ISocialBrand } from '../types';
+import { scaleToEm } from '../IconScaleToEm';
 
-interface SocialMediaGroupProps {
-  iconScale?: scale
+interface ISocialMediaGroupProps {
+  converter?: (scale: SocialIconScale) => number;
+  iconScale?: SocialIconScale;
 }
 
-const scaleToEm = (iconScale: scale) => {
-  switch (iconScale) {
-    case 'small':
-      return 2
-    case 'medium':
-      return 4
-    case 'large':
-      return 6
-    default:
-      return 4
-  }
-}
+const SocialMediaGroup: React.FC<ISocialMediaGroupProps> = (props) => {
+  const { iconScale, converter } = props;
 
-const SocialMediaGroup: React.FC<SocialMediaGroupProps> = (props) => {
-  const { iconScale } = props
-  const brandLogoEm = scaleToEm(iconScale == null ? scale.MEDIUM : iconScale)
+  const getSizeOrDefault = () => {
+    const conv = converter ? converter : scaleToEm;
 
-  const brands = socialIcons.map((element: SocialBrand) => {
-    return <SocialBrandIcon key={element.name} brand={element} size={brandLogoEm} />
-  })
+    const size = conv(iconScale == null ? SocialIconScale.MEDIUM : iconScale);
+
+    return size ? size : 2;
+  };
+
+  const brandLogoEm = getSizeOrDefault();
+
+  const brands = socialIcons.map((element: ISocialBrand) => {
+    return <SocialBrandIcon key={element.name} brand={element} size={brandLogoEm} />;
+  });
 
   return (
     <Container style={{ maxWidth: `${socialIcons.length * 2 + socialIcons.length * brandLogoEm}em` }} fluid>
-      <Row className="justify-content-md-center">{brands}</Row>
+      <Row className='justify-content-md-center'>{brands}</Row>
     </Container>
-  )
-}
+  );
+};
 
-export default SocialMediaGroup
+export default SocialMediaGroup;

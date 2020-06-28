@@ -12,7 +12,6 @@ exports[`<Header /> renders correctly 1`] = `
   <Logo
     fillWidth={true}
   />
-  <QuoteCard />
-  <Memo(wrappedComponent) />
+  <QuoteBox />
 </SectionContainer>
 `;

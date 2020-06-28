@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlogHighlightSection /> It renders hopefully 1`] = `ShallowWrapper {}`;

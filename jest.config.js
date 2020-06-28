@@ -1,29 +1,26 @@
 module.exports = {
-  collectCoverage: true,
-  collectCoverageFrom: ['src/**/**.{js,jsx,ts,tsx}', '!**/node_modules/**', '!**/styles/**'],
-  coveragePathIgnorePatterns: [`<rootDir>/src/pages/`, `<rootDir>/src/helpers/`],
-  coverageThreshold: {
-    global: {
-      statements: 76.27,
-      branches: 36.67,
-      functions: 63.83,
-      lines: 79.65
+  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+    '.*': 'babel-jest'
+  },
+  testMatch: ['**/*.(test|spec).(ts|tsx)'],
+  globals: {
+    'ts-jest': {
+      babelConfig: true,
+      tsConfig: 'jest.tsconfig.json',
+      diagnostics: false
     }
   },
-  transform: {
-    '^.+\\.[jt]sx?$': `<rootDir>/jest-preprocess.js`
-  },
+  coveragePathIgnorePatterns: ['/node_modules/', 'enzyme.js', '<rootDir>/src/queries'],
+  setupFilesAfterEnv: ['<rootDir>/enzyme.js'],
+  coverageReporters: ['json', 'lcov', 'text', 'text-summary'],
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
     '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mock.js`
   },
-  testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
-  transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
-  globals: {
-    __PATH_PREFIX__: ``
-  },
-  testURL: `http://localhost`,
-  setupFiles: [`<rootDir>/loadershim.js`],
-  setupFilesAfterEnv: ['<rootDir>/enzyme.js'],
-  snapshotSerializers: ['enzyme-to-json/serializer']
-}
+  resolver: undefined,
+  roots: ['<rootDir>'],
+  moduleDirectories: ['node_modules', '<rootDir>/src'],
+  verbose: true
+};

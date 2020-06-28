@@ -1,24 +1,21 @@
-import RedditIcon from '../../../images/Reddit.svg'
-import TwitterIcon from '../../../images/Twitter.svg'
-import RSSIcon from '../../../images/RSS.svg'
-import { SocialBrand } from '../types'
+import { ISocialBrand } from '../types';
 
-const socialIcons: Array<SocialBrand> = [
+const socialIcons: ISocialBrand[] = [
   {
-    name: 'Twitter',
-    logo: TwitterIcon,
-    href: '/'
+    href: '/',
+    logo: '/Twitter.svg',
+    name: 'Twitter'
   },
   {
-    name: 'Reddit',
-    logo: RedditIcon,
-    href: '/'
+    href: '/',
+    logo: '/Reddit.svg',
+    name: 'Reddit'
   },
   {
-    name: 'RSS',
-    logo: RSSIcon,
-    href: '/'
+    href: '/',
+    logo: '/RSS.svg',
+    name: 'RSS'
   }
-]
+];
 
-export default socialIcons
+export default socialIcons;

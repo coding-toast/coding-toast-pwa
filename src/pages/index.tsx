@@ -1,19 +1,17 @@
-import * as React from 'react'
+import * as React from 'react';
+import MainLayout from '../layout/MainLayout';
+import { Header } from 'components';
+import BlogHighlightSection from 'components/blog-highlights/BlogHighlightSection';
+import NewsLetter from 'components/newsletter/Newsletter';
 
-import Page from '../components/Page'
-import IndexLayout from '../layouts'
-import BlogHighlightSection from '../modules/blog-highlights/BlogHighlightSection'
-import NewsLetter from '../components/newsletter/Newsletter'
-import Header from '../components/header/Header'
-
-const IndexPage = () => (
-  <IndexLayout>
-    <Page>
+const HomePage: React.FC = () => {
+  return (
+    <MainLayout>
       <Header />
       <BlogHighlightSection />
       <NewsLetter />
-    </Page>
-  </IndexLayout>
-)
+    </MainLayout>
+  );
+};
 
-export default IndexPage
+export default HomePage;

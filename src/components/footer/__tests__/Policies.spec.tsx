@@ -1,12 +1,12 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import toJson from 'enzyme-to-json'
-import Policies from '../Policies'
+import * as React from 'react';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import Policies from '../Policies';
 
 describe('<Policies />', () => {
   it('renders correctly', () => {
-    const component = shallow(<Policies />)
+    const component = shallow(<Policies />);
 
-    expect(toJson(component)).toMatchSnapshot()
-  })
-})
+    expect(toJson(component)).toMatchSnapshot();
+  });
+});

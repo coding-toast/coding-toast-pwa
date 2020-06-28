@@ -1,30 +1,30 @@
-import * as React from 'react'
-import LegaleseDialog from './dialog/LegaleseDialog'
+import * as React from 'react';
+import { LegaleseDialog } from 'components';
 
-interface TermsOfServiceProps {
-  muted?: boolean
+interface ITermsOfServiceProps {
+  muted?: boolean;
 }
 
-const TermsOfService: React.FC<TermsOfServiceProps> = (props) => {
-  const { muted } = props
+const TermsOfService: React.FC<ITermsOfServiceProps> = (props) => {
+  const { muted } = props;
   return (
-    <LegaleseDialog title="Terms of Service" muted={muted}>
+    <LegaleseDialog title='Terms of Service' muted={muted}>
       <>
         <h2>Coding Toast Terms of Service</h2>
         <h3>1. Terms</h3>
         <p>
-          By accessing the website at <a href="http://www.codingtoast.com">http://www.codingtoast.com</a>, you are agreeing to be bound by
+          By accessing the website at <a href='http://www.codingtoast.com'>http://www.codingtoast.com</a>, you are agreeing to be bound by
           these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable
           local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials
           contained in this website are protected by applicable copyright and trademark law.
         </p>
         <h3>2. Use License</h3>
-        <ol type="a">
+        <ol type='a'>
           <li>
             Permission is granted to temporarily download one copy of the materials (information or software) on Coding Toast's website for
             personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this
             license you may not:
-            <ol type="i">
+            <ol type='i'>
               <li>modify or copy the materials;</li>
               <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
               <li>attempt to decompile or reverse engineer any software contained on Coding Toast's website;</li>
@@ -39,7 +39,7 @@ const TermsOfService: React.FC<TermsOfServiceProps> = (props) => {
           </li>
         </ol>
         <h3>3. Disclaimer</h3>
-        <ol type="a">
+        <ol type='a'>
           <li>
             The materials on Coding Toast's website are provided on an 'as is' basis. Coding Toast makes no warranties, expressed or
             implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions
@@ -82,13 +82,13 @@ const TermsOfService: React.FC<TermsOfServiceProps> = (props) => {
           the exclusive jurisdiction of the courts in that State or location.
         </p>
         <p>
-          <a href="https://getterms.io" title="Generate a free terms of use document">
+          <a href='https://getterms.io' title='Generate a free terms of use document'>
             Terms of Use created with GetTerms.
           </a>
         </p>
       </>
     </LegaleseDialog>
-  )
-}
+  );
+};
 
-export default TermsOfService
+export default TermsOfService;

@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "experimentalDecorators": true,
-    "module": "commonjs",
+    "module": "esnext",
     "target": "esnext",
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2015",
-      "es2017"
-    ],
+    "lib": ["dom", "es2015", "es2017"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
@@ -18,12 +15,13 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "./node_modules/@types/node/index.d.ts",
-  ]
+  "include": ["./src/**/*", "next.config.js"],
+  "exclude": ["./node_modules/@types/node/index.d.ts"],
+  "module": "commonJS"
 }

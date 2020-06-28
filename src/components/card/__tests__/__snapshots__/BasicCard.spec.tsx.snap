@@ -3,7 +3,6 @@
 exports[`<BasicCard /> renders correctly 1`] = `
 <Card
   body={false}
-  key="1"
   style={
     Object {
       "backgroundColor": "rgba(255, 255, 255, 0.05)",
@@ -37,11 +36,13 @@ exports[`<BasicCard /> renders correctly 1`] = `
       test
     </CardText>
     <CardLink>
-      <mockConstructor
-        to="/"
+      <Link
+        href="/"
       >
-        Read More
-      </mockConstructor>
+        <a>
+          Read More
+        </a>
+      </Link>
     </CardLink>
   </CardBody>
 </Card>

@@ -5,15 +5,15 @@ exports[`<SocialBrandIcon /> renders correctly 1`] = `
   className="mx-auto text-center"
   xs="auto"
 >
-  <mockConstructor
-    to="/"
+  <Link
+    href="/"
   >
     <Image
       alt="Twitter"
       fluid={false}
       rounded={false}
       roundedCircle={false}
-      src="test-file-stub"
+      src="/Twitter.svg"
       style={
         Object {
           "height": "2em",
@@ -21,6 +21,6 @@ exports[`<SocialBrandIcon /> renders correctly 1`] = `
       }
       thumbnail={false}
     />
-  </mockConstructor>
+  </Link>
 </Col>
 `;
