@@ -1,49 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BasicCard /> renders correctly 1`] = `
-<Card
-  body={false}
-  style={
-    Object {
-      "backgroundColor": "rgba(255, 255, 255, 0.05)",
-      "margin": "16px 0",
-    }
-  }
+exports[`<BlogCard /> renders correctly 1`] = `
+<Link
+  href="/"
 >
-  <CardImg
-    alt="Banner test"
-    src="test"
-    style={
-      Object {
-        "maxHeight": "275px",
-        "minHeight": "275px",
+  <a
+    className="card-as-link"
+  >
+    <Card
+      body={false}
+      style={
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "margin": "16px 0",
+        }
       }
-    }
-    variant="top"
-  />
-  <CardBody>
-    <CardTitle>
-      test
-    </CardTitle>
-    <CardSubtitle
-      className="mb-2 text-style-muted text-color-secondary"
     >
-      6/5/2020
-    </CardSubtitle>
-    <CardText
-      className="text-color-primary"
-    >
-      test
-    </CardText>
-    <CardLink>
-      <Link
-        href="/"
+      <CardImg
+        alt="Banner test"
+        src="test"
+        style={
+          Object {
+            "height": "275px",
+          }
+        }
+        variant="top"
+      />
+      <CardBody>
+        <CardTitle>
+          test
+           
+          <Badge
+            className="bg-accent-secondary"
+            pill={true}
+          >
+            New
+          </Badge>
+        </CardTitle>
+        <CardText
+          className="text-color-primary"
+        >
+          test
+        </CardText>
+      </CardBody>
+      <CardFooter
+        className="text-muted"
       >
-        <a>
-          Read More
-        </a>
-      </Link>
-    </CardLink>
-  </CardBody>
-</Card>
+        <Container
+          className="p-0"
+          fluid={false}
+        >
+          <Row
+            noGutters={true}
+          >
+            <Col>
+              <CardText>
+                Tom Jerry
+              </CardText>
+            </Col>
+            <Col
+              className="text-right"
+            >
+              <DateDisplay
+                date={2020-06-29T05:55:11.643Z}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </CardFooter>
+    </Card>
+  </a>
+</Link>
 `;

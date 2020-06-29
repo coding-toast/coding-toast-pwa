@@ -10,40 +10,44 @@ exports[`renders correctly 1`] = `
   <Col
     key="968769ef-231d-5501-8942-ee51d8d1324d"
   >
-    <BasicCard
+    <BlogCard
+      author="Bilbo Baggins"
       banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      createdAt="\`January 1, 1970\`"
       description="first blog post"
-      publishDate="\`January 1, 1970\`"
       title="blog-post-placerholder1"
     />
   </Col>
   <Col
     key="1a172731-99f4-5f68-8ead-23324a44f70c"
   >
-    <BasicCard
+    <BlogCard
+      author="Bilbo Baggins"
       banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      createdAt="\`January 1, 1970\`"
       description="third blog post"
-      publishDate="\`January 1, 1970\`"
       title="blog-post-placerholder3"
     />
   </Col>
   <Col
     key="011af6f6-6c3f-5eab-81ad-3f73e427dbd8"
   >
-    <BasicCard
+    <BlogCard
+      author="Bilbo Baggins"
       banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      createdAt="\`January 1, 1970\`"
       description="fourth blog post"
-      publishDate="\`January 1, 1970\`"
       title="blog-post-placerholder4"
     />
   </Col>
   <Col
     key="d28f2392-be5f-5fc1-96fb-b3c69e7dce6b"
   >
-    <BasicCard
+    <BlogCard
+      author="Bilbo Baggins"
       banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
+      createdAt="\`January 1, 1970\`"
       description="second blog post"
-      publishDate="\`January 1, 1970\`"
       title="blog-post-placerholder2"
     />
   </Col>
