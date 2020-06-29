@@ -13,6 +13,7 @@ import SocialMediaGroup from './social-media/social-media-group/SocialMediaGroup
 import SocialBrandIcon from './social-media/social-brand-icon/SocialBrandIcon';
 import Header from './header/Header';
 import QuoteBox from './quote-box/QuoteBox';
+import DateDisplay from './date-display/DateDisplay';
 
 export { Copyright };
 export { Footer };
@@ -29,3 +30,4 @@ export { SocialMediaGroup };
 export { SocialBrandIcon };
 export { Header };
 export { QuoteBox };
+export { DateDisplay };
