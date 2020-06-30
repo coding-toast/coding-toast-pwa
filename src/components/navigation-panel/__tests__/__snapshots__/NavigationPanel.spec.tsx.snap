@@ -14,7 +14,9 @@ exports[`<NavigationPanel /> renders correctly 1`] = `
     <Link
       href="/"
     >
-      <Logo />
+      <a>
+        <Logo />
+      </a>
     </Link>
   </NavbarBrand>
   <NavbarToggle
@@ -30,9 +32,9 @@ exports[`<NavigationPanel /> renders correctly 1`] = `
       justify={false}
     >
       <RouteLink
-        href="/blog"
-        key="/blog"
-        label="Blog"
+        href="/blogs"
+        key="/blogs"
+        label="Blogs"
       />
       <RouteLink
         href="/resources"
