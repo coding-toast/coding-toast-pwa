@@ -2,6 +2,9 @@
 
 exports[`<NextSection /> renders correctly 1`] = `
 <button
+  className="chevronButton"
+  onClick={[Function]}
+  onKeyPress={[Function]}
   tabIndex={0}
   type="button"
 >
