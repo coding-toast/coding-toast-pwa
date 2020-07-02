@@ -4,8 +4,13 @@ import { useQuery } from '@apollo/react-hooks';
 import ExcerptList from './excerpt-list/ExcerptList';
 import { Spinner } from 'react-bootstrap';
 
-const BlogListDisplay = () => {
-  const { data, loading, error } = useQuery(GET_BLOGS, { variables: { limit: 4 } });
+interface IBlogListDisplayProps {
+  limit: number;
+}
+
+const BlogListDisplay: React.FC<IBlogListDisplayProps> = (props) => {
+  const { limit } = props;
+  const { data, loading, error } = useQuery(GET_BLOGS, { variables: { limit } });
 
   if (loading) {
     return (

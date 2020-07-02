@@ -5,10 +5,12 @@ import SectionContainer, { BackgroundShade } from '../../layout/section-containe
 import BlogListDisplay from './BlogListDisplay';
 
 const BlogHighlightSection: React.FC = () => {
+  const limit = 4;
+
   return (
     <SectionContainer backgroundShade={BackgroundShade.SECONDARY}>
       <h1>Catch Up On The Latest</h1>
-      <BlogListDisplay />
+      <BlogListDisplay limit={limit} />
       <Link href='/blogs'>
         <Button className='btn-accent-secondary' block>
           Checkout All Blog Posts
