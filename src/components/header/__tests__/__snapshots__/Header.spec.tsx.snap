@@ -13,5 +13,6 @@ exports[`<Header /> renders correctly 1`] = `
     fillWidth={true}
   />
   <QuoteBox />
+  <NextSection />
 </SectionContainer>
 `;
