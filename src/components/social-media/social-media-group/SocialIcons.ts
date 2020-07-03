@@ -12,7 +12,7 @@ const socialIcons: ISocialBrand[] = [
     name: 'Reddit'
   },
   {
-    href: '/',
+    href: '/api/rss',
     logo: '/RSS.svg',
     name: 'RSS'
   }
