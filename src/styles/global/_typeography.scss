@@ -1,10 +1,9 @@
-@import '../shared/variables';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans&family=Merriweather&display=swap');
 
-// set base rem
-html {
-  font-family: $font-family-body;
-  font-size: $font-size-base;
-}
+$font-size-base: 16px;
+$font-family-body: 'Fira Sans', Helvetica, sans-serif;
+$font-family-title: 'Merriweather', serif;
+$font-family-code: 'Fira Code', monospace;
 
 h1,
 .h1,
@@ -25,40 +24,15 @@ h6,
   font-variant: small-caps;
 }
 
-h1,
-.h1 {
-  font-size: 2rem;
-  line-height: 40px;
-}
-
-h2,
-.h2 {
-  font-size: 1.5rem;
-  line-height: 30px;
-}
-
-h3,
-.h3 {
-  font-size: 1.16rem;
-  line-height: 24px;
-}
-
-h4,
-.h4 {
-  font-size: 1rem;
-  line-height: 20px;
-}
-
-.text-style-muted {
+.text-muted {
   font-family: $font-family-body;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 19px;
   letter-spacing: 0.02em;
 }
 
-.text-style-lead {
+.lead {
   font-family: $font-family-body;
   font-variant: small-caps;
   font-style: normal;
@@ -68,21 +42,8 @@ h4,
   letter-spacing: 0.04em;
 }
 
-.text-style-label {
-  font-family: $font-family-body;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.16rem;
-  line-height: 22px;
-  letter-spacing: 0.04em;
-}
-
-.text-style-code {
+code {
   font-family: $font-family-code;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 21px;
 }
 
 .text-color-primary {

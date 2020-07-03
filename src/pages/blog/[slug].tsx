@@ -42,7 +42,9 @@ const Post: React.FC = () => {
         </h2>
         <hr />
         <Image src={blog.banner} fluid />
-        <ReactMarkdown source={blog.content} />
+        <div className='mx-auto my-5' style={{ maxWidth: '800px', letterSpacing: '0.05em' }}>
+          <ReactMarkdown source={blog.content} />
+        </div>
       </SectionContainer>
     </MainLayout>
   );
