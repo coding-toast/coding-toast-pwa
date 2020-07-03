@@ -9,15 +9,16 @@ interface IBlogCardProps {
   banner: string;
   createdAt: string;
   description: string;
+  slug: string;
   title: string;
 }
 
 const BlogCard: React.FC<IBlogCardProps> = (props) => {
-  const { author, title, banner, description, createdAt } = props;
+  const { author, title, banner, description, createdAt, slug } = props;
   const RELATIVE_DAYS_CUTOFF = 7;
 
   return (
-    <Link href='/'>
+    <Link href={`/blog/${slug}`}>
       <a className='card-as-link'>
         <Card style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
           <Card.Img variant='top' src={banner} alt={`Banner ${title}`} style={{ height: '275px' }} />

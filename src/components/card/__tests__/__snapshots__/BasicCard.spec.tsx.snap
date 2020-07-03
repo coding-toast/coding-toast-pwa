@@ -2,7 +2,7 @@
 
 exports[`<BlogCard /> renders correctly 1`] = `
 <Link
-  href="/"
+  href="/blog/a"
 >
   <a
     className="card-as-link"
