@@ -7,12 +7,15 @@ import { Spinner } from 'react-bootstrap';
 import SectionContainer, { BackgroundShade } from 'layout/section-container/SectionContainer';
 import MainLayout from 'layout/MainLayout';
 import { DateDisplay } from 'components';
+import ReactMarkdown from 'react-markdown';
 
 const Post: React.FC = () => {
   const router = useRouter();
   const { slug } = router.query;
 
   const { data, loading, error } = useQuery(GET_BLOG, { variables: { slug } });
+
+  console.log('slug', slug);
 
   if (loading) {
     return (
@@ -30,6 +33,7 @@ const Post: React.FC = () => {
     );
   }
 
+  console.log(data);
   const blog = data.blogs[0];
 
   return (
@@ -40,8 +44,8 @@ const Post: React.FC = () => {
           published <DateDisplay date={new Date(blog.createdAt)} />
         </h2>
         <hr />
-        <Image src={blog.banner} style={{ height: '250px', width: '100%' }} fluid />
-        <p>{blog.content}</p>
+        <Image src={blog.banner} fluid />
+        <ReactMarkdown source={blog.content} />
       </SectionContainer>
     </MainLayout>
   );
