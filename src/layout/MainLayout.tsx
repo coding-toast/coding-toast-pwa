@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Head from 'next/head';
 import { NavigationPanel, Footer } from 'components';
+import { Container } from 'react-bootstrap';
 
 const MainLayout: React.FC = ({ children }) => {
   return (
-    <>
+    <Container className='px-0' fluid={true}>
       <Head>
         <meta charSet='UTF-8' />
         <meta httpEquiv='content-language' content='en-us' />
@@ -27,7 +28,7 @@ const MainLayout: React.FC = ({ children }) => {
       <main>{children}</main>
 
       <Footer />
-    </>
+    </Container>
   );
 };
 
