@@ -5,7 +5,8 @@ export const query = [
     title: 'blog-post-placerholder1',
     createdAt: '`January 1, 1970`',
     description: 'first blog post',
-    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg'
+    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg',
+    slug: 'first-blog-post'
   },
   {
     author: 'Bilbo Baggins',
@@ -13,7 +14,8 @@ export const query = [
     title: 'blog-post-placerholder3',
     createdAt: '`January 1, 1970`',
     description: 'third blog post',
-    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg'
+    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg',
+    slug: 'third-blog-post'
   },
   {
     author: 'Bilbo Baggins',
@@ -21,7 +23,8 @@ export const query = [
     title: 'blog-post-placerholder4',
     createdAt: '`January 1, 1970`',
     description: 'fourth blog post',
-    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg'
+    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg',
+    slug: 'fourth-blog-post'
   },
   {
     author: 'Bilbo Baggins',
@@ -29,6 +32,7 @@ export const query = [
     title: 'blog-post-placerholder2',
     createdAt: '`January 1, 1970`',
     description: 'second blog post',
-    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg'
+    banner: 'https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg',
+    slug: 'second-blog-post'
   }
 ];

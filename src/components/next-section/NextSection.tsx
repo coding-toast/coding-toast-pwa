@@ -4,7 +4,7 @@ import { NextSectionStoreContext } from 'stores/NextSectionStore';
 
 const NextSection: React.FC = () => {
   const nextSectionStore = React.useContext(NextSectionStoreContext);
-  
+
   const executeScroll = () => {
     const offset: any = nextSectionStore.ref.current?.offsetParent;
     const navHeight = 77;

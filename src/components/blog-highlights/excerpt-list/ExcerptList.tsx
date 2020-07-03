@@ -9,9 +9,9 @@ interface IExcerptListProps {
 interface IBlog {
   author: string;
   banner: string;
-  slug: string;
   createdAt: string;
   description: string;
+  slug: string;
   title: string;
 }
 

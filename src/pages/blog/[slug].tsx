@@ -15,8 +15,6 @@ const Post: React.FC = () => {
 
   const { data, loading, error } = useQuery(GET_BLOG, { variables: { slug } });
 
-  console.log('slug', slug);
-
   if (loading) {
     return (
       <Spinner animation='border' role='status'>
@@ -33,7 +31,6 @@ const Post: React.FC = () => {
     );
   }
 
-  console.log(data);
   const blog = data.blogs[0];
 
   return (
