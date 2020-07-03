@@ -9,7 +9,7 @@ interface IExcerptListProps {
 interface IBlog {
   author: string;
   banner: string;
-  blogId: string;
+  slug: string;
   createdAt: string;
   description: string;
   title: string;
@@ -20,10 +20,10 @@ const ExcerptList: React.FC<IExcerptListProps> = (props) => {
   return (
     <Row as='section' xs={1} md={2}>
       {blogs?.map((post: IBlog) => {
-        const { author, title, banner, description, createdAt, blogId } = post;
+        const { author, title, banner, description, createdAt, slug } = post;
         return (
-          <Col key={blogId}>
-            <BasicCard author={author} title={title} banner={banner} description={description} createdAt={createdAt} />
+          <Col key={slug}>
+            <BasicCard author={author} title={title} banner={banner} description={description} createdAt={createdAt} slug={slug} />
           </Col>
         );
       })}
