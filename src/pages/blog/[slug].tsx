@@ -8,6 +8,8 @@ import SectionContainer, { BackgroundShade } from 'layout/section-container/Sect
 import MainLayout from 'layout/MainLayout';
 import { DateDisplay } from 'components';
 import ReactMarkdown from 'react-markdown';
+import CodeBlock from 'components/code/CodeBlock';
+import InlineCode from 'components/code/InlineCode';
 
 const Post: React.FC = () => {
   const router = useRouter();
@@ -42,8 +44,15 @@ const Post: React.FC = () => {
         </h2>
         <hr />
         <Image src={blog.banner} fluid />
-        <div className='mx-auto my-5' style={{ maxWidth: '800px', letterSpacing: '0.05em' }}>
-          <ReactMarkdown source={blog.content} />
+        <div className='mx-auto my-5' style={{ width: '80vw', maxWidth: '800px', letterSpacing: '0.05em', wordWrap: 'break-word' }}>
+          <ReactMarkdown
+            source={blog.content}
+            linkTarget='_blank'
+            renderers={{
+              code: CodeBlock,
+              inlineCode: InlineCode
+            }}
+          />
         </div>
       </SectionContainer>
     </MainLayout>
