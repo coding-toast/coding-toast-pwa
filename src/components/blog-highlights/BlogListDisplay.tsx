@@ -3,6 +3,7 @@ import GET_BLOGS from '../../queries/get-blogs.query';
 import { useQuery } from '@apollo/react-hooks';
 import ExcerptList from './excerpt-list/ExcerptList';
 import { Spinner } from 'react-bootstrap';
+import { logEvent, logException } from 'utils/analytics';
 
 interface IBlogListDisplayProps {
   limit: number;
@@ -20,6 +21,7 @@ const BlogListDisplay: React.FC<IBlogListDisplayProps> = (props) => {
     );
   }
   if (error) {
+    logException(error.message);
     return (
       <div>
         <h2 className='h2'>Opus! We encountered a problem.</h2>
@@ -27,6 +29,8 @@ const BlogListDisplay: React.FC<IBlogListDisplayProps> = (props) => {
       </div>
     );
   }
+
+  logEvent('Blogs', 'Fetched Latest');
   return <ExcerptList blogs={data.blogs} />;
 };
 

@@ -3,6 +3,7 @@ import * as Yup from 'yup';
 import { Form, Card, Button } from 'react-bootstrap';
 import { Formik } from 'formik';
 import { postData } from 'helpers/postData';
+import { logEvent, logException } from 'utils/analytics';
 
 const ContactForm = () => {
   const NAME_MAX_LENGTH = 30;
@@ -21,9 +22,11 @@ const ContactForm = () => {
     setTimeout(() => {
       postData('https://aqueous-taiga-17941.herokuapp.com/contacts', values)
         .then(() => {
+          logEvent('Contact', 'Message sent');
           alert('Message sent!');
         })
         .catch((e) => {
+          logException(e.message);
           alert(e);
         });
       setSubmitting(false);

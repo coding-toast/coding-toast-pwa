@@ -10,6 +10,7 @@ import { DateDisplay } from 'components';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from 'components/code/CodeBlock';
 import InlineCode from 'components/code/InlineCode';
+import { logEvent, logException } from 'utils/analytics';
 
 const Post: React.FC = () => {
   const router = useRouter();
@@ -25,6 +26,7 @@ const Post: React.FC = () => {
     );
   }
   if (error) {
+    logException(error.message);
     return (
       <div>
         <h2 className='h2'>Opus! We encountered a problem.</h2>
@@ -34,6 +36,7 @@ const Post: React.FC = () => {
   }
 
   const blog = data.blogs[0];
+  logEvent('Blogs', `Fetched ${blog.slug}`);
 
   return (
     <MainLayout>
