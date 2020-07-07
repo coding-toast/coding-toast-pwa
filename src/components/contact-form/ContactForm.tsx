@@ -2,35 +2,36 @@ import * as React from 'react';
 import * as Yup from 'yup';
 import { Form, Card, Button } from 'react-bootstrap';
 import { Formik } from 'formik';
-import { postData } from 'helpers/postData';
+import CREATE_CONTACT from 'queries/create-contact.query';
 import { logEvent, logException } from 'utils/analytics';
+import { useMutation } from '@apollo/react-hooks';
 
 const ContactForm = () => {
   const NAME_MAX_LENGTH = 30;
   const MESSAGE_MAX_LENGTH = 10000;
-  const REQUEST_TIMEOUT = 400;
+
+  const [sendContact, { loading: mutationLoading, error: mutationError }] = useMutation(CREATE_CONTACT, {
+    onCompleted: () => {
+      logEvent('Contact', 'Message sent');
+      alert('Message sent!');
+    },
+    onError: (error) => {
+      logException(error.message);
+      alert(error);
+    }
+  });
 
   const onSubmit = (
     values: {
       email: string;
       message: string;
       name: string;
-      subject: string;
     },
     { setSubmitting }
   ) => {
-    setTimeout(() => {
-      postData('https://aqueous-taiga-17941.herokuapp.com/contacts', values)
-        .then(() => {
-          logEvent('Contact', 'Message sent');
-          alert('Message sent!');
-        })
-        .catch((e) => {
-          logException(e.message);
-          alert(e);
-        });
-      setSubmitting(false);
-    }, REQUEST_TIMEOUT);
+    const { email, message, name } = values;
+    sendContact({ variables: { name, email, message } });
+    setSubmitting(false);
   };
 
   const schema = Yup.object({
@@ -40,7 +41,7 @@ const ContactForm = () => {
   });
   return (
     <Card body style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-      <Formik initialValues={{ name: '', email: '', subject: '', message: '' }} validationSchema={schema} onSubmit={onSubmit}>
+      <Formik initialValues={{ name: '', email: '', message: '' }} validationSchema={schema} onSubmit={onSubmit}>
         {({ handleSubmit, handleChange, handleBlur, values, touched, errors }) => (
           <Form noValidate onSubmit={handleSubmit}>
             <Form.Group controlId='name'>
@@ -86,6 +87,8 @@ const ContactForm = () => {
             <Button type='submit' className='btn-accent-secondary' block>
               Send
             </Button>
+            {mutationLoading && <p>Loading...</p>}
+            {mutationError && <p>Error :( Please try again</p>}
           </Form>
         )}
       </Formik>
