@@ -2,8 +2,23 @@ import * as React from 'react';
 import Head from 'next/head';
 import { NavigationPanel, Footer } from 'components';
 import { Container } from 'react-bootstrap';
+import { initGA, logPageView } from 'utils/analytics';
+
+declare global {
+  interface Window {
+    GA_INITIALIZED: boolean;
+  }
+}
 
 const MainLayout: React.FC = ({ children }) => {
+  React.useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  });
+
   return (
     <Container className='px-0' fluid={true}>
       <Head>
