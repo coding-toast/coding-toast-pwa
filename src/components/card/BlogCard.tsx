@@ -2,30 +2,40 @@ import * as React from 'react';
 import { Card, Badge, Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import { DateDisplay } from 'components';
-import { differenceInCalendarDays } from 'date-fns';
+import { differenceInCalendarDays, parseISO } from 'date-fns';
 
 interface IBlogCardProps {
-  author: string;
-  banner: string;
-  createdAt: string;
-  description: string;
-  slug: string;
-  title: string;
+  data: IBlogCardAttributes;
+}
+
+interface IBlogCardAttributes {
+  authorDisplayName: String;
+  bannerImageUrl: string;
+  bannerAlternativeText: string;
+  publishDate: Date;
+  description: String;
+  slug: String;
+  title: String;
 }
 
 const BlogCard: React.FC<IBlogCardProps> = (props) => {
-  const { author, title, banner, description, createdAt, slug } = props;
+  const { authorDisplayName, title, bannerImageUrl, bannerAlternativeText, description, publishDate, slug } = props.data;
   const RELATIVE_DAYS_CUTOFF = 7;
 
   return (
     <Link href={`/blog/${slug}`}>
       <a className='card-as-link'>
         <Card style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
-          <Card.Img variant='top' src={banner} alt={`Banner ${title}`} style={{ height: '275px' }} />
+          <Card.Img
+            variant='top'
+            src={`https://aqueous-taiga-17941.herokuapp.com${bannerImageUrl}`}
+            alt={bannerAlternativeText}
+            style={{ height: '275px' }}
+          />
           <Card.Body>
             <Card.Title>
               {title}{' '}
-              {differenceInCalendarDays(new Date(), new Date(createdAt)) <= RELATIVE_DAYS_CUTOFF ? (
+              {differenceInCalendarDays(new Date(), new Date(publishDate)) <= RELATIVE_DAYS_CUTOFF ? (
                 <Badge pill className='bg-accent-secondary'>
                   New
                 </Badge>
@@ -39,10 +49,10 @@ const BlogCard: React.FC<IBlogCardProps> = (props) => {
             <Container className='p-0'>
               <Row noGutters>
                 <Col>
-                  <Card.Text>{author}</Card.Text>
+                  <Card.Text>{authorDisplayName}</Card.Text>
                 </Col>
                 <Col className='text-right'>
-                  <DateDisplay date={new Date(createdAt)} />
+                  <DateDisplay date={new Date(publishDate)} />
                 </Col>
               </Row>
             </Container>
