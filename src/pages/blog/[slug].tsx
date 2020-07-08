@@ -46,7 +46,7 @@ const Post: React.FC = () => {
           published <DateDisplay date={new Date(blog.publishDate)} />
         </h2>
         <hr />
-        <Image src={`https://aqueous-taiga-17941.herokuapp.com${blog.banner.formats?.large.url}`} alt={blog.banner.alternativeText} fluid />
+        <Image src={`${process.env.NEXT_PUBLIC_API_ENDPOINT}${blog.banner.url}`} alt={blog.banner.alternativeText} fluid />
         <div className='mx-auto my-5' style={{ width: '80vw', maxWidth: '800px', letterSpacing: '0.05em', wordWrap: 'break-word' }}>
           <ReactMarkdown
             source={blog.content}
@@ -58,7 +58,7 @@ const Post: React.FC = () => {
           />
         </div>
         <Image
-          src={`https://aqueous-taiga-17941.herokuapp.com${blog.author.avatar.formats.small.url}`}
+          src={blog.author.avatar.url ? `${process.env.NEXT_PUBLIC_API_ENDPOINT}${blog.author.avatar.url}` : '/user-solid.svg'}
           alt={blog.author.avatar.alternativeText}
         />
         <p>{blog.author.displayName}</p>

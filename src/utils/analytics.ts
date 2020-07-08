@@ -1,7 +1,7 @@
 import ReactGA from 'react-ga';
 
 export const initGA = () => {
-  ReactGA.initialize('UA-171816612-1', {
+  ReactGA.initialize(process.env.NEXT_PUBLIC_ANALYTICS_ID || '', {
     debug: true,
     titleCase: true
   });

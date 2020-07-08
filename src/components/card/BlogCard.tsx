@@ -28,7 +28,7 @@ const BlogCard: React.FC<IBlogCardProps> = (props) => {
         <Card style={{ margin: '16px 0', backgroundColor: 'rgba(255, 255, 255, 0.05)' }}>
           <Card.Img
             variant='top'
-            src={`https://aqueous-taiga-17941.herokuapp.com${bannerImageUrl}`}
+            src={`${process.env.NEXT_PUBLIC_API_ENDPOINT}${bannerImageUrl}`}
             alt={bannerAlternativeText.toString()}
             style={{ height: '275px' }}
           />

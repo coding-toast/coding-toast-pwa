@@ -28,7 +28,7 @@ const ExcerptList: React.FC<IExcerptListProps> = (props) => {
               data={{
                 authorDisplayName: author.displayName,
                 title,
-                bannerImageUrl: banner.formats?.small.url,
+                bannerImageUrl: banner.url,
                 bannerAlternativeText: banner.alternativeText,
                 description,
                 publishDate,
