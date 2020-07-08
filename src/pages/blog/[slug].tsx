@@ -43,10 +43,10 @@ const Post: React.FC = () => {
       <SectionContainer backgroundShade={BackgroundShade.PRIMARY}>
         <h1>{blog.title}</h1>
         <h2 className='text-muted h3'>
-          published <DateDisplay date={new Date(blog.createdAt)} />
+          published <DateDisplay date={new Date(blog.publishDate)} />
         </h2>
         <hr />
-        <Image src={blog.banner} fluid />
+        <Image src={`https://aqueous-taiga-17941.herokuapp.com${blog.banner.formats?.large.url}`} alt={blog.banner.alternativeText} fluid />
         <div className='mx-auto my-5' style={{ width: '80vw', maxWidth: '800px', letterSpacing: '0.05em', wordWrap: 'break-word' }}>
           <ReactMarkdown
             source={blog.content}
@@ -57,6 +57,11 @@ const Post: React.FC = () => {
             }}
           />
         </div>
+        <Image
+          src={`https://aqueous-taiga-17941.herokuapp.com${blog.author.avatar.formats.small.url}`}
+          alt={blog.author.avatar.alternativeText}
+        />
+        <p>{blog.author.displayName}</p>
       </SectionContainer>
     </MainLayout>
   );

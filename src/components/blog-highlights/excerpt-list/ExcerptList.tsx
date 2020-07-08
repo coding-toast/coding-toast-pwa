@@ -7,12 +7,13 @@ interface IExcerptListProps {
 }
 
 interface IBlog {
-  author: string;
-  banner: string;
-  createdAt: string;
-  description: string;
-  slug: string;
-  title: string;
+  author: Authors;
+  banner: UploadFile;
+  isPublished: Boolean;
+  publishDate: Date;
+  description: String;
+  slug: String;
+  title: String;
 }
 
 const ExcerptList: React.FC<IExcerptListProps> = (props) => {
@@ -20,12 +21,22 @@ const ExcerptList: React.FC<IExcerptListProps> = (props) => {
   return (
     <Row as='section' xs={1} md={2}>
       {blogs?.map((post: IBlog) => {
-        const { author, title, banner, description, createdAt, slug } = post;
-        return (
-          <Col key={slug}>
-            <BasicCard author={author} title={title} banner={banner} description={description} createdAt={createdAt} slug={slug} />
+        const { author, title, banner, description, isPublished, publishDate, slug } = post;
+        return isPublished ? (
+          <Col key={slug.toString()}>
+            <BasicCard
+              data={{
+                authorDisplayName: author.displayName,
+                title,
+                bannerImageUrl: banner.formats?.small.url,
+                bannerAlternativeText: banner.alternativeText,
+                description,
+                publishDate,
+                slug
+              }}
+            />
           </Col>
-        );
+        ) : null;
       })}
     </Row>
   );

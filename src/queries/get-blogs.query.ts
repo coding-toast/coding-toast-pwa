@@ -5,10 +5,16 @@ const GET_BLOGS = gql`
     blogs(limit: $limit, sort: "createdAt:desc") {
       slug
       title
-      author
-      banner
+      author {
+        displayName
+      }
+      banner {
+        alternativeText
+        formats
+      }
       description
-      createdAt
+      isPublished
+      publishDate
     }
   }
 `;
