@@ -12,6 +12,8 @@ interface IBlog {
 }
 
 export default async (req, res) => {
+  req = req; // FIXME: req must be used
+  
   await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/blogs`)
     .then((data) => {
       return data.json();
