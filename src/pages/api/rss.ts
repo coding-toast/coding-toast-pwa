@@ -12,7 +12,7 @@ interface IBlog {
 }
 
 export default async (req, res) => {
-  await fetch('https://aqueous-taiga-17941.herokuapp.com/blogs')
+  await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/blogs`)
     .then((data) => {
       return data.json();
     })
@@ -28,7 +28,8 @@ export default async (req, res) => {
                       <description>Coding Toast Blog</description>`;
 
       posts?.map((post: IBlog) => {
-        return post.isPublished ? (xml += `
+        return post.isPublished
+          ? (xml += `
             <item>
               <ttl>1</ttl>
               <title>${post.title}</title>
@@ -36,7 +37,8 @@ export default async (req, res) => {
               <description>${post.description}</description>
               <author>${post.author.displayName}</author>
             </item>
-          `) : null;
+          `)
+          : null;
       });
 
       xml += `</channel></rss>`;

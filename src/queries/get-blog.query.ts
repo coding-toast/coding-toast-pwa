@@ -8,12 +8,12 @@ const GET_BLOG = gql`
         displayName
         avatar {
           alternativeText
-          formats
+          url
         }
       }
       banner {
         alternativeText
-        formats
+        url
       }
       description
       isPublished

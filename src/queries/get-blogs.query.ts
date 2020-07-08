@@ -10,7 +10,7 @@ const GET_BLOGS = gql`
       }
       banner {
         alternativeText
-        formats
+        url
       }
       description
       isPublished
