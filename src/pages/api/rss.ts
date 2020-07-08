@@ -3,14 +3,15 @@
 const fetch = require('node-fetch');
 
 interface IBlog {
-  author: string;
-  banner: string;
-  createdAt: string;
-  description: string;
-  title: string;
+  author: Authors;
+  banner: UploadFile;
+  isPublished: Boolean;
+  publishDate: Date;
+  description: String;
+  title: String;
 }
 
-export default async (res) => {
+export default async (req, res) => {
   await fetch('https://aqueous-taiga-17941.herokuapp.com/blogs')
     .then((data) => {
       return data.json();
@@ -27,15 +28,15 @@ export default async (res) => {
                       <description>Coding Toast Blog</description>`;
 
       posts?.map((post: IBlog) => {
-        return (xml += `
+        return post.isPublished ? (xml += `
             <item>
               <ttl>1</ttl>
               <title>${post.title}</title>
-              <image>${post.banner}</image>
+              <image>${post.banner.url}</image>
               <description>${post.description}</description>
-              <author>${post.author}</author>
+              <author>${post.author.displayName}</author>
             </item>
-          `);
+          `) : null;
       });
 
       xml += `</channel></rss>`;
