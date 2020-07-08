@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Card, Badge, Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import { DateDisplay } from 'components';
-import { differenceInCalendarDays, parseISO } from 'date-fns';
+import { differenceInCalendarDays } from 'date-fns';
 
 interface IBlogCardProps {
   data: IBlogCardAttributes;
@@ -10,8 +10,8 @@ interface IBlogCardProps {
 
 interface IBlogCardAttributes {
   authorDisplayName: String;
-  bannerImageUrl: string;
-  bannerAlternativeText: string;
+  bannerImageUrl: String;
+  bannerAlternativeText: String;
   publishDate: Date;
   description: String;
   slug: String;
@@ -29,7 +29,7 @@ const BlogCard: React.FC<IBlogCardProps> = (props) => {
           <Card.Img
             variant='top'
             src={`https://aqueous-taiga-17941.herokuapp.com${bannerImageUrl}`}
-            alt={bannerAlternativeText}
+            alt={bannerAlternativeText.toString()}
             style={{ height: '275px' }}
           />
           <Card.Body>
