@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Form, Button, Card, Row, Col } from 'react-bootstrap';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import { logEvent, logException } from 'utils/analytics';
+import { postData } from 'helpers/postData';
 
 const SignUpForm: React.FC = () => {
   const schema = Yup.object({
@@ -13,13 +15,20 @@ const SignUpForm: React.FC = () => {
 
   const onSubmit = (
     values: {
-      acceptedTerms: boolean;
       email: string;
     },
     { setSubmitting }
   ) => {
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
+      postData('https://aqueous-taiga-17941.herokuapp.com/newsletter', values)
+        .then(() => {
+          logEvent('Subscription', 'Subscription sent');
+          alert('Subscription sent!');
+        })
+        .catch((e) => {
+          logException(e.message);
+          alert(e);
+        });
       setSubmitting(false);
     }, timeout);
   };
