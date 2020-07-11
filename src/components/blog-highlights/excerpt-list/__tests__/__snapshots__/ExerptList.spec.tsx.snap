@@ -6,54 +6,5 @@ exports[`renders correctly 1`] = `
   md={2}
   noGutters={false}
   xs={1}
->
-  <Col
-    key="first-blog-post"
-  >
-    <BlogCard
-      author="Bilbo Baggins"
-      banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-      createdAt="\`January 1, 1970\`"
-      description="first blog post"
-      slug="first-blog-post"
-      title="blog-post-placerholder1"
-    />
-  </Col>
-  <Col
-    key="third-blog-post"
-  >
-    <BlogCard
-      author="Bilbo Baggins"
-      banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-      createdAt="\`January 1, 1970\`"
-      description="third blog post"
-      slug="third-blog-post"
-      title="blog-post-placerholder3"
-    />
-  </Col>
-  <Col
-    key="fourth-blog-post"
-  >
-    <BlogCard
-      author="Bilbo Baggins"
-      banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-      createdAt="\`January 1, 1970\`"
-      description="fourth blog post"
-      slug="fourth-blog-post"
-      title="blog-post-placerholder4"
-    />
-  </Col>
-  <Col
-    key="second-blog-post"
-  >
-    <BlogCard
-      author="Bilbo Baggins"
-      banner="https://cliparting.com/wp-content/uploads/2016/06/Ribbon-outline-banner-clip-art-free-vector-for-free-download-about.jpg"
-      createdAt="\`January 1, 1970\`"
-      description="second blog post"
-      slug="second-blog-post"
-      title="blog-post-placerholder2"
-    />
-  </Col>
-</Row>
+/>
 `;
