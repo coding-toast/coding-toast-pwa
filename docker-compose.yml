@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MONGO_INITDB_DATABASE: ${DATABASE_NAME}
+      MONGO_INITDB_ROOT_USERNAME: ${DATABASE_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+    networks:
+      - coding-toast-api-network
+    volumes:
+      - coding-toast-api-data:/data/db
+    expose:
+      - ${DATABASE_PORT}
+  strapi-api:
+    image: qguenther/coding-toast-api
+    container_name: coding-toast-api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_SRV: ${DATABASE_SRV}
+      DATABASE_SSL: ${DATABASE_SSL}
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+    networks:
+      - coding-toast-api-network
+    volumes:
+      - coding-toast-api-data:/usr/src/app
+    ports:
+      - 1337:1337
+    command: npm start
+  coding-toast-pwa:
+    build: .
+    container_name: coding-toast-pwa
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NEXT_PUBLIC_ANALYTICS_ID: 'UA-171816612-1s'
+      NEXT_PUBLIC_API_ENDPOINT: ${API_HOST}:${API_PORT}
+    networks:
+      - coding-toast-api-network
+    ports:
+      - 3000:3000
+    command: npm start
+networks:
+  coding-toast-api-network:
+    driver: bridge
+volumes:
+  coding-toast-api-data:
